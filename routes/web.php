@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route thats sends back the view
+
 Route::get('/', function () {
     return view('index');
 });
+
+
+// Route 可以回傳 String arrays json function ...
+
+/* 為了不要讓route直接回傳view，改成使用controller 的方法
+Route::get('/products', [ProductsController::class, 'index']);
+
+*/

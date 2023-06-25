@@ -25,6 +25,8 @@ class UserFactory extends Factory
             'remember_token' => Str::random(10),
         ];
     }
+    /*keys of array 要跟database colunm names 一樣 !!!*/
+
 
     /**
      * Indicate that the model's email address should be unverified.
