@@ -1,0 +1,27 @@
+#hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/img/主畫面.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0.45);
+  background-blend-mode: darken;
+}
+
+@media (min-width: 992px) {
+  .LandingTitle {
+    font-size: 42pt;
+  }
+}
+
+.LandingTitle {
+  margin-top: 25vh;
+}
+
+@media (min-width: 992px) {
+  .LandingSubtitle {
+    font-size: 22pt;
+  }
+}
+
