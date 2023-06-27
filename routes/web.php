@@ -31,7 +31,7 @@ Route::get('/products. 'App\Http\Controller\');
 // });
 
 Route::get('/', [PagesController::class, 'index']);
-Route::get('/Jable', [PagesController::class, 'about']);
+// Route::get('/Jable', [PagesController::class, 'about']);
 
 
 
