@@ -18,7 +18,8 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->date('birthday');
-            $table->integer('facetype_id');
+            $table->integer('facetype_id')->unsigned();
+            $table->foreign('facetype_id')->references('id')->on('face_categories');
             $table->rememberToken();
             
         });

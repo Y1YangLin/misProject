@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,8 +31,12 @@ Route::get('/products. 'App\Http\Controller\');
 //     return view('index');
 // });
 
+
+/*Pages --> 主頁等一般頁面*/
 Route::get('/', [PagesController::class, 'index']);
-// Route::get('/Jable', [PagesController::class, 'about']);
+Route::get('/pages/login', [PagesController::class, 'login']);
+
+/*Users --> 與Users相關*/
 
 
 

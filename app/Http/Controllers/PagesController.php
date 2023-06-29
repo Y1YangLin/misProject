@@ -11,6 +11,9 @@ class PagesController extends Controller
         return view('index');
     }
 
-    
+    //點會員中心 --> 登入頁面
+    public function login(){
+        return view('pages.login');
+    }
 
 }
