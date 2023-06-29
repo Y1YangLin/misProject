@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\FaceCategoryController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
@@ -34,10 +36,16 @@ Route::get('/products. 'App\Http\Controller\');
 
 /*Pages --> 主頁等一般頁面*/
 Route::get('/', [PagesController::class, 'index']);
-Route::get('/pages/login', [PagesController::class, 'login']);
+Route::get('/users/login', [PagesController::class, 'login']);
 
 /*Users --> 與Users相關*/
 
 
+/* Products*/
+Route::get('/products/product', [ProductsController::class, 'index']);
+
+
+/**FaceCategory */
+Route::get('/facetypes/facecategory', [FaceCategoryController::class, 'index']);
 
 
