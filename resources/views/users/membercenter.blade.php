@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>會員中心</title>
-    <link rel="stylesheet" href="../MemberCenter_assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../MemberCenter_assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="../MemberCenter_assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="../MemberCenter_assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="../MemberCenter_assets/css/aos.min.css">
-    <link rel="stylesheet" href="../MemberCenter_assets/css/Account-setting-or-edit-profile.css">
-    <link rel="stylesheet" href="../MemberCenter_assets/css/NZTextbox---Date.css">
-    <link rel="stylesheet" href="../MemberCenter_assets/css/styles.css">
-    <?php require_once 'header.php' ;?>
+    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/fonts/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/fonts/fontawesome5-overrides.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/css/aos.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/css/Account-setting-or-edit-profile.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/css/NZTextbox---Date.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/css/styles.css') }}">
+    <?php #require_once 'header.php' ;?>
 </head>
 
 <body>
@@ -34,8 +34,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col col-12">
-                                                    <h5 class="user-name"><?php echo $data['user']->Member_name ;?></h5>
-                                                    <h6 class="user-email"><?php echo $data['user']->Member_email ;?></h6>
+                                                    <h5 class="user-name"><?php #echo $data['user']->Member_name ;?></h5>
+                                                    <h6 class="user-email"><?php #echo $data['user']->Member_email ;?></h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -93,14 +93,14 @@
                             </div>
                             
                                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="form-group"><label class="form-label" for="fullName">用戶名稱</label><input type="text" id="fullName" name="name" class="form-control" placeholder="請輸入姓名" value="<?php echo $data['user']->Member_name ;?>"></div>
+                                    <div class="form-group"><label class="form-label" for="fullName">用戶名稱</label><input type="text" id="fullName" name="name" class="form-control" placeholder="請輸入姓名" value="<?php #echo $data['user']->Member_name ;?>"></div>
                                 </div>
                                 
                                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="form-group"><label class="form-label" for="eMail">生日</label><input type="date" id="bd" name="bd" class="form-control" placeholder="請輸入生日" value="<?php echo $data['user']->Member_birthday;?>"></div>
+                                    <div class="form-group"><label class="form-label" for="eMail">生日</label><input type="date" id="bd" name="bd" class="form-control" placeholder="請輸入生日" value="<?php #echo $data['user']->Member_birthday;?>"></div>
                                 </div>
                                 <div class="col">
-                                    <div class="form-group"><label class="form-label" for="eMail">信箱</label><input type="email" id="eMail" name="email" class="form-control" placeholder="請輸入信箱" value="<?php echo $data['user']->Member_email ;?>"></div>
+                                    <div class="form-group"><label class="form-label" for="eMail">信箱</label><input type="email" id="eMail" name="email" class="form-control" placeholder="請輸入信箱" value="<?php #echo $data['user']->Member_email ;?>"></div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group"><label class="form-label" for="eMail">地址</label><input type="email" id="address" name="address" class="form-control" placeholder="請輸入地址" value="<?php //echo $data->Member_name ;?>"></div>
@@ -149,32 +149,32 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 pressgood gy-3 px-5" id="pressgood" style="display: none;">
                 <div class="row g-4 gx-5 row-cols-1 row-cols-md-3">
 
-                <?php foreach($data['like'] as $arr) { ?>
+                <?php //foreach($data['like'] as $arr) { ?>
                     <div class="col-12 col-md-4" data-aos="fade-up" id="product-item-animation-element-slide-top-left-4">
                         <div class="d-flex flex-column justify-content-xxl-start product-container">
                             <div class="row" style="box-shadow: 2px 2px 5px 2px;">
-                                <div class="col"><img class="rounded img-fluid d-block w-100 fit-cover" style="max-width: 100%;height: auto;" src="<?php echo 'http://34.81.132.111/html' . substr($arr->Product_imglocation, 2) ;?>"></div>
+                                <div class="col"><img class="rounded img-fluid d-block w-100 fit-cover" style="max-width: 100%;height: auto;" src="<?php echo 'http://34.81.132.111/html' //. substr($arr->Product_imglocation, 2) ;?>"></div>
                                 <div class="col-8 col-xxl-12 text-center col-12" style="text-overflow: ellipsis;">
-                                    <h4 class="text-truncate text-center"><?php echo $arr->Product_name ;?></h4>
+                                    <h4 class="text-truncate text-center"><?php #echo $arr->Product_name ;?></h4>
                                 </div>
                                 <div class="col-12">
-                                    <p class="text-truncate product-description"><?php echo $arr->Product_intro?></p>
+                                    <p class="text-truncate product-description"><?php #echo $arr->Product_intro?></p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     
-                    <?php }?>
+                    <?php #}?>
                 </div>
             </div>
 
             <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 collection" id="collection" style="display: none;">
                 <div class="row">
                     <div class="col text-center d-flex d-sm-flex justify-content-end justify-content-sm-end col-12" id="btn_collection_add"><button class="btn btn-success btn-lg" style="margin-left:5px;" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal-Add" title="scac"><i class="fas fa-plus" style="font-size:15px;"></i></button></div>
-                    <?php echo empty($data['collection']) ? "沒有收藏 快去收 ! " : '' ;?>
+                    <?php //echo empty($data['collection']) ? "沒有收藏 快去收 ! " : '' ;?>
                     
-                    <?php foreach($data['collection'] as $arr) { ?>
+                    <?php //foreach($data['collection'] as $arr) { ?>
                     <div class="col-6 col-sm-6 col-md-4 col-4">
                     
                         <div class="card">
@@ -185,12 +185,12 @@
                                         <ul class="nav">
                                             <li class="nav-item" href="#">
                                                 <div class="row d-flex flex-column">
-                                                    <div class="col btn_collection-1"><a href="#"><img class="img-thumbnail object-fit-fill" src="../MemberCenter_assets/img/swiftui.png"></a></div>
+                                                    <div class="col btn_collection-1"><a href="#"><img class="img-thumbnail object-fit-fill" src="{{ URL::asset('membercenter_assets/img/swiftui.png ') }}"></a></div>
                                                     <div class="col">
                                                         <hr>
                                                     </div>
                                                     <div class="col btn_collection-1"><a href="#" style="text-decoration:none">
-                                                            <h4 class="text-nowrap" style="text-align: center;color: var(--bs-gray-900);font-weight: bold;"><?php echo $arr->ProductCategory_type?></h4>
+                                                            <h4 class="text-nowrap" style="text-align: center;color: var(--bs-gray-900);font-weight: bold;"><?php //echo $arr->ProductCategory_type?></h4>
                                                         </a></div>
                                                 </div>
                                             </li>
@@ -201,7 +201,7 @@
                         </div>
                         
                     </div>
-                    <?php } ?>
+                    <?php //} ?>
 
                     
                     
@@ -211,24 +211,24 @@
             
             <div class="col product_for_collection gy-3 px-5 col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9" id="product_for_collection" style="display: none;">
                 <div class="row g-4 gx-5 row-cols-1 row-cols-md-3">
-                <?php echo empty($data['collection']) ? "沒有收藏 快去收 ! " : '' ;?>
-                <?php foreach($data['collection'] as $arr) { ?>
+                <?php //echo empty($data['collection']) ? "沒有收藏 快去收 ! " : '' ;?>
+                <?php //foreach($data['collection'] as $arr) { ?>
 
                 
                     <div class="col-12 col-md-4" data-aos="fade-up" id="product-item-animation-element-slide-top-left">
                         <div class="d-flex flex-column justify-content-xxl-start product-container">
                             <div class="row" style="box-shadow: 2px 2px 5px 2px;">
-                                <div class="col"><img class="rounded img-fluid d-block w-100 fit-cover" style="max-width: 100%;height: auto;" src="<?php echo 'http://34.81.132.111/html' . substr($arr->Product_imglocation, 2) ;?>"></div>
+                                <div class="col"><img class="rounded img-fluid d-block w-100 fit-cover" style="max-width: 100%;height: auto;" src="<?php echo 'http://34.81.132.111/html' //. substr($arr->Product_imglocation, 2) ;?>"></div>
                                 <div class="col-8 col-xxl-12 text-center col-12" style="text-overflow: ellipsis;">
-                                    <h4 class="text-truncate text-center"><?php echo $arr->Product_name?></h4>
+                                    <h4 class="text-truncate text-center"><?php //echo $arr->Product_name?></h4>
                                 </div>
                                 <div class="">
-                                    <p class="text-truncate product-description"><?php echo $arr->Product_intro?></p>
+                                    <p class="text-truncate product-description"><?php //echo $arr->Product_intro?></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <?php }?>
+                    <?php //}?>
 
                     <!-- <div class="col-12 col-md-4" data-aos="fade-up" id="product-item-animation-element-slide-top-left-3">
                         <div class="d-flex flex-column justify-content-xxl-start product-container">
@@ -275,26 +275,26 @@
             
             <div class="col product_for_collection gy-3 gx-5 comment" id="comments" style="display: none;">
 
-                <?php echo empty($data['comment']) ? "沒有評論 快去留 ! " : '' ;?>
-                <?php foreach($data['comment'] as $arr) { ?>
+                <?php //echo empty($data['comment']) ? "沒有評論 快去留 ! " : '' ;?>
+                <?php #foreach($data['comment'] as $arr) { ?>
                 <div class="row" id="commemt">
                     <div class="col-12 d-flex align-items-center align-items-lg-center" id="comment_date" style="background: #eceff2;border-radius: 11px;height: 45px;">
-                        <h4 style="margin-bottom: 0px;"><?php echo $arr->ProductComment_date ;?></h4>
+                        <h4 style="margin-bottom: 0px;"><?php //echo $arr->ProductComment_date ;?></h4>
                     </div>
                     <div class="col-10" id="comment_ourlogo"><a class="navbar-brand" style="font-weight: bold;font-size: 28px;">YOFU</a></div>
                     <div class="col-2 d-flex justify-content-center align-items-center justify-content-xl-end" id="comment_close"><button class="btn btn-sm" data-bs-toggle="modal" data-bss-tooltip="" style="margin-left:5px;" type="submit" data-bs-target="#exampleModal-Delete" title="safas"><i class="fa fa-close" style="font-size: 21px;"></i></button></div>
                     <div class="col-8" id="comment_content">
-                        <p><?php echo $arr->ProductComment_content ;?><br></p>
+                        <p><?php //echo $arr->ProductComment_content ;?><br></p>
                     </div>
-                    <div class="col-4 d-xxl-flex justify-content-xxl-center" id="comment_product_image"><img width="100%" height="auto" src="<?php echo 'http://34.81.132.111/html' . substr($arr->Product_imglocation, 2) ;?>" style="max-width: 191.988px;"></div>
+                    <div class="col-4 d-xxl-flex justify-content-xxl-center" id="comment_product_image"><img width="100%" height="auto" src="<?php echo 'http://34.81.132.111/html' //. substr($arr->Product_imglocation, 2) ;?>" style="max-width: 191.988px;"></div>
                     <div class="col-12" id="comment_product_name">
-                        <h6 style="font-weight: bold;"><br><span style="color: rgb(68, 68, 68);"><?php echo $arr->Product_name ;?></span><br><br></h6>
+                        <h6 style="font-weight: bold;"><br><span style="color: rgb(68, 68, 68);"><?php //echo $arr->Product_name ;?></span><br><br></h6>
                     </div>
                     <div class="col col-12" id="comment_time">
                         <h6 style="font-size: 12px;"><br><br><br></h6>
                     </div>
                 </div>
-                <?php } ?>
+                <?php #} ?>
 
                 
 
@@ -363,13 +363,13 @@
         </div>
     </div>
     
-    <script src="../MemberCenter_assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../MemberCenter_assets/js/aos.min.js"></script>
-    <script src="../MemberCenter_assets/js/bs-init.js"></script>
+    <script src="{{ URL::asset('membercenter_assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ URL::asset('membercenter_assets/js/aos.min.js') }}"></script>
+    <script src="{{ URL::asset('membercenter_assets/js/bs-init.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4&quot; crossorigin=&quot;anonymous"></script>
-    <script src="../MemberCenter_assets/js/Offcanvasjustifiy.js"></script>
-    <script src="../MemberCenter_assets/js/page.js"></script>
-    <script src="../MemberCenter_assets//js/Toasts.js"></script>
+    <script src="{{ URL::asset('membercenter_assets/js/Offcanvasjustifiy.js') }}"></script>
+    <script src="{{ URL::asset('membercenter_assets/js/page.js') }}"></script>
+    <script src="{{ URL::asset('membercenter_assets//js/Toasts.js') }}"></script>
     <script>
 
 
@@ -400,4 +400,4 @@
 
 
 </html>
-<?php require_once 'footer.php' ;?>
+<?php #require_once 'footer.php' ;?>

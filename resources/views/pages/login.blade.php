@@ -21,31 +21,7 @@
    <?php #require 'header.php';?>
   <body>
       <section class="position-relative py-4 py-xl-5">
-         <!-- <div class="container" style="height: 33px;">
-            <div class="row">
-               <div class="col">
-                  <nav class="navbar navbar-light navbar-expand-md fixed-top text-bg-light navbar-fixed-top navigation-clean-button" style="background: rgb(34, 34, 34);border-radius: 20;border-top-left-radius: 20;border-top-right-radius: 20;border-bottom-right-radius: 20;border-bottom-left-radius: 20;border-style: none;padding-top: 0;height: 48px;padding-bottom: 0px;margin-top: 3px;">
-                     <div class="container">
-                        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                        <div><a class="navbar-brand" href="#"><span class="fw-bold">YOFU</span> </a></div>
-                        <div class="collapse navbar-collapse" id="navcol-1" style="color: rgb(255,255,255);">
-                           <ul class="navbar-nav nav-right">
-                              <li class="nav-item"><a class="nav-link active link-dark" href="D:/SA/httpdoc/index.php" style="color: rgba(224,217,217,0.9);">首頁</a></li>
-                              <li class="nav-item"><a class="nav-link link-dark" href="../about.php" style="color: rgba(224,217,217,0.9);">產品</a></li>
-                              <li class="nav-item"><a class="nav-link link-dark" href="../faq.php" style="color: rgba(224,217,217,0.9);">FAQ</a></li>
-                              <li class="nav-item"></li>
-                           </ul>
-                           <div class="dropdown">
-                              <a class="dropdown-toggle link-dark d-xl-flex justify-content-xl-start align-items-xl-center" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="color: rgba(224,217,217,0.9);">服務</a>
-                              <div class="dropdown-menu"><a class="dropdown-item" href="services.php">膚質分析</a><a class="dropdown-item" href="#">商品比價</a></div>
-                           </div>
-                           <p class="ms-auto navbar-text actions" style="padding-left: 0px;padding-bottom: 11px;padding-top: 8px;margin-right: -31px;"><a href="javascript:void(0);" role="button" aria-expanded="false" data-bs-toggle="dropdown"><span id="profile-name-header"></span><img id="user-img-id" src="login_assets/img/avatar-placeholder.png" style="width: 2rem;" width="32" height="32"><img class="chevron" src="login_assets/img/icon_chevron-down.svg"></a> </p>
-                        </div>
-                     </div>
-                  </nav>
-               </div>
-            </div>
-         </div> -->
+         
          <div class="container">
             <?php //print_r($data); ?>
             <div class="row d-flex justify-content-center">
@@ -138,7 +114,7 @@
          </div>
       </footer> -->
       <?php #require 'footer.php';?>
-      <script src="login_assets/bootstrap/js/bootstrap.min.js"></script>
-      <script src="login_assets/js/script.min.js"></script>
+      <script src="{{ URL::asset('login_assets/bootstrap/js/bootstrap.min.js') }}"></script>
+      <script src="{{ URL::asset('login_assets/js/script.min.js') }}"></script>
    </body>
 </html>

@@ -20,6 +20,7 @@ return new class extends Migration
             $table->date('birthday');
             $table->integer('facetype_id')->unsigned();
             $table->foreign('facetype_id')->references('id')->on('face_categories');
+            
             $table->rememberToken();
             
         });

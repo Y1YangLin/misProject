@@ -36,10 +36,11 @@ Route::get('/products. 'App\Http\Controller\');
 
 /*Pages --> 主頁等一般頁面*/
 Route::get('/', [PagesController::class, 'index']);
-Route::get('/users/login', [PagesController::class, 'login']);
+
 
 /*Users --> 與Users相關*/
-
+Route::get('/users/login', [UsersController::class, 'index']);
+Route::get('/users/about', [UsersController::class, 'about']);
 
 /* Products*/
 Route::get('/products/product', [ProductsController::class, 'index']);
