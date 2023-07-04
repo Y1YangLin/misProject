@@ -13,7 +13,7 @@ class PagesController extends Controller
 
     //點會員中心 --> 登入頁面
     public function login(){
-        return view('pages.login');
+        return view('auth.login');
     }
 
     

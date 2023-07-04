@@ -16,13 +16,13 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->date('birthday');
-            $table->integer('facetype_id')->unsigned();
+            $table->string('password')->nullable();
+            $table->date('birthday')->nullable();
+            $table->integer('facetype_id')->unsigned()->nullable();
             $table->foreign('facetype_id')->references('id')->on('face_categories');
-            
+            $table->string('google_id')->nullable();
             $table->rememberToken();
-            
+            $table->timestamps();
         });
     }
 

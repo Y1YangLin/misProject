@@ -30,7 +30,7 @@
                     <li class="nav-item"><a class="nav-link" href="/products/product" style="color:var(--bs-navbar-hover-color);font-weight:bold;">產品</a></li>
                     <li class="nav-item"><a class="nav-link" href="/facetypes/facecategory" style="color:var(--bs-navbar-hover-color);font-weight:bold;">膚質分析</a></li>
                     <li class="nav-item" style="height: 47.5px;"><button class="btn text-bg-light d-flex align-items-center" type="submit" data-bs-toggle="modal" data-bs-target="#Modal-Customerservice" style="font-size: 21px;width: 100%;height: 100%;padding: 8px 16px;font-weight: bold;"><br><strong><span style="color: var(--bs-navbar-hover-color); background-color: rgb(248, 249, 250);">客戶服務</span></strong><br><br></button></li>
-                    <li class="nav-item dropdown"><a class="nav-link" href="/users/login" style="color: var(--bs-navbar-brand-hover-color);">會員中心</a>
+                    <li class="nav-item dropdown"><a class="nav-link" href="/login" style="color: var(--bs-navbar-brand-hover-color);">會員中心</a>
                         <ol class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">我的帳戶</a></li>
                             <li>
