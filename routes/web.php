@@ -50,3 +50,11 @@ Route::get('/products/product', [ProductsController::class, 'index']);
 Route::get('/facetypes/facecategory', [FaceCategoryController::class, 'index']);
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
