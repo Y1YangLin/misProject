@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ Auth::user()->name}}  {{ __('老鐵你好 ') }} 
+                    
                     
                 </div>
             </div>

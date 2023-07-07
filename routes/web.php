@@ -37,19 +37,19 @@ Route::get('/products. 'App\Http\Controller\');
 
 
 /*Pages --> 主頁等一般頁面*/
-// Route::get('/', [PagesController::class, 'index']);
-
+Route::get('/', [PagesController::class, 'index']);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 /*Users --> 與Users相關*/
 // Route::get('/login', [PagesController::class, 'login'])->name('login');
-Route::get('/users/about', [UsersController::class, 'about']);
+Route::get('/about', [UsersController::class, 'about']);
 
 /* Products*/
-Route::get('/products/product', [ProductsController::class, 'index']);
+Route::get('/products', [ProductsController::class, 'index']);
 
 
 /**FaceCategory */
-Route::get('/facetypes/facecategory', [FaceCategoryController::class, 'index']);
+Route::get('/facetypes', [FaceCategoryController::class, 'index']);
 
 /**Google Socialite */
 Route::get('auth/google', [GoogleAuthController::class, 'redirect'])->name('google-auth');
@@ -58,8 +58,6 @@ Route::get('auth/google/call-back', [GoogleAuthController::class, 'callbackGoogl
 Auth::routes();
 
 
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 
