@@ -41,7 +41,7 @@ Route::get('/', [PagesController::class, 'index']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 /*Users --> 與Users相關*/
-// Route::get('/login', [PagesController::class, 'login'])->name('login');
+Route::get('/user/login', [UsersController::class, 'index']);
 Route::get('/about', [UsersController::class, 'about']);
 
 /* Products*/

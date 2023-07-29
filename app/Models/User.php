@@ -19,7 +19,7 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    /**使用者會填的資料 */
+    
     protected $fillable = [
         'name',
         'email',
