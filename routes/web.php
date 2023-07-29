@@ -35,14 +35,16 @@ Route::get('/products. 'App\Http\Controller\');
 //     return view('index');
 // });
 
+Auth::routes();
+
 
 /*Pages --> 主頁等一般頁面*/
 Route::get('/', [PagesController::class, 'index']);
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/index', [PagesController::class, 'index']);
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 /*Users --> 與Users相關*/
-Route::get('/user/login', [UsersController::class, 'index']);
-Route::get('/about', [UsersController::class, 'about']);
+Route::get('/test', [UsersController::class, 'login']);
 
 /* Products*/
 Route::get('/products', [ProductsController::class, 'index']);
@@ -55,7 +57,7 @@ Route::get('/facetypes', [FaceCategoryController::class, 'index']);
 Route::get('auth/google', [GoogleAuthController::class, 'redirect'])->name('google-auth');
 Route::get('auth/google/call-back', [GoogleAuthController::class, 'callbackGoogle']);
 
-Auth::routes();
+
 
 
 
