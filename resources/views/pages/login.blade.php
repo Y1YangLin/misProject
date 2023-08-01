@@ -38,31 +38,39 @@
                         <div class="content">
                            <div id = "content_signup" style="display: none ;">
 
-                              <form class="text-center form_signup" action="users/signup" name="signup-form" method="post" style="width: 376px;padding-left: 0px; ">
-                                
-                                <input id = "name" class="form-control" type="name" name="name" placeholder="姓名" style="font-size: 18px;margin-bottom: 15px;padding-right: 206px;margin-right: -237px;">
+                              <form class="text-center form_signup" action="{{ route('register') }}" name="signup-form" method="POST" style="width: 376px;padding-left: 0px; ">
+                                @csrf
+                                <input id = "register_name" class="form-control" type="name" name="name" placeholder="姓名" style="font-size: 18px;margin-bottom: 15px;padding-right: 206px;margin-right: -237px;">
                                 
                                 
 
                                 
-                                <input class="form-control" type="email" name="email" placeholder="信箱" style="font-size: 18px;margin-bottom: 15px;">
+                                <input id = "register_email" class="form-control" type="email" name="email" placeholder="信箱" style="font-size: 18px;margin-bottom: 15px;">
                                 
                                  <div class = "relative ">
                                     <div class="fas fa-eye eye"></div>   
-                                    <input class="form-control password" type="password" name="pwd" placeholder="密碼" style="font-size: 18px;margin-bottom: 17px;">             
+                                    <input id = "register_password" class="form-control password" type="password" name="pwd" placeholder="密碼" style="font-size: 18px;margin-bottom: 17px;">             
                                  </div>                             
                                  
                                  <div class = "relative ">
                                     <div class="fa fa-eye eye1"></div>
-                                    <input class="form-control password1" type="password" name="repwd" placeholder="再次輸入密碼" style="font-size: 18px;margin-bottom: 17px;">                        
+                                    <input id = "register_repwd" class="form-control password1" type="password" name="repwd" placeholder="再次輸入密碼" style="font-size: 18px;margin-bottom: 17px;">                        
                                     
+                                    @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
+
+                                    
+
                                  </div>
                                  
                                 <button class="btn btn-primary test" type="submit" name="submit" style="width: 267px;font-size: 33px;height: 55.5px;padding-top: 5px;padding-bottom: 6px;background: #63686d;font-family: Barrio, serif;font-weight: bold;">註冊</button>
 
                                  <!-- google authenticator here-->
-                                 <div class="row mb-0">
-                                    <div class="col-md-8 offset-md-4">
+                                 <div class="relative ">
+                                    <div class="google-btn">
                                        <a href="{{ route('google-auth') }}">
                                           <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png">
                                        </a>
@@ -73,22 +81,29 @@
                            </div>
                            
                               <div id = "content_login">
-                                 <form class="text-center form_login" action="users/login" name="signin-form" method="post"style="width: 376px;padding-left: 0px;">
-                                    <input class="form-control" type="email" name="email" placeholder="電子信箱" style="font-size: 18px;margin-bottom: 15px;">
+                                 <form class="text-center form_login" action="{{ route('login') }}" name="signin-form" method="post"style="width: 376px;padding-left: 0px;">
+                                    @csrf
+                                    <input id = "login_email" class="form-control" type="email" name="email" placeholder="電子信箱" style="font-size: 18px;margin-bottom: 15px;">
                                     
                                     
                                     
                                     <div class = "relative ">
                                        <div class="fas fa-eye eye2"></div>
-                                       <input class="form-control password2" type="password" name="pwd" placeholder="密碼" style="font-size: 18px;margin-bottom: 17px;">                                  
+                                       <input id = "login_password" class="form-control password2" type="password" name="pwd" placeholder="密碼" style="font-size: 18px;margin-bottom: 17px;">                                  
                                     </div> 
-                                                                      
-                                    <p class="text-muted" style="margin-top: 10px;">忘記密碼?</p>
+                                    
+                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                                    <label class="form-check-label" for="remember">
+                                        {{ __('Remember Me') }}
+                                    </label>
+
+                                    <p class="text-muted" style="margin-top: 10px;"><a href="#">忘記密碼?</a></p>
                                     <button class="btn btn-primary" name="submit" type="submit" style="width: 267px;font-size: 33px;height: 55.5px;padding-top: 5px;padding-bottom: 6px;background: #63686d;">登入</button>
                                     
                                     <!-- google authenticator here-->
-                                    <div class="row mb-0">
-                                       <div class="col-md-8 offset-md-4">
+                                    <div class="relative">
+                                       <div class="google-btn">
                                           <a href="{{ route('google-auth') }}">
                                                 <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png">
                                           </a>

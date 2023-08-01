@@ -41,10 +41,11 @@ Auth::routes();
 /*Pages --> 主頁等一般頁面*/
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/index', [PagesController::class, 'index']);
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 /*Users --> 與Users相關*/
 Route::get('/test', [UsersController::class, 'login']);
+Route::get('/membercenter', [UsersController::class, 'about']);
 
 /* Products*/
 Route::get('/products', [ProductsController::class, 'index']);

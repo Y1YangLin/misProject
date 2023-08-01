@@ -1,201 +1,382 @@
-
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Mon Jul 31 2023 17:27:06 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="64c3f1a50a737c6a48e2cd1a" data-wf-site="64c3f1a50a737c6a48e2cd14">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>YOFU</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/aos.min.css">
-    <link rel="stylesheet" href="assets/css/Black-Navbar.css">
-    <link rel="stylesheet" href="assets/css/dh-row-titile-text-image-right-1.css">
-    <link rel="stylesheet" href="assets/css/Footer-Basic-icons.css">
-    <link rel="stylesheet" href="assets/css/Full-Height-Hero.css">
-    <link rel="stylesheet" href="assets/css/Gamanet_Header_v1.css">
-    <link rel="stylesheet" href="assets/css/Hero-Carousel-images.css">
-    <link rel="stylesheet" href="assets/css/Hero-Technology--1.css">
-    <link rel="stylesheet" href="assets/css/Hero-Technology-.css">
-    <link rel="stylesheet" href="assets/css/Ludens-Client---Login-Dropdown.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
-
-    <nav class="bg-light navbar navbar-expand-lg sticky-top">
-        <div class="container d-lg-flex align-items-lg-center"><a class="navbar-brand" href="#" style="font-weight: bold;font-size: 28px;">YOFU</a><button class="navbar-toggler Triger" data-bs-toggle="offcanvas" type="button" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg"><span class="navbar-toggler-icon"></span></button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-                <ul class="nav d-flex justify-content-lg-start align-items-lg-center flex-column flex-lg-row navmove" style="font-weight: bold;font-size: 21px;">
-                    <li class="nav-item"><a class="nav-link" href="/products" style="color:var(--bs-navbar-hover-color);font-weight:bold;">產品</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/facetypes" style="color:var(--bs-navbar-hover-color);font-weight:bold;">膚質分析</a></li>
-                    <li class="nav-item" style="height: 47.5px;"><button class="btn text-bg-light d-flex align-items-center" type="submit" data-bs-toggle="modal" data-bs-target="#Modal-Customerservice" style="font-size: 21px;width: 100%;height: 100%;padding: 8px 16px;font-weight: bold;"><br><strong><span style="color: var(--bs-navbar-hover-color); background-color: rgb(248, 249, 250);">客戶服務</span></strong><br><br></button></li>
-                    <li class="nav-item dropdown"><a class="nav-link" href="/login" style="color: var(--bs-navbar-brand-hover-color);">會員中心</a>
-                        <ol class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">我的帳戶</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            
-                            <li><a class="dropdown-item" href="#">登出</a></li>
-                        </ol>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <meta charset="utf-8">
+  <title>YOFU</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="index_assets/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="index_assets/css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="index_assets/css/waves-library-site-e37884.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Oswald:200,300,400,500,600,700"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="index_assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="index_assets/images/webclip.png" rel="apple-touch-icon">
 </head>
-
-
-<body>
-    <div class="carousel slide" data-bs-ride="carousel" id="carousel-1" style="height: 600px;margin-top: 40px;">
-        <div class="carousel-inner h-100" data-aos="fade-up">
-            <div class="carousel-item active h-100" data-aos="fade-left"><img class="w-100 d-block position-absolute h-100 fit-cover" src="assets/img/主畫面.jpg" alt="Slide Image" style="z-index: -1;background-blend-mode: darken;">
-                <div class="container d-flex flex-column justify-content-center h-100">
-                    <div class="row">
-                        <div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
-                            <div>
-                                <h1 class="text-uppercase fs-2 fw-bold text-center text-white mb-3">化妝品比價推薦平台</h1>
-                                <p class="fs-5 fw-lighter text-center text-white mb-4">Cosmetics Price Comparison Recommendation Platform</p>
+<body class="body">
+  <div class="navbar-logo-center">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-center-container shadow-three w-nav">
+      <div class="container">
+        <div class="navbar-wrapper-three">
+          <a href="/" class="navbar-brand-three w-nav-brand">
+            <h1>YO FU</h1>
+          </a>
+          <nav role="navigation" class="nav-menu-wrapper-three w-nav-menu">
+            <div class="nav-menu-three">
+              <ul role="list" class="nav-menu-block w-list-unstyled">
+                <li>
+                  <a href="/facetypes" class="nav-link">膚質分析</a>
+                </li>
+                <li>
+                  <a href="/contact" class="nav-link">聯絡我們</a>
+                </li>
+                <li>
+                  <div data-delay="0" data-hover="false" class="nav-dropdown w-dropdown">
+                    <address class="nav-dropdown-toggle w-dropdown-toggle">
+                      <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
+                      <div class="text-block-4">產品</div>
+                    </address>
+                    <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
+                      <a href="#" class="nav-dropdown-link w-dropdown-link">男生</a>
+                      <a href="#" class="nav-dropdown-link w-dropdown-link">女生</a>
+                      <a href="#" class="nav-dropdown-link w-dropdown-link">孩童</a>
+                      <a href="/product" class="nav-dropdown-link w-dropdown-link">推薦</a>
+                    </nav>
+                  </div>
+                </li>
+              </ul>
+              <ul role="list" class="nav-menu-block w-list-unstyled">
+                <li class="mobile-margin-top-10">
+                  <a href="/login" class="nav-link-2 w-nav-link">account_circle</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="menu-button w-nav-button">
+            <div class="w-icon-nav-menu"></div>
+          </div>
         </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item h-100" data-aos="fade-left"><img class="w-100 d-block position-absolute h-100 fit-cover" src="assets/img/商品介紹_1.png" alt="Slide Image" style="z-index: -1;">
-                <div class="container d-flex flex-column justify-content-center h-100">
-                    <div class="row">
-                        <div class="col-md-6 col-xl-4 offset-md-2">
-                            <div style="max-width: 350px;">
-                                <h1 class="text-uppercase fw-bold text-white">Biben dum<br>fringi dictum, augue purus</h1>
-                                <p class="fw-lighter text-light my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue interdum.</p><a class="btn btn-primary fs-6 fw-bold text-bg-light me-2" role="button" href="#">瀏覽更多</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item h-100" data-aos="fade-left"><img class="w-100 d-block position-absolute h-100 fit-cover" src="assets/img/商品介紹_2.png" alt="Slide Image" style="z-index: -1;">
-                <div class="container d-flex flex-column justify-content-center h-100">
-                    <div class="row">
-                        <div class="col-md-6 col-xl-4 offset-md-2">
-                            <div style="max-width: 350px;">
-                                <h1 class="text-uppercase fw-bold text-white">Biben dum<br>fringi dictum, augue purus</h1>
-                                <p class="fw-lighter text-light my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue interdum.</p><a class="btn btn-primary fs-6 fw-bold text-bg-light me-2" role="button" href="#">瀏覽更多</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </div>
+  <div class="waves---section-hero-primary">
+    <div class="waves---main-container w-container">
+      <div class="w-layout-grid waves-grid-hero-1">
+        <div id="w-node-_8f10a10f-28f2-ab81-bcd1-b547e376a59f-48e2cd1a" class="waves-content-hero-1">
+          <div class="waves---limit-480">
+            <div class="waves---subtitle-2"></div>
+          </div>
+          <h1 class="waves---mega-heading-1">No Compromises on Skincare, We Care for You.</h1>
         </div>
-        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
-        <ol class="carousel-indicators">
-            <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
-        </ol>
-    </div>
-    <div class="bg-dark border rounded hero-technology jumbotron h1 py-5 px-4" data-aos="fade-up" data-aos-duration="800" id="Lotion" style="padding-bottom: 16px;">
-        <h1 class="fs-2 fw-bold hero-title">化妝水</h1>
-        <p class="fs-6 hero-subtitle">Lotion</p>
-        <p><a class="btn btn-primary btn-lg fs-6 fw-bold text-center text-bg-light border-0 border-white hero-button" role="button" href="./class/product2.html?type=1&p=1">瀏覽更多</a></p>
-    </div>
-    <div class="bg-light border rounded hero-technology jumbotron h2 py-5 px-4" data-aos="fade-up" data-aos-duration="800" id="Essence" style="margin-top: -10px;">
-        <h1 class="fs-2 fw-bold hero-title">精華液</h1>
-        <p class="fs-6 hero-subtitle">Essence</p>
-        <p><a class="btn btn-primary btn-lg fs-6 fw-bold text-center text-bg-light border-0 border-white hero-button" role="button" href="./class/product2.html?type=2&p=1">瀏覽更多</a></p>
-    </div>
-    <div class="bg-light border rounded hero-technology jumbotron h3 py-5 px-4" data-aos="fade-up" data-aos-duration="800" id="Lotion2" style="margin-top: -10px;">
-        <h1 class="fs-2 fw-bold hero-title">乳液</h1>
-        <p class="fs-6 hero-subtitle">Lotion</p>
-        <p><a class="btn btn-primary btn-lg fs-6 fw-bold text-center text-bg-light border-0 border-white hero-button" role="button" href="./class/product2.html?type=3&p=1">瀏覽更多</a></p>
-    </div>
-    <div class="bg-light border rounded hero-technology jumbotron h4 py-5 px-4" data-aos="fade-up" data-aos-duration="800" id="Cream" style="margin-top: -10px;">
-        <h1 class="fs-2 fw-bold hero-title">乳霜</h1>
-        <p class="fs-6 hero-subtitle">cream</p>
-        <p><a class="btn btn-primary btn-lg fs-6 fw-bold text-center text-bg-light border-0 border-white hero-button" role="button" href="./class/product2.html?type=4&p=1">瀏覽更多</a></p>
-    </div>
-    <div class="bg-light border rounded hero-technology jumbotron h5 py-5 px-4" data-aos="fade-up" id="Primer" style="margin-top: -10px;">
-        <h1 class="fs-2 fw-bold hero-title">妝前乳</h1>
-        <p class="fs-6 hero-subtitle">Primer</p>
-        <p><a class="btn btn-primary btn-lg fs-6 fw-bold text-center text-bg-light border-0 border-white hero-button" role="button" href="./class/product2.html?type=5&p=1">瀏覽更多</a></p>
-    </div>
-    <div class="bg-light border rounded hero-technology jumbotron h6 py-5 px-4" data-aos="fade-up" data-aos-duration="800" id="Foundation" style="margin-top: -10px;">
-        <h1 class="fs-2 fw-bold hero-title">粉底液</h1>
-        <p class="fs-6 hero-subtitle">foundation</p>
-        <p><a class="btn btn-primary btn-lg fs-6 fw-bold text-center text-bg-light border-0 border-white hero-button" role="button" href="./class/product2.html?type=6&p=1">瀏覽更多</a></p>
-    </div>
-    <div class="bg-light border rounded hero-technology jumbotron h7 py-5 px-4" data-aos="fade-up" data-aos-duration="800" id="Setting-Powder" style="margin-top: -10px;">
-        <h1 class="fs-2 fw-bold hero-title">蜜粉/蜜粉餅</h1>
-        <p class="fs-6 hero-subtitle">setting powder</p>
-        <p><a class="btn btn-primary btn-lg fs-6 fw-bold text-center text-bg-light border-0 border-white hero-button" role="button" href="./class/product2.html?type=7&p=1">瀏覽更多</a></p>
-    </div>
-    <div class="bg-light border rounded hero-technology jumbotron h8 py-5 px-4" data-aos="fade-up" data-aos-duration="800" id="Setting-Spray" style="margin-top: -10px;">
-        <h1 class="fs-2 fw-bold hero-title">定裝噴霧</h1>
-        <p class="hero-subtitle">setting spray</p>
-        <p><a class="btn btn-primary btn-lg fs-6 fw-bold text-center text-bg-light border-0 border-white hero-button" role="button" href="./class/product2.html?type=8&p=1">瀏覽更多</a></p>
-    </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="Modal-Customerservice" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <h4 style="font-weight: bold;text-align: center;color: var(--green);">聯絡我們</h4>
-                    <hr>
-                    <form class="text-dark" data-bss-recipient="12223ac6677c1d072c3a5614f27bf1e1">
-                        <div class="form-group mb-3"><input class="form-control" type="text" name="name" placeholder="您的姓名" required=""></div>
-                        <div class="form-group mb-3"><input class="form-control" type="email" name="email" placeholder="您的信箱" required=""></div>
-                        <div class="form-group mb-3"><textarea class="form-control" name="message" placeholder="想說的話" rows="14" required="" minlength="10"></textarea></div>
-                    </form>
-                </div>
-                <div class="modal-footer"><button class="btn btn-secondary" type="button" data-bs-dismiss="modal">關閉</button><button class="btn btn-success" type="button" data-bs-dismiss="modal">確認送出</button></div>
+        <div id="w-node-_8f10a10f-28f2-ab81-bcd1-b547e376a5a8-48e2cd1a" data-w-id="8f10a10f-28f2-ab81-bcd1-b547e376a5a8" style="opacity:0" class="waves-gallery-hero-1">
+          <div class="waves-gradient-hero-1"></div>
+          <div style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="waves-column-hero-1 column-one">
+            <div class="waves-inside-hero-1">
+              <div class="waves-item-gallery-hero-1">
+                <div class="waves-image-wrap-hero-1"><img src="https://uploads-ssl.webflow.com/64c3f1a50a737c6a48e2cd14/64c477bca124713eea5a9106_Hero%201%20-%202.webp" loading="lazy" alt="" class="waves-image-hero-1"></div>
+                <div class="waves-image-wrap-hero-1"><img src="index_assets/images/Hero-1---6_1Hero-1---6.webp" loading="lazy" srcset="index_assets/images/Hero-1---6_1-p-500.jpg 500w, index_assets/images/Hero-1---6_1Hero-1---6.webp 520w" sizes="(max-width: 479px) 257.2749938964844px, (max-width: 767px) 54vw, (max-width: 991px) 34vw, (max-width: 1439px) 264px, 288px" alt="" class="waves-image-hero-1"></div>
+                <div class="waves-image-wrap-hero-1"><img src="index_assets/images/Hero-1---5.jpg" loading="lazy" srcset="index_assets/images/Hero-1---5-p-500.jpg 500w, index_assets/images/Hero-1---5.jpg 520w" sizes="(max-width: 479px) 257.2749938964844px, (max-width: 767px) 54vw, (max-width: 991px) 34vw, (max-width: 1439px) 264px, 288px" alt="" class="waves-image-hero-1"></div>
+              </div>
+              <div class="waves-item-gallery-hero-1">
+                <div class="waves-image-wrap-hero-1"><img src="https://uploads-ssl.webflow.com/64c3f1a50a737c6a48e2cd14/64c477bca124713eea5a9106_Hero%201%20-%202.webp" loading="lazy" alt="" class="waves-image-hero-1"></div>
+                <div class="waves-image-wrap-hero-1"><img src="index_assets/images/Hero-1---6_1Hero-1---6.webp" loading="lazy" srcset="index_assets/images/Hero-1---6_1-p-500.jpg 500w, index_assets/images/Hero-1---6_1Hero-1---6.webp 520w" sizes="(max-width: 479px) 257.2749938964844px, (max-width: 767px) 54vw, (max-width: 991px) 34vw, (max-width: 1439px) 264px, 288px" alt="" class="waves-image-hero-1"></div>
+                <div class="waves-image-wrap-hero-1"><img src="index_assets/images/Hero-1---5.jpg" loading="lazy" srcset="index_assets/images/Hero-1---5-p-500.jpg 500w, index_assets/images/Hero-1---5.jpg 520w" sizes="(max-width: 479px) 257.2749938964844px, (max-width: 767px) 54vw, (max-width: 991px) 34vw, (max-width: 1439px) 264px, 288px" alt="" class="waves-image-hero-1"></div>
+              </div>
             </div>
+          </div>
+          <div style="-webkit-transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="waves-column-hero-1 column-two">
+            <div class="waves-inside-hero-1 reverse">
+              <div class="waves-item-gallery-hero-1">
+                <div class="waves-image-wrap-hero-1"><img src="index_assets/images/Hero-1---4_1Hero-1---4.webp" loading="lazy" srcset="index_assets/images/Hero-1---4_1-p-500.jpg 500w, index_assets/images/Hero-1---4_1Hero-1---4.webp 520w" sizes="(max-width: 479px) 257.2749938964844px, (max-width: 767px) 54vw, (max-width: 991px) 34vw, (max-width: 1439px) 264px, 288px" alt="" class="waves-image-hero-1"></div>
+                <div class="waves-image-wrap-hero-1"><img src="https://uploads-ssl.webflow.com/64c3f1a50a737c6a48e2cd14/64c477bca124713eea5a910f_Hero%201%20-%203.webp" loading="lazy" alt="" class="waves-image-hero-1"></div>
+                <div class="waves-image-wrap-hero-1"><img src="index_assets/images/Hero-1---1_1Hero-1---1.webp" loading="lazy" srcset="index_assets/images/Hero-1---1_1-p-500.jpg 500w, index_assets/images/Hero-1---1_1Hero-1---1.webp 520w" sizes="(max-width: 479px) 257.2749938964844px, (max-width: 767px) 54vw, (max-width: 991px) 34vw, (max-width: 1439px) 264px, 288px" alt="" class="waves-image-hero-1"></div>
+              </div>
+              <div class="waves-item-gallery-hero-1">
+                <div class="waves-image-wrap-hero-1"><img src="index_assets/images/Hero-1---4_1Hero-1---4.webp" loading="lazy" srcset="index_assets/images/Hero-1---4_1-p-500.jpg 500w, index_assets/images/Hero-1---4_1Hero-1---4.webp 520w" sizes="(max-width: 479px) 257.2749938964844px, (max-width: 767px) 54vw, (max-width: 991px) 34vw, (max-width: 1439px) 264px, 288px" alt="" class="waves-image-hero-1"></div>
+                <div class="waves-image-wrap-hero-1"><img src="https://uploads-ssl.webflow.com/64c3f1a50a737c6a48e2cd14/64c477bca124713eea5a910f_Hero%201%20-%203.webp" loading="lazy" alt="" class="waves-image-hero-1"></div>
+                <div class="waves-image-wrap-hero-1"><img src="index_assets/images/Hero-1---1_1Hero-1---1.webp" loading="lazy" srcset="index_assets/images/Hero-1---1_1-p-500.jpg 500w, index_assets/images/Hero-1---1_1Hero-1---1.webp 520w" sizes="(max-width: 479px) 257.2749938964844px, (max-width: 767px) 54vw, (max-width: 991px) 34vw, (max-width: 1439px) 264px, 288px" alt="" class="waves-image-hero-1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="waves-gradient-hero-1 bottom"></div>
         </div>
+      </div>
     </div>
-    <!-- <div class="bg-dark text-secondary px-4 py-5 text-center">
-        <div class="py-5">
-            <h5 class="fs-3 display-5 fw-bold text-white">目標理念</h5>
-            <div class="col-lg-6 mx-auto">
-                <p class="fs-5 mb-4" style="margin-bottom: 0px;margin-top: 1px;padding-bottom: 0px;padding-top: 41px;">藉由顧客的問卷、瀏覽紀錄、喜愛商品等資料，推薦適合使用者膚質與臉型的化妝品與保養品</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
+  </div>
+  <div class="waves---section-medium">
+    <div class="waves---main-container w-container">
+      <div class="w-layout-grid waves---grid-halves-sticky">
+        <div id="w-node-_9f92e944-4c09-f48e-a19a-f38a5e9d8843-48e2cd1a" class="waves---sticky-halves-left">
+          <div class="waves---sticky-halves">
+            <div class="waves---content-sticky-features-2">
+              <h2 class="waves---heading-2-no-margins">膚質分析</h2>
+              <div class="waves---paragraph-big">藉由簡單的幾個步驟，帶您了解自己屬於哪種膚質</div>
+              <div class="waves---mg-top-16">
+                <a href="/facetypes" class="waves---cta-dark w-button">立即體驗</a>
+              </div>
             </div>
-            <div class="container" style="margin-bottom: -72px;margin-top: 63px;">
-                <div class="row row-cols-1 row-cols-lg-3">
-                    <div class="col">
-                        <p class="text-muted my-2">2022 SA&nbsp; No.15</p>
-                    </div>
-                    <div class="col">
-                        <ul class="list-inline my-2">
-                            <li class="list-inline-item me-4">
-                                <div class="bs-icon-circle bs-icon-primary text-bg-dark bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
-                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-                                    </svg></div>
-                            </li>
-                            <li class="list-inline-item me-4">
-                                <div class="bs-icon-circle bs-icon-primary text-bg-dark bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter">
-                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
-                                    </svg></div>
-                            </li>
-                            <li class="list-inline-item">
-                                <div class="bs-icon-circle bs-icon-primary text-bg-dark bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram">
-                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
-                                    </svg></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul class="list-inline my-2">
-                            <li class="list-inline-item"><a class="link-secondary" href="#">Cosmetic</a></li>
-                            <li class="list-inline-item"><a class="link-secondary" href="#" style="margin-left: 18px;">Care Product</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div> -->
-    <?php #require_once 'footer.php';?>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/aos.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/Gamanet_Header_v1.js"></script>
+        <div id="w-node-_9f92e944-4c09-f48e-a19a-f38a5e9d884d-48e2cd1a" class="waves---master-tiles-features-2">
+          <div class="waves-tile-features-2">
+            <div class="waves---mg-bottom-16">
+              <div id="w-node-_1f5f59ef-dde1-e68f-affb-234dcb4ae05a-48e2cd1a" class="w-layout-layout quick-stack-2 wf-layout-layout">
+                <div id="w-node-_1f5f59ef-dde1-e68f-affb-234dcb4ae05b-48e2cd1a" class="w-layout-cell cell-2">
+                  <div class="text-block-3">publish</div>
+                </div>
+                <div id="w-node-_1f5f59ef-dde1-e68f-affb-234dcb4ae05c-48e2cd1a" class="w-layout-cell">
+                  <h1 class="waves---heading-3-no-margins">01 上開啟相機</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waves-tile-features-2">
+            <div class="waves---mg-bottom-16">
+              <div id="w-node-_792cef2f-2e1d-6e7a-06f7-a8494a86d4eb-48e2cd1a" class="w-layout-layout quick-stack-2 wf-layout-layout">
+                <div id="w-node-_792cef2f-2e1d-6e7a-06f7-a8494a86d4ec-48e2cd1a" class="w-layout-cell cell-2">
+                  <div class="text-block-3">analytics</div>
+                </div>
+                <div id="w-node-_792cef2f-2e1d-6e7a-06f7-a8494a86d4ef-48e2cd1a" class="w-layout-cell">
+                  <h1 class="waves---heading-3-no-margins">02 進行分析</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waves-tile-features-2">
+            <div class="waves---mg-bottom-16">
+              <div id="w-node-_645f7b5a-3dfa-d429-58d1-b269f7a3af2b-48e2cd1a" class="w-layout-layout quick-stack-2 wf-layout-layout">
+                <div id="w-node-_645f7b5a-3dfa-d429-58d1-b269f7a3af2c-48e2cd1a" class="w-layout-cell cell-2">
+                  <div class="text-block-3">hourglass_top</div>
+                </div>
+                <div id="w-node-_645f7b5a-3dfa-d429-58d1-b269f7a3af2f-48e2cd1a" class="w-layout-cell">
+                  <h1 class="waves---heading-3-no-margins">03 等待結果</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="waves-tile-features-2">
+            <div class="waves---mg-bottom-16">
+              <div id="w-node-cdedddd2-50a6-9f9f-6691-0cb78bf87864-48e2cd1a" class="w-layout-layout quick-stack-2 wf-layout-layout">
+                <div id="w-node-cdedddd2-50a6-9f9f-6691-0cb78bf87865-48e2cd1a" class="w-layout-cell cell-2">
+                  <div class="text-block-3">mood</div>
+                </div>
+                <div id="w-node-cdedddd2-50a6-9f9f-6691-0cb78bf87868-48e2cd1a" class="w-layout-cell">
+                  <h1 class="waves---heading-3-no-margins">04 了解膚況</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="padding-section-large">
+          <div class="margin-bottom margin-xxlarge">
+            <div class="div-block">
+              <div id="w-node-_4b7b9f17-5b56-a7e7-a77b-cf9302fb3d2e-48e2cd1a" class="w-layout-layout quick-stack wf-layout-layout">
+                <div id="w-node-_4b7b9f17-5b56-a7e7-a77b-cf9302fb3d2f-48e2cd1a" class="w-layout-cell">
+                  <h2>推薦產品</h2>
+                  <p class="text-size-medium">我們將依據您的膚質推薦適合您的產品</p>
+                </div>
+                <div id="w-node-_4b7b9f17-5b56-a7e7-a77b-cf9302fb3d30-48e2cd1a" class="w-layout-cell cell">
+                  <a href="#" class="button is-secondary w-button">View all</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery21_component">
+            <div data-delay="4000" data-animation="slide" class="gallery21_slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false" id="gallery13_slider">
+              <div class="gallery21_mask w-slider-mask">
+                <div class="gallery21_slide w-slide">
+                  <div class="blog33_item">
+                    <a href="#" class="blog33_image-link w-inline-block">
+                      <div class="blog33_image-wrapper"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg" loading="lazy" alt="" class="blog33_image"></div>
+                    </a>
+                    <a href="#" class="blog33_category-link w-inline-block">
+                      <div class="text-block">類別(男生、女生...)</div>
+                    </a>
+                    <a href="#" class="blog3_title-link w-inline-block">
+                      <h3 class="heading-style-h5">產品名稱</h3>
+                    </a>
+                    <div class="text-size-regular">大致內容</div>
+                  </div>
+                </div>
+                <div class="gallery21_slide w-slide">
+                  <div class="blog33_item">
+                    <a href="#" class="blog33_image-link w-inline-block">
+                      <div class="blog33_image-wrapper"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg" loading="lazy" alt="" class="blog33_image"></div>
+                    </a>
+                    <a href="#" class="blog33_category-link w-inline-block">
+                      <div class="text-block">類別(男生、女生...)</div>
+                    </a>
+                    <a href="#" class="blog3_title-link w-inline-block">
+                      <h3 class="heading-style-h5">產品名稱</h3>
+                    </a>
+                    <div class="text-size-regular">大致內容</div>
+                  </div>
+                </div>
+                <div class="gallery21_slide w-slide">
+                  <div class="blog33_item">
+                    <a href="#" class="blog33_image-link w-inline-block">
+                      <div class="blog33_image-wrapper"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg" loading="lazy" alt="" class="blog33_image"></div>
+                    </a>
+                    <a href="#" class="blog33_category-link w-inline-block">
+                      <div class="text-block">類別(男生、女生...)</div>
+                    </a>
+                    <a href="#" class="blog3_title-link w-inline-block">
+                      <h3 class="heading-style-h5">產品名稱</h3>
+                    </a>
+                    <div class="text-size-regular">大致內容</div>
+                  </div>
+                </div>
+                <div class="gallery21_slide w-slide">
+                  <div class="blog33_item">
+                    <a href="#" class="blog33_image-link w-inline-block">
+                      <div class="blog33_image-wrapper"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg" loading="lazy" alt="" class="blog33_image"></div>
+                    </a>
+                    <a href="#" class="blog33_category-link w-inline-block">
+                      <div class="text-block">類別(男生、女生...)</div>
+                    </a>
+                    <a href="#" class="blog3_title-link w-inline-block">
+                      <h3 class="heading-style-h5">產品名稱</h3>
+                    </a>
+                    <div class="text-size-regular">大致內容</div>
+                  </div>
+                </div>
+                <div class="gallery21_slide w-slide">
+                  <div class="blog33_item">
+                    <a href="#" class="blog33_image-link w-inline-block">
+                      <div class="blog33_image-wrapper"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg" loading="lazy" alt="" class="blog33_image"></div>
+                    </a>
+                    <a href="#" class="blog33_category-link w-inline-block">
+                      <div class="text-block">類別(男生、女生...)</div>
+                    </a>
+                    <a href="#" class="blog3_title-link w-inline-block">
+                      <h3 class="heading-style-h5">產品名稱</h3>
+                    </a>
+                    <div class="text-size-regular">大致內容</div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery21_arrow is-left w-slider-arrow-left">
+                <div class="gallery21_arrow-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.31066 8.75001L9.03033 14.4697L7.96967 15.5303L0.439339 8.00001L7.96967 0.469676L9.03033 1.53034L3.31066 7.25001L15.5 7.25L15.5 8.75L3.31066 8.75001Z" fill="currentColor"></path>
+                  </svg></div>
+              </div>
+              <div class="gallery21_arrow w-slider-arrow-right">
+                <div class="gallery21_arrow-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.6893 7.25L6.96967 1.53033L8.03033 0.469666L15.5607 8L8.03033 15.5303L6.96967 14.4697L12.6893 8.75H0.5V7.25H12.6893Z" fill="currentColor"></path>
+                  </svg></div>
+              </div>
+              <div class="gallery21_slide-nav w-slider-nav w-slider-nav-invert w-round"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="waves---section-hero-primary recommand">
+    <div class="waves---main-container w-container">
+      <div class="waves-content-hero-6">
+        <div class="waves-limit-1008">
+          <h1 class="waves---mega-heading-1">Become a member, subscribe to exclusive updates.</h1>
+        </div>
+        <div class="waves---limit-480">
+          <div class="waves---subtitle">填寫信箱，體驗獨特的用戶專屬服務.</div>
+        </div>
+        <div class="waves---form-block-hero-6 w-form">
+          <form id="email-form" name="email-form" data-name="Email Form" method="get" class="waves-form-hero-6" data-wf-page-id="64c3f1a50a737c6a48e2cd1a" data-wf-element-id="f7ad9e51-fb4a-dc50-ec0b-b6cb81107f23"><input type="email" class="waves-text-field-background field-hero-6 w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter email" id="Email-2"><input type="submit" value="Submit" data-wait="Please wait..." class="waves---cta-dark wide-cta w-button"></form>
+          <div class="waves-success-mesaage w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+        <div class="waves---master-checks-horizontal">
+          <div class="waves---single-check-item"><img src="index_assets/images/check.svg" loading="lazy" alt="" class="waves---check-icon">
+            <div class="waves---paragraph-small">膚質分析</div>
+          </div>
+          <div class="waves---single-check-item"><img src="index_assets/images/check.svg" loading="lazy" alt="" class="waves---check-icon">
+            <div class="waves---paragraph-small">專業問答</div>
+          </div>
+          <div class="waves---single-check-item"><img src="index_assets/images/check.svg" loading="lazy" alt="" class="waves---check-icon">
+            <div class="waves---paragraph-small">產品推薦</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="waves-footer-1">
+    <div class="waves---main-container-2 w-container">
+      <h1>YO FU</h1>
+      <div class="waves---paragraph-big">No Compromises on Skincare, We Care for You.</div>
+      <div class="waves-divider-footer-1"></div>
+      <div class="waves-bottom-footer-1">
+        <div class="waves-bottom-right-footer-1">
+          <a href="#" class="w-inline-block"><img src="index_assets/images/dribbble.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="index_assets/images/telegram.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="index_assets/images/instagram.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="index_assets/images/google-circle.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="index_assets/images/youtube.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div-block-2 w-clearfix">
+    <a data-w-id="268cc64d-b646-1a65-94f1-e5ab1ed228a6" href="#" class="button-2 w-button">support_agent</a>
+    <div class="w-layout-blockcontainer container-3 w-container" style="display:none;">
+      <div id="w-node-d2e5dcd5-352c-a2ee-2dd0-eebbc665976e-48e2cd1a">
+        <div class="dialogy_toplabel">男銅客服江鴻麟</div>
+      </div>
+      <div class="waves-form-block-contact-2 w-form">
+        <form id="wf-form-Input-box" name="wf-form-Input-box" data-name="Input box" method="get" class="waves---form-contact-1" data-wf-page-id="64c3f1a50a737c6a48e2cd1a" data-wf-element-id="d2e5dcd5-352c-a2ee-2dd0-eebbc665976c">
+          <div class="waves---input-wrap">
+            <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798b-48e2cd1a" class="w-layout-layout gpt wf-layout-layout">
+              <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798c-48e2cd1a" class="w-layout-cell">
+                <div class="dialogy_top_head">support_agent</div>
+              </div>
+              <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798d-48e2cd1a" class="w-layout-cell gpt_content">
+                <div class="text-block-5">This is some text inside of a div blockadasddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaa.</div>
+              </div>
+            </div>
+            <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd691-48e2cd1a" class="w-layout-layout customer wf-layout-layout">
+              <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd692-48e2cd1a" class="w-layout-cell"></div>
+              <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd695-48e2cd1a" class="w-layout-cell customer_content">
+                <div class="text-block-5">This is some text inside of a div blockadasddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaa.</div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="waves-success-mesaage-2 w-form-done"></div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+      <div class="form-block w-form">
+        <form id="wf-form-Input-Form" name="wf-form-Input-Form" data-name="Input Form" method="get" class="form" data-wf-page-id="64c3f1a50a737c6a48e2cd1a" data-wf-element-id="7dc99aa3-b61c-1053-908b-49c919f25f3a">
+          <div id="w-node-be686127-321d-17eb-b2ec-2d3e7d8a0880-48e2cd1a" class="w-layout-layout quick-stack-4 wf-layout-layout">
+            <div id="w-node-be686127-321d-17eb-b2ec-2d3e7d8a0881-48e2cd1a" class="w-layout-cell cell-4"><input type="text" class="text-field w-input" autofocus="true" maxlength="256" name="field" data-name="Field" placeholder="請告訴我您的問題" id="field" required=""></div>
+            <div id="w-node-be686127-321d-17eb-b2ec-2d3e7d8a0882-48e2cd1a" class="w-layout-cell cell-5"><input type="submit" value="send" data-wait="Please wait..." class="submit-button w-button"></div>
+          </div>
+        </form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64c3f1a50a737c6a48e2cd14" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="index_assets/js/webflow.js" type="text/javascript"></script>
 </body>
-
 </html>

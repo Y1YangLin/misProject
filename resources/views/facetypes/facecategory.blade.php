@@ -8,10 +8,23 @@
     <link rel="stylesheet" href="{{ asset('facetype_assets/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('facetype_assets/css/Hero-Carousel-images.css') }}">
     <link rel="stylesheet" href="{{ asset('facetype_assets/css/Navbar-Right-Links-Dark-icons.css') }}">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Webflow" name="generator">
+    <link href="index_assets/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="index_assets/css/webflow.css" rel="stylesheet" type="text/css">
+    <link href="index_assets/css/waves-library-site-e37884.webflow.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">WebFont.load({  google: {    families: ["Oswald:200,300,400,500,600,700"]  }});</script>
+    <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+    <link href="index_assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="index_assets/images/webclip.png" rel="apple-touch-icon">
+    
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-dark py-3" data-bs-theme="dark">
+    <!-- <nav class="navbar navbar-expand-md bg-dark py-3" data-bs-theme="dark">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span>YOFU</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-5">
                 <ul class="navbar-nav ms-auto">
@@ -21,7 +34,54 @@
                 </ul><a class="btn btn-primary ms-md-2" role="button" href="/login">註冊&amp;登入</a>
             </div>
         </div>
-    </nav>
+    </nav> -->
+    
+    <div class="navbar-logo-center">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-center-container shadow-three w-nav">
+      <div class="container">
+        <div class="navbar-wrapper-three">
+          <a href="/" class="navbar-brand-three w-nav-brand">
+            <h1>YO FU</h1>
+          </a>
+          <nav role="navigation" class="nav-menu-wrapper-three w-nav-menu">
+            <div class="nav-menu-three">
+              <ul role="list" class="nav-menu-block w-list-unstyled">
+                <li>
+                  <a href="/facetypes" class="nav-link">膚質分析</a>
+                </li>
+                <li>
+                  <a href="/contact" class="nav-link">聯絡我們</a>
+                </li>
+                <li>
+                  <div data-delay="0" data-hover="false" class="nav-dropdown w-dropdown">
+                    <address class="nav-dropdown-toggle w-dropdown-toggle">
+                      <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
+                      <div class="text-block-4">產品</div>
+                    </address>
+                    <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
+                      <a href="#" class="nav-dropdown-link w-dropdown-link">男生</a>
+                      <a href="#" class="nav-dropdown-link w-dropdown-link">女生</a>
+                      <a href="#" class="nav-dropdown-link w-dropdown-link">孩童</a>
+                      <a href="/product" class="nav-dropdown-link w-dropdown-link">推薦</a>
+                    </nav>
+                  </div>
+                </li>
+              </ul>
+              <ul role="list" class="nav-menu-block w-list-unstyled">
+                <li class="mobile-margin-top-10">
+                  <a href="/login" class="nav-link-2 w-nav-link">account_circle</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="menu-button w-nav-button">
+            <div class="w-icon-nav-menu"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
     <section class="carousel">
         <div class="container-fluid" style="padding: 0px;">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel-1" style="height: 600px;">
@@ -127,9 +187,12 @@
         <div class="container-fluid" style="background: #F5F3E9;">
             <div class="row g-0">
                 <div class="col-md-6 text-center align-self-center" style="background: #F5F3E9;">
-                    <h1 style="color: #000;font-family: Hind;font-weight: bold;font-size: 32px;">立即體驗，體驗前請先加入會員</h1><button class="btn btn-primary" type="button" style="color: #FFF;font-weight: bold;text-align: center;font-size: 18px;font-family: Hind;background: #000000;border-radius: 50px;padding: 12px 89px;">立即預約</button>
+                    <h1 style="color: #000;font-family: Hind;font-weight: bold;font-size: 32px;">立即體驗，體驗前請先加入會員</h1><a href="/facetypes/photo"><button class="btn btn-primary" type="button" style="color: #FFF;font-weight: bold;text-align: center;font-size: 18px;font-family: Hind;background: #000000;border-radius: 50px;padding: 12px 89px;">立即體驗</button></a>
                 </div>
-                <div class="col-md-6"><img src="facetype_assets/img/banner7.jpg"></div>
+                <div class="col-md-6 text-center align-self-center" style="background: #F5F3E9;">
+                    <img src="facetype_assets/img/banner7.jpg">
+                </div>
+                
             </div>
         </div>
     </footer>
