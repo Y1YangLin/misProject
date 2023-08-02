@@ -11,4 +11,8 @@ class FaceCategoryController extends Controller
         return view('facetypes.facecategory');
     }
 
+    public function photo(){
+        return view('facetypes.photo');
+    }
+
 }

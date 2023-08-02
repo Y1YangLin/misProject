@@ -53,6 +53,7 @@ Route::get('/products', [ProductsController::class, 'index']);
 
 /**FaceCategory */
 Route::get('/facetypes', [FaceCategoryController::class, 'index']);
+Route::get('/facetypes/photo', [FaceCategoryController::class, 'photo']);
 
 /**Google Socialite */
 Route::get('auth/google', [GoogleAuthController::class, 'redirect'])->name('google-auth');

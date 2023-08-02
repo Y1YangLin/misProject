@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-wf-page="64c3f1a50a737c6a48e2cd1a" data-wf-site="64c3f1a50a737c6a48e2cd14">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
     <title>膚質檢測頁面</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Webflow" name="generator">
+
     <link rel="stylesheet" href="{{ asset('facetype_assets/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('facetype_assets/css/Hero-Carousel-images.css') }}">
     <link rel="stylesheet" href="{{ asset('facetype_assets/css/Navbar-Right-Links-Dark-icons.css') }}">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Webflow" name="generator">
-    <link href="index_assets/css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="index_assets/css/webflow.css" rel="stylesheet" type="text/css">
-    <link href="index_assets/css/waves-library-site-e37884.webflow.css" rel="stylesheet" type="text/css">
+    <link href="{{ asset('index_assets/css/normalize.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('index_assets/css/webflow.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('index_assets/css/waves-library-site-e37884.webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -196,7 +197,7 @@
             </div>
         </div>
     </footer>
-    <script src="facetype_assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ asset('facetype_assets/bootstrap/js/bootstrap.min.js') }}"></script>
 </body>
 
 </html>
