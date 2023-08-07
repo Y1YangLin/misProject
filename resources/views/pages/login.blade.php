@@ -1,127 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-      <title>pretty-login</title>
-      <link rel="stylesheet" href="{{ URL::asset('login_assets/bootstrap/css/bootstrap.min.css') }}">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aguafina+Script&amp;display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&amp;display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allan&amp;display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alumni+Sans+Inline+One&amp;display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Angkor&amp;display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&amp;display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bakbak+One&amp;display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barrio&amp;display=swap">
-      <link rel="stylesheet" href="{{ URL::asset('login_assets/css/styles.min.css') }}">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0" />
-      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-      
-   </head>
-   
-  <body>
-      <section class="position-relative py-4 py-xl-5">
-         
-         <div class="container">
-            
-            <div class="row d-flex justify-content-center">
-               <div class="col-md-11 col-lg-5 col-xl-4">
-                  <div class="card mb-5">
-                     <div class="card-body d-flex flex-column align-items-center" style="padding-bottom: 42px;margin-bottom: 24px;margin-top: 16px;padding-top: 12px;height: 663.5px;">
-                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary bs-icon my-4" style="background: var(--bs-card-bg);width: 257px;color: var(--bs-card-bg);">
-                           <h1 style="background: var(--bs-card-bg);color: #97aee8;font-family: 'Alumni Sans Inline One', serif;width: 292.475px;height: 82.225px;text-align: center;padding: 1px;font-size: 71.52px;">YO FU</h1>
-                        </div>
-                        <div style="margin-left: 1px;width: 258.375px;"></div>
-                        <div class="btn-group item" role="group" style="margin-bottom: 25px;width: 330px;height: 54px;">
-                          <button class="btn btn-primary button_signup button_signup_cs" type="button" style="font-size: 26px;margin-right: 2px;border-radius: 10px;height: 55px;background: var(--bs-card-bg);color: var(--bs-black);font-weight: bold;font-family: Barrio, serif;border-style: none;border-color: var(--bs-black); " value="註冊">會員註冊</button>
-                          <button class="btn btn-primary button_login button_login_cs" type="button" style="font-size: 26px;margin-left: 2px;border-radius: 10px;height: 55px;color: var(--bs-black);background: var(--bs-card-bg);font-weight: bold;border-style: none;border-color: var(--bs-gray-900);" value="註冊介面.bsdesign">立即登入</button></div>
-                        <div class="content">
-                           <div id = "content_signup" style="display: none ;">
-
-                              <form class="text-center form_signup" action="{{ route('register') }}" name="signup-form" method="POST" style="width: 376px;padding-left: 0px; ">
-                                @csrf
-                                <input id = "register_name" class="form-control" type="name" name="name" placeholder="姓名" style="font-size: 18px;margin-bottom: 15px;padding-right: 206px;margin-right: -237px;">
-                                
-                                
-
-                                
-                                <input id = "register_email" class="form-control" type="email" name="email" placeholder="信箱" style="font-size: 18px;margin-bottom: 15px;">
-                                
-                                 <div class = "relative ">
-                                    <div class="fas fa-eye eye"></div>   
-                                    <input id = "register_password" class="form-control password" type="password" name="pwd" placeholder="密碼" style="font-size: 18px;margin-bottom: 17px;">             
-                                 </div>                             
-                                 
-                                 <div class = "relative ">
-                                    <div class="fa fa-eye eye1"></div>
-                                    <input id = "register_repwd" class="form-control password1" type="password" name="repwd" placeholder="再次輸入密碼" style="font-size: 18px;margin-bottom: 17px;">                        
-                                    
-                                    @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
-
-                                    
-
-                                 </div>
-                                 
-                                <button class="btn btn-primary test" type="submit" name="submit" style="width: 267px;font-size: 33px;height: 55.5px;padding-top: 5px;padding-bottom: 6px;background: #63686d;font-family: Barrio, serif;font-weight: bold;">註冊</button>
-
-                                 <!-- google authenticator here-->
-                                 <div class="relative ">
-                                    <div class="google-btn">
-                                       <a href="{{ route('google-auth') }}">
-                                          <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png">
-                                       </a>
-                                    </div>
-                                 </div>
-
-                              </form>
-                           </div>
-                           
-                              <div id = "content_login">
-                                 <form class="text-center form_login" action="{{ route('login') }}" name="signin-form" method="post"style="width: 376px;padding-left: 0px;">
-                                    @csrf
-                                    <input id = "login_email" class="form-control" type="email" name="email" placeholder="電子信箱" style="font-size: 18px;margin-bottom: 15px;">
-                                    
-                                    
-                                    
-                                    <div class = "relative ">
-                                       <div class="fas fa-eye eye2"></div>
-                                       <input id = "login_password" class="form-control password2" type="password" name="pwd" placeholder="密碼" style="font-size: 18px;margin-bottom: 17px;">                                  
-                                    </div> 
-                                    
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-
-                                    <p class="text-muted" style="margin-top: 10px;"><a href="#">忘記密碼?</a></p>
-                                    <button class="btn btn-primary" name="submit" type="submit" style="width: 267px;font-size: 33px;height: 55.5px;padding-top: 5px;padding-bottom: 6px;background: #63686d;">登入</button>
-                                    
-                                    <!-- google authenticator here-->
-                                    <div class="relative">
-                                       <div class="google-btn">
-                                          <a href="{{ route('google-auth') }}">
-                                                <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png">
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </form>
-                              </div>
-                              
-                        </div>
-                     </div>
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Mon Aug 07 2023 12:27:02 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="64d0d9ef449eb28e9c7d0e81" data-wf-site="64c3f1a50a737c6a48e2cd14">
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <meta content="Login" property="og:title">
+  <meta content="Login" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="{{ asset('login_assets/css/normalize.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('login_assets/css/webflow.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('login_assets/css/waves-library-site-e37884.webflow.css') }}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Oswald:200,300,400,500,600,700"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="{{ asset('login_assets/login_assets/images/favicon.ico') }}" rel="shortcut icon" type="image/x-icon">
+  <link href="{{ asset('login_assets/login_assets/images/webclip.png') }}" rel="apple-touch-icon">
+</head>
+<body>
+  <div class="navbar-logo-center">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-center-container shadow-three w-nav">
+      <div class="container">
+        <div class="navbar-wrapper-three">
+          <a href="/" class="navbar-brand-three w-nav-brand">
+            <h1>YO FU</h1>
+          </a>
+          <nav role="navigation" class="nav-menu-wrapper-three w-nav-menu">
+            <div class="nav-menu-three">
+              <ul role="list" class="nav-menu-block w-list-unstyled">
+                <li>
+                  <a href="/facetypes" class="nav-link">膚質分析</a>
+                </li>
+                <li>
+                  <a href="/contact" class="nav-link">聯絡我們</a>
+                </li>
+                <li>
+                  <div data-delay="0" data-hover="false" class="nav-dropdown w-dropdown">
+                    <address class="nav-dropdown-toggle w-dropdown-toggle">
+                      <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
+                      <div class="text-block-4">產品</div>
+                    </address>
+                    <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
+                      <a href="product.html" class="nav-dropdown-link w-dropdown-link">男生</a>
+                      <a href="product.html" class="nav-dropdown-link w-dropdown-link">女生</a>
+                      <a href="product.html" class="nav-dropdown-link w-dropdown-link">孩童</a>
+                      <a href="/products" class="nav-dropdown-link w-dropdown-link">推薦</a>
+                    </nav>
                   </div>
-               </div>
+                </li>
+              </ul>
+              <ul role="list" class="nav-menu-block w-list-unstyled">
+                <li class="mobile-margin-top-10">
+                  <a href="/login" class="nav-link-2 w-nav-link">account_circle</a>
+                </li>
+              </ul>
             </div>
-         </div>
-      </section>
-      
-      
-      <script src="{{ URL::asset('login_assets/bootstrap/js/bootstrap.min.js') }}"></script>
-      <script src="{{ URL::asset('login_assets/js/script.min.js') }}"></script>
-   </body>
+          </nav>
+          <div class="menu-button w-nav-button">
+            <div class="w-icon-nav-menu"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="waves---section-hero-primary-2"></div>
+  <div class="waves---section-medium-3">
+    <div class="waves-master-contact-1">
+      <div class="waves---center-heading">
+        <h1 class="waves---heading-2-no-margins-2">Welcome!</h1>
+        <div class="waves---paragraph-big-2">Welcome to YOFU, here is the log in page.</div>
+      </div>
+      <div class="waves-form-block-contact-1 w-form">
+        <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="POST" class="waves---form-contact-2" data-wf-page-id="64d0d9ef449eb28e9c7d0e81" data-wf-element-id="4e969231-cb0b-30b7-3799-4576ee8a44bd">
+          @csrf
+          <div class="waves---input-wrap-2">
+            <div class="waves---field-label">Email</div><input type="email" class="waves-text-field-background-2 w-input" maxlength="256" name="Email" data-name="Email" placeholder="ex. Email" id="Email">
+          </div>
+          <div class="waves---input-wrap-2">
+            <div class="waves---field-label">Password</div><input type="password" class="waves-text-field-background-2 w-input" maxlength="256" name="Email-2" data-name="Email 2" placeholder="ex. Email" id="Email-2">
+          </div><label class="w-checkbox waves---checkbox-field-2">
+            <div class="w-checkbox-input w-checkbox-input--inputType-custom waves---checkbox-2"></div><input type="checkbox" id="checkbox" name="Checkbox" data-name="Checkbox" style="opacity:0;position:absolute;z-index:-1"><span class="waves---checkbox-label-2 w-form-label" for="Checkbox">I accept the <a href="#">Terms &amp; Conditions</a></span>
+          </label>
+          <div class="waves-submit-wrap-contact-2"><input type="submit" value="Submit" data-wait="Please wait..." class="waves---cta-dark-3 wide-cta w-button"></div>
+          <div class="waves-submit-wrap-contact-2"><a href="/register"><b >還沒有帳號 ? </b></a></div>
+         </form>
+        <div class="waves-success-mesaage-3 w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+    </div>
+    <div class="waves---main-container-4 w-container"></div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64c3f1a50a737c6a48e2cd14" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="{{ asset('login_assets/js/webflow.js') }}" type="text/javascript"></script>
+</body>
 </html>

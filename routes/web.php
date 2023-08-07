@@ -35,7 +35,7 @@ Route::get('/products. 'App\Http\Controller\');
 //     return view('index');
 // });
 
-Auth::routes();
+
 
 
 /*Pages --> 主頁等一般頁面*/
@@ -49,7 +49,7 @@ Route::get('/membercenter', [UsersController::class, 'about']);
 
 /* Products*/
 Route::get('/products', [ProductsController::class, 'index']);
-
+Route::get('/product-detail', [ProductsController::class, 'show_Product_Detail']);
 
 /**FaceCategory */
 Route::get('/facetypes', [FaceCategoryController::class, 'index']);
@@ -59,9 +59,18 @@ Route::get('/facetypes/photo', [FaceCategoryController::class, 'photo']);
 Route::get('auth/google', [GoogleAuthController::class, 'redirect'])->name('google-auth');
 Route::get('auth/google/call-back', [GoogleAuthController::class, 'callbackGoogle']);
 
+Auth::routes();
 
+Route::get('/foo', function(){
+    
+    return view('test');
+    
+});
 
-
+Route::post('/foo', function(){
+    echo 'test';
+    return ;
+});
 
 
 

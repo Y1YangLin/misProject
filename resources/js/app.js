@@ -37,3 +37,9 @@ app.component('example-component', ExampleComponent);
  */
 
 app.mount('#app');
+
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')
+    }
+});

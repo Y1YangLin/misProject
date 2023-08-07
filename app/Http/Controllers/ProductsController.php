@@ -11,5 +11,8 @@ class ProductsController extends Controller
         return view('products.product');
     }
 
+    public function show_Product_Detail(){
+        return view('products.product-detail');
+    }
 
 }

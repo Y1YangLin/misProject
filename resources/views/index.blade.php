@@ -44,7 +44,7 @@
                       <a href="#" class="nav-dropdown-link w-dropdown-link">男生</a>
                       <a href="#" class="nav-dropdown-link w-dropdown-link">女生</a>
                       <a href="#" class="nav-dropdown-link w-dropdown-link">孩童</a>
-                      <a href="/product" class="nav-dropdown-link w-dropdown-link">推薦</a>
+                      <a href="/products" class="nav-dropdown-link w-dropdown-link">推薦</a>
                     </nav>
                   </div>
                 </li>
