@@ -1,6 +1,8 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
 <!--  Last Published: Mon Aug 07 2023 12:27:02 GMT+0000 (Coordinated Universal Time)  -->
+@extends('layouts.navbar')
 <html data-wf-page="64d0d9ef449eb28e9c7d0e81" data-wf-site="64c3f1a50a737c6a48e2cd14">
+
 <head>
   <meta charset="utf-8">
   <title>Login</title>
@@ -20,51 +22,11 @@
   <link href="login_assets/images/webclip.png" rel="apple-touch-icon">
 </head>
 <body>
-  <div class="navbar-logo-center">
-    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-center-container shadow-three w-nav">
-      <div class="container">
-        <div class="navbar-wrapper-three">
-          <a href="/" class="navbar-brand-three w-nav-brand">
-            <h1>YO FU</h1>
-          </a>
-          <nav role="navigation" class="nav-menu-wrapper-three w-nav-menu">
-            <div class="nav-menu-three">
-              <ul role="list" class="nav-menu-block w-list-unstyled">
-                <li>
-                  <a href="/facetypes" class="nav-link">膚質分析</a>
-                </li>
-                <li>
-                  <a href="/contact" class="nav-link">聯絡我們</a>
-                </li>
-                <li>
-                  <div data-delay="0" data-hover="false" class="nav-dropdown w-dropdown">
-                    <address class="nav-dropdown-toggle w-dropdown-toggle">
-                      <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
-                      <div class="text-block-4">產品</div>
-                    </address>
-                    <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
-                      <a href="product.html" class="nav-dropdown-link w-dropdown-link">男生</a>
-                      <a href="product.html" class="nav-dropdown-link w-dropdown-link">女生</a>
-                      <a href="product.html" class="nav-dropdown-link w-dropdown-link">孩童</a>
-                      <a href="/products" class="nav-dropdown-link w-dropdown-link">推薦</a>
-                    </nav>
-                  </div>
-                </li>
-              </ul>
-              <ul role="list" class="nav-menu-block w-list-unstyled">
-                <li class="mobile-margin-top-10">
-                  <a href="/login" class="nav-link-2 w-nav-link">account_circle</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <div class="menu-button w-nav-button">
-            <div class="w-icon-nav-menu"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
+
+    @section('content')
+    @endsection
+
   <div class="waves---section-hero-primary-2"></div>
   <div class="waves---section-medium-3">
     <div class="waves-master-contact-1">
@@ -76,16 +38,25 @@
         <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" action="{{ route('login') }}" method="POST" class="waves---form-contact-2" data-wf-page-id="64d0d9ef449eb28e9c7d0e81" data-wf-element-id="4e969231-cb0b-30b7-3799-4576ee8a44bd">
           @csrf
           <div class="waves---input-wrap-2">
-            <div class="waves---field-label">Email</div><input type="email" class="waves-text-field-background-2 w-input" maxlength="256" name="email" data-name="Email" placeholder="ex. Email" id="Email">
+            <div class="waves---field-label">Email</div><input type="email" class="waves-text-field-background-2 w-input" maxlength="256" name="email" data-name="Email" placeholder="ex. 9ay@email.com" id="Email" required autocomplete="email" autofocus>
           </div>
           <div class="waves---input-wrap-2">
-            <div class="waves---field-label">Password</div><input type="password" class="waves-text-field-background-2 w-input" maxlength="256" name="password" data-name="Email 2" placeholder="ex. Email" id="Email-2">
+            <div class="waves---field-label">Password</div><input type="password" class="waves-text-field-background-2 w-input" maxlength="256" name="password" data-name="Email 2" placeholder="password" id="Email-2"required autocomplete="current-password">
           </div><label class="w-checkbox waves---checkbox-field-2">
             <div class="w-checkbox-input w-checkbox-input--inputType-custom waves---checkbox-2"></div><input type="checkbox" id="checkbox" name="Checkbox" data-name="Checkbox" style="opacity:0;position:absolute;z-index:-1"><span class="waves---checkbox-label-2 w-form-label" for="Checkbox">I accept the <a href="#">Terms &amp; Conditions</a></span>
           </label>
           <div class="waves-submit-wrap-contact-2"><input type="submit" value="Submit" data-wait="Please wait..." class="waves---cta-dark-3 wide-cta w-button"></div>
           
          </form>
+         <!-- <div class="row mb-0">
+          <div class="col-md-8 offset-md-4">
+           <a href="{{ route('google-auth') }}">
+            <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png">
+           </a>
+          </div>
+         </div> -->
+
+
          <br>
          <div class="waves-submit-wrap-contact-2"><a href="/register"><b >還沒有帳號 ? </b></a></div>
          
@@ -100,6 +71,7 @@
     <div class="waves---main-container-4 w-container"></div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64c3f1a50a737c6a48e2cd14" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="{{ asset('login_assets/js/webflow.js') }}" type="text/javascript"></script>
+  <script src="login_assets/js/webflow.js" type="text/javascript"></script>
 </body>
+
 </html>

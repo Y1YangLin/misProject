@@ -36,41 +36,32 @@ Route::get('/products. 'App\Http\Controller\');
 // });
 
 
-
+Auth::routes();
 
 /*Pages --> 主頁等一般頁面*/
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/index', [PagesController::class, 'index']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/contact', [PagesController::class, 'showcontactform']);
+Route::post('/getcontactform', [PagesController::class, 'getcontactform'])->name('contactform');
 
 /*Users --> 與Users相關*/
-Route::get('/test', [UsersController::class, 'login']);
-Route::get('/membercenter', [UsersController::class, 'about']);
+Route::post('/user/editUserPassword', [UsersController::class, 'editUserPassword'])->name('editPassword');
+Route::post('/user/editUserProfile', [UsersController::class, 'editUserProfile'])->name('editProfile');
+
 
 /* Products*/
-Route::get('/products', [ProductsController::class, 'index']);
+Route::get('/product', [ProductsController::class, 'index']);
 Route::get('/product-detail', [ProductsController::class, 'show_Product_Detail']);
 
 /**FaceCategory */
-Route::get('/facetypes', [FaceCategoryController::class, 'index']);
+Route::get('/facetype', [FaceCategoryController::class, 'index']);
 Route::get('/facetypes/photo', [FaceCategoryController::class, 'photo']);
 
 /**Google Socialite */
 Route::get('auth/google', [GoogleAuthController::class, 'redirect'])->name('google-auth');
 Route::get('auth/google/call-back', [GoogleAuthController::class, 'callbackGoogle']);
 
-Auth::routes();
-
-Route::get('/foo', function(){
-    
-    return view('test');
-    
-});
-
-Route::post('/foo', function(){
-    echo 'test';
-    return ;
-});
 
 
 

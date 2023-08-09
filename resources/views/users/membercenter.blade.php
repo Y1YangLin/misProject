@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+@extends('layouts.navbar')
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -29,52 +29,8 @@
 
 <body>
 
-<div class="navbar-logo-center">
-    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-center-container shadow-three w-nav">
-      <div class="container">
-        <div class="navbar-wrapper-three">
-          <a href="/" class="navbar-brand-three w-nav-brand">
-            <h1>YO FU</h1>
-          </a>
-          <nav role="navigation" class="nav-menu-wrapper-three w-nav-menu">
-            <div class="nav-menu-three">
-              <ul role="list" class="nav-menu-block w-list-unstyled">
-                <li>
-                  <a href="/facetypes" class="nav-link">膚質分析</a>
-                </li>
-                <li>
-                  <a href="/contact" class="nav-link">聯絡我們</a>
-                </li>
-                <li>
-                  <div data-delay="0" data-hover="false" class="nav-dropdown w-dropdown">
-                    <address class="nav-dropdown-toggle w-dropdown-toggle">
-                      <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
-                      <div class="text-block-4">產品</div>
-                    </address>
-                    <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
-                      <a href="#" class="nav-dropdown-link w-dropdown-link">男生</a>
-                      <a href="#" class="nav-dropdown-link w-dropdown-link">女生</a>
-                      <a href="#" class="nav-dropdown-link w-dropdown-link">孩童</a>
-                      <a href="/products" class="nav-dropdown-link w-dropdown-link">推薦</a>
-                    </nav>
-                  </div>
-                </li>
-              </ul>
-              <ul role="list" class="nav-menu-block w-list-unstyled">
-                <li class="mobile-margin-top-10">
-                  <a href="/login" class="nav-link-2 w-nav-link">account_circle</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <div class="menu-button w-nav-button">
-            <div class="w-icon-nav-menu"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+    @section('content')
+    @endsection
     <br>
     <br>
     <br>
@@ -98,8 +54,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col col-12">
-                                                    <h5 class="user-name"><?php #echo $data['user']->Member_name ;?></h5>
-                                                    <h6 class="user-email"><?php #echo $data['user']->Member_email ;?></h6>
+                                                    <h5 class="user-name">{{ $user->name }}</h5>
+                                                    <h6 class="user-email"></h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -124,19 +80,22 @@
                                                 <li class="nav-item btn_pressgood"><a class="nav-link text-start py-1 px-0" href="#"><i class="fas fa-heart mx-3" style="color: #63686d;"></i><span class="text-nowrap mx-2" style="color: var(--bs-gray-900);font-weight: bold;">按讚紀錄</span></a></li>
                                             </ul>
                                         </div>
+                                        
+                                        
                                         <div class="col d-sm-flex d-xxl-flex justify-content-sm-center justify-content-xxl-center">
                                             <ul class="nav flex-lg-column flex-row">
-                                                <li class="nav-item btn_collection"><a class="nav-link active text-start py-1 px-0" href="#"><i class="fas fa-archive mx-3" style="color: #63686d;"></i><span class="text-nowrap mx-2" style="color: var(--bs-gray-900);font-weight: bold;">我的收藏</span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col d-sm-flex d-xxl-flex justify-content-sm-center justify-content-xxl-center">
-                                            <ul class="nav flex-lg-column flex-row">
-                                                <li class="nav-item btn_comment"><a class="nav-link text-start py-1 px-0" href="#"><i class="fas fa-pen-alt mx-3" style="color: #63686d;"></i><span class="text-nowrap mx-2" style="color: var(--bs-gray-900);font-weight: bold;">我的評論</span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col d-sm-flex d-xxl-flex justify-content-sm-center justify-content-xxl-center">
-                                            <ul class="nav flex-lg-column flex-row">
-                                                <li class="nav-item mb"><a class="nav-link text-start py-1 px-0" href="login_assets/users/logout" style="color: var(--bs-gray-900);"><i class="fas fa-sign-out-alt mx-3" style="color: #63686d;"></i><i class="fa fa-caret-right d-none position-absolute"></i><span class="text-nowrap mx-2" style="font-weight: bold;">登出</span></a></li>
+                                            
+                                                <li class="nav-item mb">
+                                                    <a class="nav-link text-start py-1 px-0" href="{{ route('logout') }}" style="color: var(--bs-gray-900);"
+                                                        onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();">
+                                                        <i class="fas fa-sign-out-alt mx-3" style="color: #63686d;"></i><i class="fa fa-caret-right d-none position-absolute"></i><span class="text-nowrap mx-2" style="font-weight: bold;">登出</span>
+                                                    </a>
+                                                    
+                                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                        @csrf
+                                                    </form>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -152,28 +111,27 @@
                         <div class="row gy-1">
                         
                             <div>
-                                <form action="/users/editMemberData" method="POST" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <form action="{{ route('editProfile') }}" method="POST" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                @csrf
                                 <h6 class="mb-2" style="color: var(--bs-gray-900);font-weight: bold;font-size: 25px;">個人資料</h6>
                             </div>
                             
                                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="form-group"><label class="form-label" for="fullName">用戶名稱</label><input type="text" id="fullName" name="name" class="form-control" placeholder="請輸入姓名" value="<?php #echo $data['user']->Member_name ;?>"></div>
+                                    <div class="form-group"><label class="form-label" for="fullName">用戶名稱</label><input type="text" id="fullName" name="name" class="form-control" placeholder="請輸入姓名" value="{{ $user->name }}"></div>
                                 </div>
                                 
                                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="form-group"><label class="form-label" for="eMail">生日</label><input type="date" id="bd" name="bd" class="form-control" placeholder="請輸入生日" value="<?php #echo $data['user']->Member_birthday;?>"></div>
+                                    <div class="form-group"><label class="form-label" for="eMail">生日</label><input type="date" id="bd" name="bd" class="form-control" placeholder="請輸入生日" value="{{ $user->birthday }}"></div>
                                 </div>
                                 <div class="col">
-                                    <div class="form-group"><label class="form-label" for="eMail">信箱</label><input type="email" id="eMail" name="email" class="form-control" placeholder="請輸入信箱" value="<?php #echo $data['user']->Member_email ;?>"></div>
+                                    <div class="form-group"><label class="form-label" for="eMail">信箱</label><input type="email" id="eMail" name="email" class="form-control" placeholder="請輸入信箱" value="{{ $user->email }}"></div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-group"><label class="form-label" for="eMail">地址</label><input type="email" id="address" name="address" class="form-control" placeholder="請輸入地址" value="<?php //echo $data->Member_name ;?>"></div>
-                                </div>
+                                
                                 <div class="col-12">
                                     <div class="form-group"><label class="form-label" for="eMail">個人頭像</label><label class="form-label" for="Street"></label><label class="form-label form-label" for="customFile"></label><input type="file" class="form-control" id="customFile"></div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                    <div class="d-flex justify-content-end"><button class="btn btn-secondary" type="button" id="submit" name="submit">取消</button><button class="btn btn-primary liveToastBtn" type="submit" name="submit">更新</button></div>
+                                    <div class="d-flex justify-content-end"><a href="/home"><button class="btn btn-secondary" type="button" id="submit" name="submit">取消</button></a><button class="btn btn-primary liveToastBtn" type="submit" name="submit">更新</button></div>
                                 </div>
                             
                         </div>
@@ -186,11 +144,12 @@
                     <div class="card-body d-lg-flex d-xl-flex align-items-lg-center align-items-xl-center">
                         <div class="row gy-1">
                             <div>
-                                <form action="/users/editMemberPwd" method="post" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <form action="{{ route('editPassword') }}" method="POST" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                @csrf
                                 <h6 class="mb-2" style="font-size: 25px;color: var(--bs-gray-900);font-weight: bold;">密碼更新</h6>
                             </div>
                             <div class="col-12 offset-xxl-0">
-                                <?php //echo empty($data['pwd_err']) ?$data['pwd_err'] :'' ;?>
+                                
                                 <div class="form-group"><label class="form-label" for="fullName">請輸入原密碼</label><input type="password" id="fullName" class="form-control" name="oldPwd" placeholder="請輸入舊密碼"></div>
                             </div>
                             <div class="col-12">
@@ -200,7 +159,7 @@
                                 <div class="form-group"><label class="form-label" for="eMail">再次輸入新密碼</label><input type="password" id="eMail-1" class="form-control" name="newPwd2" placeholder="再次輸入新密碼"></div>
                             </div>
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <div class="d-flex justify-content-end"><button class="btn btn-secondary" type="button" id="submit" name="submit">取消</button><button class="btn btn-primary liveToastBtn" type="submit" name="submit">更新</button></div>
+                                <div class="d-flex justify-content-end"><a href="/home"><button class="btn btn-secondary" type="button" id="submit" name="submit">取消</button></a><button class="btn btn-primary liveToastBtn" type="submit" name="submit">更新</button></div>
                             </div>
                                 </form>
                         </div>
@@ -265,7 +224,7 @@
                         </div>
                         
                     </div>
-                    <?php //} ?>
+                    
 
                     
                     
@@ -275,8 +234,7 @@
             
             <div class="col product_for_collection gy-3 px-5 col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9" id="product_for_collection" style="display: none;">
                 <div class="row g-4 gx-5 row-cols-1 row-cols-md-3">
-                <?php //echo empty($data['collection']) ? "沒有收藏 快去收 ! " : '' ;?>
-                <?php //foreach($data['collection'] as $arr) { ?>
+                
 
                 
                     <div class="col-12 col-md-4" data-aos="fade-up" id="product-item-animation-element-slide-top-left">
@@ -292,55 +250,16 @@
                             </div>
                         </div>
                     </div>
-                    <?php //}?>
+                    
 
-                    <!-- <div class="col-12 col-md-4" data-aos="fade-up" id="product-item-animation-element-slide-top-left-3">
-                        <div class="d-flex flex-column justify-content-xxl-start product-container">
-                            <div class="row" style="box-shadow: 2px 2px 5px 2px;">
-                                <div class="col"><img class="rounded img-fluid d-block w-100 fit-cover" style="max-width: 100%;height: auto;" src="../MemberCenter_assets/img/商品照1.jpg"></div>
-                                <div class="col-8 col-xxl-12 text-center col-12" style="text-overflow: ellipsis;">
-                                    <h4 class="text-truncate text-center">dffefsedfesfesfefef</h4>
-                                </div>
-                                <div class="col-12">
-                                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4" data-aos="fade-up" id="product-item-animation-element-slide-top-left-2">
-                        <div class="d-flex flex-column justify-content-xxl-start product-container">
-                            <div class="row" style="box-shadow: 2px 2px 5px 2px;">
-                                <div class="col"><img class="rounded img-fluid d-block w-100 fit-cover" style="max-width: 100%;height: auto;" src="../MemberCenter_assets/img/商品照1.jpg"></div>
-                                <div class="col-8 col-xxl-12 text-center col-12" style="text-overflow: ellipsis;">
-                                    <h4 class="text-truncate text-center">dffefsedfesfesfefef</h4>
-                                </div>
-                                <div class="col-12">
-                                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4" data-aos="fade-up" id="product-item-animation-element-slide-top-left-1">
-                        <div class="d-flex flex-column justify-content-xxl-start product-container">
-                            <div class="row" style="box-shadow: 2px 2px 5px 2px;">
-                                <div class="col"><img class="rounded img-fluid d-block w-100 fit-cover" style="max-width: 100%;height: auto;" src="../MemberCenter_assets/img/商品照1.jpg"></div>
-                                <div class="col-8 col-xxl-12 text-center col-12" style="text-overflow: ellipsis;">
-                                    <h4 class="text-truncate text-center">dffefsedfesfesfefef</h4>
-                                </div>
-                                <div class="col-12">
-                                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare sem sed nisl dignissim, facilisis dapibus lacus vulputate. Sed lacinia lacinia magna. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                    
                 </div>
             </div>
             
             
             <div class="col product_for_collection gy-3 gx-5 comment" id="comments" style="display: none;">
 
-                <?php //echo empty($data['comment']) ? "沒有評論 快去留 ! " : '' ;?>
-                <?php #foreach($data['comment'] as $arr) { ?>
+                
                 <div class="row" id="commemt">
                     <div class="col-12 d-flex align-items-center align-items-lg-center" id="comment_date" style="background: #eceff2;border-radius: 11px;height: 45px;">
                         <h4 style="margin-bottom: 0px;"><?php //echo $arr->ProductComment_date ;?></h4>
@@ -358,7 +277,7 @@
                         <h6 style="font-size: 12px;"><br><br><br></h6>
                     </div>
                 </div>
-                <?php #} ?>
+                
 
                 
 
@@ -438,24 +357,24 @@
 
 
 
-        var product_for_collection = document.querySelector(".product_for_collection");
+//         var product_for_collection = document.querySelector(".product_for_collection");
 
-        for (var i = 0; i < button_collection_1.length; i++){ //按下我的收藏內的資料夾
-            button_collection_1[i].addEventListener('click', function(){
-         // button_memberdata.style.display = "none";
-        if (product_for_collection.style.display === "none"){
-            // button_memberdata.style.display = "none";
-            product_for_collection.style.display = "block";///商品出現
+//         for (var i = 0; i < button_collection_1.length; i++){ //按下我的收藏內的資料夾
+//             button_collection_1[i].addEventListener('click', function(){
+//          // button_memberdata.style.display = "none";
+//         if (product_for_collection.style.display === "none"){
+//             // button_memberdata.style.display = "none";
+//             product_for_collection.style.display = "block";///商品出現
 
-            changepassword.style.display = "none";
-            memberdata.style.display = "none";
-            pressgood.style.display = "none";
-            collection.style.display = "none";
-            comment.style.display = "none";
+//             changepassword.style.display = "none";
+//             memberdata.style.display = "none";
+//             pressgood.style.display = "none";
+//             collection.style.display = "none";
+//             comment.style.display = "none";
 
-        }
-    })
-  }
+//         }
+//     })
+//   }
 
 
     </script>

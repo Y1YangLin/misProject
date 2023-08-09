@@ -1,5 +1,6 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
 <!--  Last Published: Mon Aug 07 2023 12:27:02 GMT+0000 (Coordinated Universal Time)  -->
+@extends('layouts.navbar')
 <html data-wf-page="64c7c06a322ef8c157444ce1" data-wf-site="64c3f1a50a737c6a48e2cd14">
 <head>
   <meta charset="utf-8">
@@ -20,7 +21,7 @@
   <link href="{{ asset('product_assets/images/webclip.png') }}" rel="apple-touch-icon">
 </head>
 <body>
-  <div class="navbar-logo-center">
+  <!-- <div class="navbar-logo-center">
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-center-container shadow-three w-nav">
       <div class="container">
         <div class="navbar-wrapper-three">
@@ -64,7 +65,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
+  @section('content')
+  @endsection
+  
   <section class="section-2">
     <div data-w-id="dd7f5726-41d7-90ca-3be0-44c2186494e4" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="brix---inner-container-640px---center">
       <div class="brix---text-center">

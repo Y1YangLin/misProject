@@ -1,6 +1,7 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
 <!--  Last Published: Tue Aug 08 2023 01:23:34 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="64d0de5c4b0a070a5e8da3a7" data-wf-site="64c3f1a50a737c6a48e2cd14">
+@extends('layouts.navbar')
 <head>
   <meta charset="utf-8">
   <title>Sign up</title>
@@ -20,7 +21,7 @@
   <link href="login_assets/images/webclip.png" rel="apple-touch-icon">
 </head>
 <body>
-  <div class="navbar-logo-center">
+  <!-- <div class="navbar-logo-center">
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-center-container shadow-three w-nav">
       <div class="container">
         <div class="navbar-wrapper-three">
@@ -64,7 +65,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
+  @section('content')
+  @endsection
+
   <div class="waves---section-medium-4">
     <div class="waves---main-container-4 w-container">
       <div class="waves-master-contact-1">
@@ -78,16 +83,16 @@
             <div class="waves---2-inputs-2">
             
               <div id="w-node-_86f57ca4-904d-d70d-d6f1-c52c3badee22-5e8da3a7" class="waves---input-wrap-2">
-                <div class="waves---field-label">User name</div><input type="text" class="waves-text-field-background-2 w-input" maxlength="256" name="name" data-name="Last Name" placeholder="ex. Scott" id="Last-name">
+                <div class="waves---field-label">User name</div><input type="text" class="waves-text-field-background-2 w-input" maxlength="256" name="name" data-name="Last Name" placeholder="ex. Scott" id="Last-name" required autocomplete="name" autofocus>
               </div>
             </div>
             <div class="waves---input-wrap-2">
-              <div class="waves---field-label">Email</div><input type="email" class="waves-text-field-background-2 w-input" maxlength="256" name="email" data-name="Email" placeholder="ex. Email" id="Email">
+              <div class="waves---field-label">Email</div><input type="email" class="waves-text-field-background-2 w-input" maxlength="256" name="email" data-name="Email" placeholder="ex. Email" id="Email" required autocomplete="email">
             </div>
             <div class="waves---input-wrap-2">
-              <div class="waves---field-label">Password</div><input type="password" class="waves-text-field-background-2 w-input" maxlength="256" name="password" data-name="Email 2" placeholder="ex. Email" id="Email-2">
+              <div class="waves---field-label">Password</div><input type="password" class="waves-text-field-background-2 w-input" maxlength="256" name="password" data-name="Email 2" placeholder="ex. Email" id="Email-2" required autocomplete="new-password">
               <div class="waves---input-wrap-2">
-                <div class="waves---field-label">Password Again</div><input type="password" class="waves-text-field-background-2 w-input" maxlength="256" name="password_confirmation" data-name="Password" placeholder="ex. Email" id="Password">
+                <div class="waves---field-label">Password Again</div><input type="password" class="waves-text-field-background-2 w-input" maxlength="256" name="password_confirmation" data-name="Password" placeholder="ex. Email" id="Password" required autocomplete="new-password">
               </div>
             </div><label class="w-checkbox waves---checkbox-field-2">
               <div class="w-checkbox-input w-checkbox-input--inputType-custom waves---checkbox-2"></div><input type="checkbox" id="checkbox" name="Checkbox" data-name="Checkbox" style="opacity:0;position:absolute;z-index:-1"><span class="waves---checkbox-label-2 w-form-label" for="Checkbox">I accept the <a href="#">Terms &amp; Conditions</a></span>
@@ -98,7 +103,18 @@
                <a href="/login"><b>返回登入頁面</b></a>
             </div>
             
+            <div class="row mb-0">
+           <!-- <div class="col-md-8 offset-md-4">
+            <a href="{{ route('google-auth') }}">
+             <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png">
+            </a>
+          </div>
+         </div> -->
+
           </form>
+
+          
+
           <div class="waves-success-mesaage-3 w-form-done">
             <div>Thank you! Your submission has been received!</div>
           </div>

@@ -3,20 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 
 class UsersController extends Controller
 {
-    public function login(){
-        return view('pages.login');
     
-        
+    public function editUserProfile(Request $request){
+
+        dd($request->all());
 
     }
 
-    public function about(){
-        return view('users.membercenter');
+    public function editUserPassword(Request $request){
+        
+        dd($request->all());
+        
+        
     }
 
     

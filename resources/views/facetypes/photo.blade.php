@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
-
+@extends('layouts.navbar')
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -24,7 +24,7 @@
 
 <body>
 
-<div class="navbar-logo-center">
+<!-- <div class="navbar-logo-center">
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-center-container shadow-three w-nav">
       <div class="container">
         <div class="navbar-wrapper-three">
@@ -68,7 +68,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
+  @section('content')
+  @endsection
 
     <section>
         <div class="container-fluid" style="padding-right: 0px;padding-left: 0px;"><img src="{{ asset('photo_assets/img/pic5-text.png') }}" style="width: 100%;height: 500px;"></div>

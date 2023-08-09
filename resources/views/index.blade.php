@@ -1,5 +1,6 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
 <!--  Last Published: Mon Jul 31 2023 17:27:06 GMT+0000 (Coordinated Universal Time)  -->
+@extends('layouts.navbar')
 <html data-wf-page="64c3f1a50a737c6a48e2cd1a" data-wf-site="64c3f1a50a737c6a48e2cd14">
 <head>
   <meta charset="utf-8">
@@ -18,7 +19,8 @@
   <link href="index_assets/images/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body">
-  <div class="navbar-logo-center">
+  
+  <!-- <div class="navbar-logo-center">
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-center-container shadow-three w-nav">
       <div class="container">
         <div class="navbar-wrapper-three">
@@ -41,9 +43,9 @@
                       <div class="text-block-4">產品</div>
                     </address>
                     <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
-                      <!-- <a href="#" class="nav-dropdown-link w-dropdown-link">男生</a>
+                      <a href="#" class="nav-dropdown-link w-dropdown-link">男生</a>
                       <a href="#" class="nav-dropdown-link w-dropdown-link">女生</a>
-                      <a href="#" class="nav-dropdown-link w-dropdown-link">孩童</a> -->
+                      <a href="#" class="nav-dropdown-link w-dropdown-link">孩童</a>
                       <a href="/products" class="nav-dropdown-link w-dropdown-link">資生堂</a>
                     </nav>
                   </div>
@@ -62,7 +64,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
+  @section('content')
+  @endsection
+
   <div class="waves---section-hero-primary">
     <div class="waves---main-container w-container">
       <div class="w-layout-grid waves-grid-hero-1">

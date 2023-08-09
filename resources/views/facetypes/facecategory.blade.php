@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html data-wf-page="64c3f1a50a737c6a48e2cd1a" data-wf-site="64c3f1a50a737c6a48e2cd14">
-
+@extends('layouts.navbar')
 <head>
     <meta charset="utf-8">
     
@@ -25,19 +25,8 @@
 </head>
 
 <body>
-    <!-- <nav class="navbar navbar-expand-md bg-dark py-3" data-bs-theme="dark">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span>YOFU</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-5">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="/facetypes">膚況分析</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/products">產品推薦</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about">會員中心</a></li>
-                </ul><a class="btn btn-primary ms-md-2" role="button" href="/login">註冊&amp;登入</a>
-            </div>
-        </div>
-    </nav> -->
     
-    <div class="navbar-logo-center">
+    <!-- <div class="navbar-logo-center">
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-center-container shadow-three w-nav">
       <div class="container">
         <div class="navbar-wrapper-three">
@@ -60,9 +49,9 @@
                       <div class="text-block-4">產品</div>
                     </address>
                     <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
-                      <!-- <a href="#" class="nav-dropdown-link w-dropdown-link">男生</a>
+                      <a href="#" class="nav-dropdown-link w-dropdown-link">男生</a>
                       <a href="#" class="nav-dropdown-link w-dropdown-link">女生</a>
-                      <a href="#" class="nav-dropdown-link w-dropdown-link">孩童</a> -->
+                      <a href="#" class="nav-dropdown-link w-dropdown-link">孩童</a>
                       <a href="/products" class="nav-dropdown-link w-dropdown-link">資生堂</a>
                     </nav>
                   </div>
@@ -81,8 +70,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
     
+    @section('content')
+    @endsection
+
     <section class="carousel">
         <div class="container-fluid" style="padding: 0px;">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel-1" style="height: 600px;">

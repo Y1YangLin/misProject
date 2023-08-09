@@ -11,11 +11,16 @@ class PagesController extends Controller
         return view('index');
     }
 
-    //點會員中心 --> 登入頁面
-    public function login(){
-        return view('auth.login');
+    public function showcontactform(){
+
+        return view('pages.contact');
     }
 
-    
+    public function getcontactform(Request $request){
+
+        dd($request);
+
+    }
+
 
 }

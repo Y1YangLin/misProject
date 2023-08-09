@@ -24,7 +24,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // dd(Auth::user());
-        return view('home');
+        // dd('test');
+
+        $user = Auth::user();
+
+        return view('users.membercenter')->with(['user' => $user]);
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
 <!--  Last Published: Mon Aug 07 2023 12:27:02 GMT+0000 (Coordinated Universal Time)  -->
+@extends('layouts.navbar')
 <html data-wf-page="64cc5573602be14b9be527bc" data-wf-site="64c3f1a50a737c6a48e2cd14">
 <head>
   <meta charset="utf-8">
@@ -20,7 +21,7 @@
   <link href="product_assets/images/webclip.png" rel="apple-touch-icon">
 </head>
 <body>
-  <div class="navbar-logo-center">
+  <!-- <div class="navbar-logo-center">
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-center-container shadow-three w-nav">
       <div class="container">
         <div class="navbar-wrapper-three">
@@ -64,7 +65,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
+  @section('content')
+  @endsection
+
   <div class="div-block-5">
     <div class="brix---section-pd-bottom-56px">
       <div class="brix---container-default-2 w-container">
