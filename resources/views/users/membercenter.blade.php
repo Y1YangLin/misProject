@@ -37,6 +37,21 @@
     <br>
     <br>
     <br>
+
+    <!-- 用來顯示使用者修改資料的狀態 -->
+    <script>
+        var msg = "{{ Session::get('message') }}";
+        var exist = "{{ Session::has('message') }}";
+        
+
+        if(exist){
+            alert(msg);
+        }
+
+    </script>
+
+    
+
     <div class="container gy-5">
         <div class="row gutter">
             <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3" id="sidecol">
