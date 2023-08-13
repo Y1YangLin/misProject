@@ -51,7 +51,7 @@
             <div class="waves-inside-hero-1">
               <div class="waves-item-gallery-hero-1">
                 <div class="waves-image-wrap-hero-1"><img src="https://uploads-ssl.webflow.com/64c3f1a50a737c6a48e2cd14/64c477bca124713eea5a9106_Hero%201%20-%202.webp" loading="lazy" alt="" class="waves-image-hero-1"></div>
-                <div class="waves-image-wrap-hero-1"><img src="index_assets/images/Hero-1---6_1Hero-1---6.webp" loading="lazy" srcset="index_assets/images/Hero-1---6_1-p-500.jpg 500w, index_assets/images/Hero-1---6_1Hero-1---6.webp 520w" sizes="(max-width: 479px) 257.2749938964844px, (max-width: 767px) 54vw, (max-width: 991px) 34vw, (max-width: 1439px) 264px, 288px" alt="" class="waves-image-hero-1"></div>
+                <div class="waves-image-wrap-hero-1"><img src="{{ asset('index_assets/images/Hero-1---6_1Hero-1---6.webp') }}" loading="lazy" srcset="index_assets/images/Hero-1---6_1-p-500.jpg 500w, index_assets/images/Hero-1---6_1Hero-1---6.webp 520w" sizes="(max-width: 479px) 257.2749938964844px, (max-width: 767px) 54vw, (max-width: 991px) 34vw, (max-width: 1439px) 264px, 288px" alt="" class="waves-image-hero-1"></div>
                 <div class="waves-image-wrap-hero-1"><img src="index_assets/images/Hero-1---5.jpg" loading="lazy" srcset="index_assets/images/Hero-1---5-p-500.jpg 500w, index_assets/images/Hero-1---5.jpg 520w" sizes="(max-width: 479px) 257.2749938964844px, (max-width: 767px) 54vw, (max-width: 991px) 34vw, (max-width: 1439px) 264px, 288px" alt="" class="waves-image-hero-1"></div>
               </div>
               <div class="waves-item-gallery-hero-1">
