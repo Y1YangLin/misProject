@@ -38,7 +38,7 @@
         <div class="waves-image-wrap-contact-3"><img src=" {{ asset('index_assets/images/lily-woods-team-member-brix-templates-avatar-picture.jpeg') }}" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 94vw, 890px" srcset=" {{ asset('index_assets/images/lily-woods-team-member-brix-templates-avatar-picture-p-500.jpeg 500w') }}, {{ asset('index_assets/images/lily-woods-team-member-brix-templates-avatar-picture.jpeg 800w') }}" alt="Lily Woods - Elements Webflow Library - BRIX Templates" class="waves-image-contact-3"></div>
         <div class="waves-content-contact-3">
           <div class="waves-form-block-contact-3 w-form">
-            <form id="Contact-form" action="{{ route('contactform') }}" name="wf-form-Contact-Form-2" data-name="Contact Form" method="POST" class="waves---form-contact-3" data-wf-page-id="64d2501148f66bed1c42f12b" data-wf-element-id="6e4a7115-53e7-dbea-287a-2ef5a042f988">
+            <form id="Contact-form" action="{{ route('sendMail') }}" name="wf-form-Contact-Form-2" data-name="Contact Form" method="POST" class="waves---form-contact-3" data-wf-page-id="64d2501148f66bed1c42f12b" data-wf-element-id="6e4a7115-53e7-dbea-287a-2ef5a042f988">
               @csrf
               <h1 class="heading-4">Contact Us</h1>
               <div class="text-block-9">我們會傾聽您的聲音，如果有疑問，我們的客服將會幫您解答。</div>
@@ -54,9 +54,9 @@
               <div class="waves---input-wrap-3">
                 <div class="waves---field-label-2">Country</div><select id="country" name="Country" data-name="Country" class="waves-select-white-2 w-select">
                   <option value="">Select one...</option>
-                  <option value="First">Taiwan</option>
-                  <option value="Second">Japan</option>
-                  <option value="Third">US</option>
+                  <option value="Taiwan">Taiwan</option>
+                  <option value="Japan">Japan</option>
+                  <option value="US">US</option>
                 </select>
               </div>
               <div class="waves---input-wrap-3">
@@ -87,7 +87,7 @@
         <div id="w-node-_6103a993-a2f4-1f27-2c69-e77dce8a1195-1c42f12b" class="waves-tile-contact-4">
           <div class="waves---mg-bottom-18"><img src="index_assets/images/send-mail.svg" loading="lazy" alt="" class="waves-icon-65"></div>
           <h3 class="waves---heading-3-no-margins-3">Mail us</h3>
-          <div class="waves---paragraph-regular-3">templates@wavesdesign.io</div>
+          <div class="waves---paragraph-regular-3">misproject2023@gmail.com</div>
         </div>
         <div id="w-node-_6103a993-a2f4-1f27-2c69-e77dce8a119c-1c42f12b" class="waves-tile-contact-4">
           <div class="waves---mg-bottom-18"><img src="index_assets/images/phone.svg" loading="lazy" alt="" class="waves-icon-65"></div>
@@ -97,7 +97,7 @@
         <div id="w-node-_6103a993-a2f4-1f27-2c69-e77dce8a11a3-1c42f12b" class="waves-tile-contact-4">
           <div class="waves---mg-bottom-18"><img src="index_assets/images/pin-alt.svg" loading="lazy" alt="" class="waves-icon-65"></div>
           <h3 class="waves---heading-3-no-margins-3">Find us</h3>
-          <div class="waves---paragraph-regular-3">Street 41, 40102, Indonesia</div>
+          <div class="waves---paragraph-regular-3">Street 41, 40102, 北極路</div>
         </div>
       </div>
     </div>
@@ -118,6 +118,15 @@
       </div>
     </div>
   </div>
+
+  @if (session()->has('message'))
+    <script>
+       setTimeout(function() {
+           window.location.href = "/index"
+       }, 5000); // 2 second
+    </script>
+  @endif
+
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64c3f1a50a737c6a48e2cd14" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="index_assets/js/webflow.js" type="text/javascript"></script>
 </body>

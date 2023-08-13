@@ -90,9 +90,9 @@
               <div class="waves---field-label">Email</div><input type="email" class="waves-text-field-background-2 w-input" maxlength="256" name="email" data-name="Email" placeholder="ex. Email" id="Email" required autocomplete="email">
             </div>
             <div class="waves---input-wrap-2">
-              <div class="waves---field-label">Password</div><input type="password" class="waves-text-field-background-2 w-input" maxlength="256" name="password" data-name="Email 2" placeholder="ex. Email" id="Email-2" required autocomplete="new-password">
+              <div class="waves---field-label">Password</div><input type="password" class="waves-text-field-background-2 w-input" maxlength="256" name="password" data-name="Email 2" placeholder="ex. #9ay666" id="Email-2" required autocomplete="new-password">
               <div class="waves---input-wrap-2">
-                <div class="waves---field-label">Password Again</div><input type="password" class="waves-text-field-background-2 w-input" maxlength="256" name="password_confirmation" data-name="Password" placeholder="ex. Email" id="Password" required autocomplete="new-password">
+                <div class="waves---field-label">Password Again</div><input type="password" class="waves-text-field-background-2 w-input" maxlength="256" name="password_confirmation" data-name="Password" placeholder="ex. #9ay666" id="Password" required autocomplete="new-password">
               </div>
             </div><label class="w-checkbox waves---checkbox-field-2">
               <div class="w-checkbox-input w-checkbox-input--inputType-custom waves---checkbox-2"></div><input type="checkbox" id="checkbox" name="Checkbox" data-name="Checkbox" style="opacity:0;position:absolute;z-index:-1"><span class="waves---checkbox-label-2 w-form-label" for="Checkbox">I accept the <a href="#">Terms &amp; Conditions</a></span>

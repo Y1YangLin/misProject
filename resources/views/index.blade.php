@@ -25,6 +25,17 @@
   @section('content')
   @endsection
 
+  <script>
+        var msg = "{{ Session::get('message') }}";
+        var exist = "{{ Session::has('message') }}";
+        
+
+        if(exist){
+            alert(msg);
+        }
+
+    </script>
+
   <div class="waves---section-hero-primary">
     <div class="waves---main-container w-container">
       <div class="w-layout-grid waves-grid-hero-1">
@@ -78,7 +89,7 @@
               <h2 class="waves---heading-2-no-margins">膚質分析</h2>
               <div class="waves---paragraph-big">藉由簡單的幾個步驟，帶您了解自己屬於哪種膚質</div>
               <div class="waves---mg-top-16">
-                <a href="/facetype" class="waves---cta-dark w-button">立即體驗</a>
+                <a href="/facetype/photo" class="waves---cta-dark w-button">立即體驗</a>
               </div>
             </div>
           </div>

@@ -4,6 +4,7 @@ use App\Http\Controllers\FaceCategoryController;
 use App\Http\Controllers\GoogleAuthController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\SendMailController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -40,10 +41,10 @@ Auth::routes();
 
 /*Pages --> 主頁等一般頁面*/
 Route::get('/', [PagesController::class, 'index']);
-Route::get('/index', [PagesController::class, 'index']);
+Route::get('/index', [PagesController::class, 'index'])->name('index');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/contact', [PagesController::class, 'showcontactform']);
-Route::post('/getcontactform', [PagesController::class, 'getcontactform'])->name('contactform');
+
 
 /*Users --> 與Users相關*/
 Route::post('/user/editUserPassword', [UsersController::class, 'editUserPassword'])->name('editPassword');
@@ -56,13 +57,11 @@ Route::get('/product-detail', [ProductsController::class, 'show_Product_Detail']
 
 /**FaceCategory */
 Route::get('/facetype', [FaceCategoryController::class, 'index']);
-Route::get('/facetypes/photo', [FaceCategoryController::class, 'photo']);
+Route::get('/facetype/photo', [FaceCategoryController::class, 'photo']);
 
 /**Google Socialite */
 Route::get('auth/google', [GoogleAuthController::class, 'redirect'])->name('google-auth');
 Route::get('auth/google/call-back', [GoogleAuthController::class, 'callbackGoogle']);
-
-
 
 
 
