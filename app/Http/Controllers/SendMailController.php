@@ -8,7 +8,7 @@ use App\Mail\ReminderMail;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-
+use Illuminate\Support\Facades\Session;
 
 class SendMailController extends Controller
 {
@@ -29,12 +29,10 @@ class SendMailController extends Controller
         if($user){
             Mail::to($data['email'], $data['name'])->send(new ReminderMail($mailData));
         }else{
-            return dd('你還不是會員喔 快去註冊ㄅ');
+            return redirect()->route('index')->with('mail-msg', '你還不是會員喔 快去註冊ㄅ');
         }
 
         
-        
-
-        return redirect()->intended('/index')->with('message', '謝謝您的回饋 :)');
+        return redirect()->route('index')->with('mail-msg', '謝謝您的回饋 :)');
     }
 }

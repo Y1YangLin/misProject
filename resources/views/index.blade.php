@@ -25,17 +25,6 @@
   @section('content')
   @endsection
 
-  <script>
-        var msg = "{{ Session::get('message') }}";
-        var exist = "{{ Session::has('message') }}";
-        
-
-        if(exist){
-            alert(msg);
-        }
-
-    </script>
-
   <div class="waves---section-hero-primary">
     <div class="waves---main-container w-container">
       <div class="w-layout-grid waves-grid-hero-1">
@@ -351,5 +340,6 @@
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64c3f1a50a737c6a48e2cd14" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="index_assets/js/webflow.js" type="text/javascript"></script>
+  
 </body>
 </html>
