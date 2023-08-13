@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class FaceCategory extends Model
 {
     use HasFactory;
+
+    public $timestamps = false;
+
+
 }
