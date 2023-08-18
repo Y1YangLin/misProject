@@ -36,14 +36,14 @@ class GoogleAuthController extends Controller
                 
                 Auth::login($new_user);
 
-                return redirect()->intended('/home');
+                return redirect()->route('home');
 
 
             }else{
 
                 Auth::login($user);
                 
-                return redirect()->intended('/home');
+                return redirect()->route('home');
             }
 
 

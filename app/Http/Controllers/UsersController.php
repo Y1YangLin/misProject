@@ -43,7 +43,6 @@ class UsersController extends Controller
         // dd($request->all());
         $oldPassword = $request->oldPwd;
         $password = $request->newPwd;
-        $password_again = $request->newPwd2;
         
         if(Hash::check($oldPassword, Auth::user()->password)){
             

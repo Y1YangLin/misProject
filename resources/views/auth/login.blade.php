@@ -40,9 +40,18 @@
           <div class="waves---input-wrap-2">
             <div class="waves---field-label">Email</div><input type="email" class="waves-text-field-background-2 w-input" maxlength="256" name="email" data-name="Email" placeholder="ex. 9ay@email.com" id="Email" required autocomplete="email" autofocus>
           </div>
+
+          @error('email')
+            <span class="invalid-feedback" role="alert">
+              <strong style="color: red;"> 登入錯誤，再檢查看看喔 ! </strong>
+            </span>
+          @enderror
+          
           <div class="waves---input-wrap-2">
-            <div class="waves---field-label">Password</div><input type="password" class="waves-text-field-background-2 w-input" maxlength="256" name="password" data-name="Email 2" placeholder="password" id="Email-2"required autocomplete="current-password">
-          </div><label class="w-checkbox waves---checkbox-field-2">
+            <div class="waves---field-label">Password</div><input type="password" class="waves-text-field-background-2 w-input" maxlength="256" name="password" data-name="Password" placeholder="password" id="Password" required autocomplete="current-password">
+          </div>
+          
+          <label class="w-checkbox waves---checkbox-field-2">
             <div class="w-checkbox-input w-checkbox-input--inputType-custom waves---checkbox-2"></div><input type="checkbox" id="checkbox" name="Checkbox" data-name="Checkbox" style="opacity:0;position:absolute;z-index:-1"><span class="waves---checkbox-label-2 w-form-label" for="Checkbox">I accept the <a href="#">Terms &amp; Conditions</a></span>
           </label>
           <div class="waves-submit-wrap-contact-2"><input type="submit" value="Submit" data-wait="Please wait..." class="waves---cta-dark-3 wide-cta w-button"></div>

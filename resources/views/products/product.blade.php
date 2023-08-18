@@ -21,21 +21,21 @@
   <link href="{{ asset('product_assets/images/webclip.png') }}" rel="apple-touch-icon">
 </head>
 <body>
-  <!-- <div class="navbar-logo-center">
+  <div class="navbar-logo-center">
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-center-container shadow-three w-nav">
       <div class="container">
         <div class="navbar-wrapper-three">
-          <a href="/" class="navbar-brand-three w-nav-brand">
+          <a href="index.html" class="navbar-brand-three w-nav-brand">
             <h1>YO FU</h1>
           </a>
           <nav role="navigation" class="nav-menu-wrapper-three w-nav-menu">
             <div class="nav-menu-three">
               <ul role="list" class="nav-menu-block w-list-unstyled">
                 <li>
-                  <a href="/facetypes" class="nav-link">膚質分析</a>
+                  <a href="#" class="nav-link">膚質分析</a>
                 </li>
                 <li>
-                  <a href="/contact" class="nav-link">聯絡我們</a>
+                  <a href="customerservice.html" class="nav-link">聯絡我們</a>
                 </li>
                 <li>
                   <div data-delay="0" data-hover="false" class="nav-dropdown w-dropdown">
@@ -47,14 +47,14 @@
                       <a href="product.html" aria-current="page" class="nav-dropdown-link w-dropdown-link w--current">男生</a>
                       <a href="product.html" aria-current="page" class="nav-dropdown-link w-dropdown-link w--current">女生</a>
                       <a href="product.html" aria-current="page" class="nav-dropdown-link w-dropdown-link w--current">孩童</a>
-                      <a href="/products" aria-current="page" class="nav-dropdown-link w-dropdown-link w--current">推薦</a>
+                      <a href="product.html" aria-current="page" class="nav-dropdown-link w-dropdown-link w--current">推薦</a>
                     </nav>
                   </div>
                 </li>
               </ul>
               <ul role="list" class="nav-menu-block w-list-unstyled">
                 <li class="mobile-margin-top-10">
-                  <a href="/login" class="nav-link-2 w-nav-link">account_circle</a>
+                  <a href="login.html" class="nav-link-2 w-nav-link">account_circle</a>
                 </li>
               </ul>
             </div>
@@ -65,11 +65,7 @@
         </div>
       </div>
     </div>
-  </div> -->
-
-  @section('content')
-  @endsection
-  
+  </div>
   <section class="section-2">
     <div data-w-id="dd7f5726-41d7-90ca-3be0-44c2186494e4" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="brix---inner-container-640px---center">
       <div class="brix---text-center">
@@ -140,18 +136,22 @@
       </div>
       <div class="brix---container-default w-container">
         <div data-w-id="dd7f5726-41d7-90ca-3be0-44c2186494f0" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="w-layout-grid brix---grid-3-columns">
-          <a data-w-id="dd7f5726-41d7-90ca-3be0-44c2186494f1" href="/product-detail" class="brix---product-card-wrapper-v1 w-inline-block">
-            <div class="brix---product-card-image-inside-card"><img srcset="product_assets/images/tshirt-ecommerce-card-elements-brix-templates-p-500.jpg 500w, product_assets/images/tshirt-ecommerce-card-elements-brix-templates.jpg 804w" src="product_assets/images/tshirt-ecommerce-card-elements-brix-templates.jpg" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, (max-width: 1439px) 30vw, 369.7250061035156px" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2">
-              <div class="brix---badge-wrapper-top-right">
-                <div class="brix---badge-secondary-small-bold">$49.00</div>
-              </div>
-            </div>
-            <div class="brix---product-card-content">
-              <div class="brix---mg-bottom-16px">
-                <div class="brix---color-neutral-803">
-                  <h3 class="brix---heading-h4-size">T-Shirt</h3>
+          <div id="w-node-_474d1e66-e039-88c2-5ff8-f7af6d82ff4f-57444ce1" class="div-block-8 brix---product-card-wrapper-v1">
+            <a data-w-id="dd7f5726-41d7-90ca-3be0-44c2186494f1" href="product-detail.html" class="brix---product-card-wrapper-v1 w-inline-block">
+              <div class="brix---product-card-image-inside-card"><img srcset="images/tshirt-ecommerce-card-elements-brix-templates-p-500.jpg 500w, images/tshirt-ecommerce-card-elements-brix-templates.jpg 804w" src="images/tshirt-ecommerce-card-elements-brix-templates.jpg" sizes="(max-width: 767px) 99vw, (max-width: 991px) 50vw, (max-width: 1439px) 33vw, (max-width: 1919px) 406.6974792480469px, 21vw" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2">
+                <div class="brix---badge-wrapper-top-right">
+                  <div class="brix---badge-secondary-small-bold">$49.00</div>
                 </div>
               </div>
+            </a>
+            <div class="brix---product-card-content">
+              <a data-w-id="664de3d5-a0d8-b4e3-93fc-45c01e33e96f" href="product-detail.html" class="brix---copy w-inline-block">
+                <div class="brix---mg-bottom-16px">
+                  <div class="brix---color-neutral-803">
+                    <h3 class="brix---heading-h4-size">T-Shirt</h3>
+                  </div>
+                </div>
+              </a>
               <div class="brix---mg-bottom-24px">
                 <div class="brix---color-neutral-600">
                   <p class="brix---paragraph-default">Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.</p>
@@ -159,107 +159,127 @@
               </div>
               <div data-w-id="dd7f5726-41d7-90ca-3be0-44c218649500" class="favorite-button">favorite</div>
             </div>
-          </a>
-          <a data-w-id="dd7f5726-41d7-90ca-3be0-44c218649502" href="#" class="brix---product-card-wrapper-v1 w-inline-block">
-            <div class="brix---product-card-image-inside-card"><img srcset="product_assets/images/zip-hoodie-ecommerce-card-elements-brix-templates-p-500.jpg 500w, product_assets/images/zip-hoodie-ecommerce-card-elements-brix-templates.jpg 776w" src="product_assets/images/zip-hoodie-ecommerce-card-elements-brix-templates.jpg" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, (max-width: 1439px) 30vw, 369.7375183105469px" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2">
-              <div class="brix---badge-wrapper-top-right">
-                <div class="brix---badge-secondary-small-bold">$199.00</div>
-              </div>
-            </div>
-            <div class="brix---product-card-content">
-              <div class="brix---mg-bottom-16px">
-                <div class="brix---color-neutral-803">
-                  <h3 class="brix---heading-h4-size">Zip Hoodie</h3>
+          </div>
+          <div id="w-node-b1809c2b-bfb0-99bf-c360-c42acbb4fea5-57444ce1" class="div-block-8 brix---product-card-wrapper-v1">
+            <a data-w-id="b1809c2b-bfb0-99bf-c360-c42acbb4fea6" href="product-detail.html" class="brix---product-card-wrapper-v1 w-inline-block">
+              <div class="brix---product-card-image-inside-card"><img srcset="images/tshirt-ecommerce-card-elements-brix-templates-p-500.jpg 500w, images/tshirt-ecommerce-card-elements-brix-templates.jpg 804w" src="images/tshirt-ecommerce-card-elements-brix-templates.jpg" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, (max-width: 1439px) 30vw, 369.7375183105469px" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2">
+                <div class="brix---badge-wrapper-top-right">
+                  <div class="brix---badge-secondary-small-bold">$49.00</div>
                 </div>
               </div>
+            </a>
+            <div class="brix---product-card-content">
+              <a data-w-id="b1809c2b-bfb0-99bf-c360-c42acbb4fead" href="product-detail.html" class="brix---copy w-inline-block">
+                <div class="brix---mg-bottom-16px">
+                  <div class="brix---color-neutral-803">
+                    <h3 class="brix---heading-h4-size">T-Shirt</h3>
+                  </div>
+                </div>
+              </a>
               <div class="brix---mg-bottom-24px">
                 <div class="brix---color-neutral-600">
                   <p class="brix---paragraph-default">Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.</p>
                 </div>
               </div>
-              <div data-w-id="cf2b54d2-79d1-6f0a-852b-f49e6918f7bb" class="favorite-button">favorite</div>
+              <div data-w-id="b1809c2b-bfb0-99bf-c360-c42acbb4feb6" class="favorite-button">favorite</div>
             </div>
-          </a>
-          <a data-w-id="dd7f5726-41d7-90ca-3be0-44c218649513" href="#" class="brix---product-card-wrapper-v1 w-inline-block">
-            <div class="brix---product-card-image-inside-card"><img srcset="product_assets/images/beanie-ecommerce-card-elements-brix-templates-p-500.jpg 500w, product_assets/images/beanie-ecommerce-card-elements-brix-templates.jpg 776w" src="product_assets/images/beanie-ecommerce-card-elements-brix-templates.jpg" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, (max-width: 1439px) 30vw, 369.7375183105469px" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2">
-              <div class="brix---badge-wrapper-top-right">
-                <div class="brix---badge-secondary-small-bold">$49.00</div>
-              </div>
-            </div>
-            <div class="brix---product-card-content">
-              <div class="brix---mg-bottom-16px">
-                <div class="brix---color-neutral-803">
-                  <h3 class="brix---heading-h4-size">Beanie</h3>
+          </div>
+          <div id="w-node-eb183751-8050-cf0e-921a-2a7fd20d3716-57444ce1" class="div-block-8 brix---product-card-wrapper-v1">
+            <a data-w-id="eb183751-8050-cf0e-921a-2a7fd20d3717" href="product-detail.html" class="brix---product-card-wrapper-v1 w-inline-block">
+              <div class="brix---product-card-image-inside-card"><img srcset="images/tshirt-ecommerce-card-elements-brix-templates-p-500.jpg 500w, images/tshirt-ecommerce-card-elements-brix-templates.jpg 804w" src="images/tshirt-ecommerce-card-elements-brix-templates.jpg" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, (max-width: 1439px) 30vw, 369.7375183105469px" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2">
+                <div class="brix---badge-wrapper-top-right">
+                  <div class="brix---badge-secondary-small-bold">$49.00</div>
                 </div>
               </div>
+            </a>
+            <div class="brix---product-card-content">
+              <a data-w-id="eb183751-8050-cf0e-921a-2a7fd20d371e" href="product-detail.html" class="brix---copy w-inline-block">
+                <div class="brix---mg-bottom-16px">
+                  <div class="brix---color-neutral-803">
+                    <h3 class="brix---heading-h4-size">T-Shirt</h3>
+                  </div>
+                </div>
+              </a>
               <div class="brix---mg-bottom-24px">
                 <div class="brix---color-neutral-600">
                   <p class="brix---paragraph-default">Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.</p>
                 </div>
               </div>
-              <div data-w-id="6fd84fe6-5607-626f-e405-8ef820d48c5c" class="favorite-button">favorite</div>
+              <div data-w-id="eb183751-8050-cf0e-921a-2a7fd20d3727" class="favorite-button">favorite</div>
             </div>
-          </a>
-          <a data-w-id="dd7f5726-41d7-90ca-3be0-44c218649524" href="#" class="brix---product-card-wrapper-v1 w-inline-block">
-            <div class="brix---product-card-image-inside-card"><img srcset="product_assets/images/pullover-ecommerce-card-elements-brix-templates-p-500.jpg 500w, product_assets/images/pullover-ecommerce-card-elements-brix-templates.jpg 776w" src="product_assets/images/pullover-ecommerce-card-elements-brix-templates.jpg" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, (max-width: 1439px) 30vw, 369.7250061035156px" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2">
-              <div class="brix---badge-wrapper-top-right">
-                <div class="brix---badge-secondary-small-bold">$149.00</div>
-              </div>
-            </div>
-            <div class="brix---product-card-content">
-              <div class="brix---mg-bottom-16px">
-                <div class="brix---color-neutral-803">
-                  <h3 class="brix---heading-h4-size">Pullover Hoodie</h3>
+          </div>
+          <div id="w-node-_358e932a-85e1-711a-2fef-2a5a039d8025-57444ce1" class="div-block-8 brix---product-card-wrapper-v1">
+            <a data-w-id="358e932a-85e1-711a-2fef-2a5a039d8026" href="product-detail.html" class="brix---product-card-wrapper-v1 w-inline-block">
+              <div class="brix---product-card-image-inside-card"><img srcset="images/tshirt-ecommerce-card-elements-brix-templates-p-500.jpg 500w, images/tshirt-ecommerce-card-elements-brix-templates.jpg 804w" src="images/tshirt-ecommerce-card-elements-brix-templates.jpg" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, (max-width: 1439px) 30vw, 369.7250061035156px" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2">
+                <div class="brix---badge-wrapper-top-right">
+                  <div class="brix---badge-secondary-small-bold">$49.00</div>
                 </div>
               </div>
+            </a>
+            <div class="brix---product-card-content">
+              <a data-w-id="358e932a-85e1-711a-2fef-2a5a039d802d" href="product-detail.html" class="brix---copy w-inline-block">
+                <div class="brix---mg-bottom-16px">
+                  <div class="brix---color-neutral-803">
+                    <h3 class="brix---heading-h4-size">T-Shirt</h3>
+                  </div>
+                </div>
+              </a>
               <div class="brix---mg-bottom-24px">
                 <div class="brix---color-neutral-600">
                   <p class="brix---paragraph-default">Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.</p>
                 </div>
               </div>
-              <div data-w-id="e8f10a59-aa16-47cc-3ed0-0179ee25ac9a" class="favorite-button">favorite</div>
+              <div data-w-id="358e932a-85e1-711a-2fef-2a5a039d8036" class="favorite-button">favorite</div>
             </div>
-          </a>
-          <a data-w-id="dd7f5726-41d7-90ca-3be0-44c218649535" href="#" class="brix---product-card-wrapper-v1 w-inline-block">
-            <div class="brix---product-card-image-inside-card"><img srcset="{{ asset('product_assets/images/tote-bag-ecommerce-card-elements-brix-templates-p-500.jpg 500w') }}, product_assets/images/tote-bag-ecommerce-card-elements-brix-templates.jpg 776w" src="product_assets/images/tote-bag-ecommerce-card-elements-brix-templates.jpg" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, (max-width: 1439px) 30vw, 369.7375183105469px" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2">
-              <div class="brix---badge-wrapper-top-right">
-                <div class="brix---badge-secondary-small-bold">$19.00</div>
-              </div>
-            </div>
-            <div class="brix---product-card-content">
-              <div class="brix---mg-bottom-16px">
-                <div class="brix---color-neutral-803">
-                  <h3 class="brix---heading-h4-size">Tote Bag</h3>
+          </div>
+          <div id="w-node-_4efc251a-5c25-caca-00b5-cc00989070d1-57444ce1" class="div-block-8 brix---product-card-wrapper-v1">
+            <a data-w-id="4efc251a-5c25-caca-00b5-cc00989070d2" href="product-detail.html" class="brix---product-card-wrapper-v1 w-inline-block">
+              <div class="brix---product-card-image-inside-card"><img srcset="images/tshirt-ecommerce-card-elements-brix-templates-p-500.jpg 500w, images/tshirt-ecommerce-card-elements-brix-templates.jpg 804w" src="images/tshirt-ecommerce-card-elements-brix-templates.jpg" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, (max-width: 1439px) 30vw, 369.7375183105469px" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2">
+                <div class="brix---badge-wrapper-top-right">
+                  <div class="brix---badge-secondary-small-bold">$49.00</div>
                 </div>
               </div>
+            </a>
+            <div class="brix---product-card-content">
+              <a data-w-id="4efc251a-5c25-caca-00b5-cc00989070d9" href="product-detail.html" class="brix---copy w-inline-block">
+                <div class="brix---mg-bottom-16px">
+                  <div class="brix---color-neutral-803">
+                    <h3 class="brix---heading-h4-size">T-Shirt</h3>
+                  </div>
+                </div>
+              </a>
               <div class="brix---mg-bottom-24px">
                 <div class="brix---color-neutral-600">
                   <p class="brix---paragraph-default">Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.</p>
                 </div>
               </div>
-              <div data-w-id="6f165c68-0e03-dd6a-50b6-6459b3bb1672" class="favorite-button">favorite</div>
+              <div data-w-id="4efc251a-5c25-caca-00b5-cc00989070e2" class="favorite-button">favorite</div>
             </div>
-          </a>
-          <a data-w-id="dd7f5726-41d7-90ca-3be0-44c218649546" href="#" class="brix---product-card-wrapper-v1 w-inline-block">
-            <div class="brix---product-card-image-inside-card"><img srcset="product_assets/images/polo-t-shirt-ecommerce-card-elements-brix-templates-p-500.jpg 500w, product_assets/images/polo-t-shirt-ecommerce-card-elements-brix-templates.jpg 776w" src="product_assets/images/polo-t-shirt-ecommerce-card-elements-brix-templates.jpg" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, (max-width: 1439px) 30vw, 369.7375183105469px" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2">
-              <div class="brix---badge-wrapper-top-right">
-                <div class="brix---badge-secondary-small-bold">$49.00</div>
-              </div>
-            </div>
-            <div class="brix---product-card-content">
-              <div class="brix---mg-bottom-16px">
-                <div class="brix---color-neutral-803">
-                  <h3 class="brix---heading-h4-size">Polo T-Shirt</h3>
+          </div>
+          <div id="w-node-_9f09bcd1-4974-23f3-c081-5b06612b9d35-57444ce1" class="div-block-8 brix---product-card-wrapper-v1">
+            <a data-w-id="9f09bcd1-4974-23f3-c081-5b06612b9d36" href="product-detail.html" class="brix---product-card-wrapper-v1 w-inline-block">
+              <div class="brix---product-card-image-inside-card"><img srcset="product_assets/images/tshirt-ecommerce-card-elements-brix-templates-p-500.jpg 500w, product_assets/images/tshirt-ecommerce-card-elements-brix-templates.jpg 804w" src="product_assets/images/tshirt-ecommerce-card-elements-brix-templates.jpg" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, (max-width: 1439px) 30vw, 369.7375183105469px" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2">
+                <div class="brix---badge-wrapper-top-right">
+                  <div class="brix---badge-secondary-small-bold">$49.00</div>
                 </div>
               </div>
+            </a>
+            <div class="brix---product-card-content">
+              <a data-w-id="9f09bcd1-4974-23f3-c081-5b06612b9d3d" href="product-detail.html" class="brix---copy w-inline-block">
+                <div class="brix---mg-bottom-16px">
+                  <div class="brix---color-neutral-803">
+                    <h3 class="brix---heading-h4-size">T-Shirt</h3>
+                  </div>
+                </div>
+              </a>
               <div class="brix---mg-bottom-24px">
                 <div class="brix---color-neutral-600">
                   <p class="brix---paragraph-default">Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.</p>
                 </div>
               </div>
-              <div data-w-id="0710da58-bf72-e602-82ad-23500187f726" class="favorite-button">favorite</div>
+              <div data-w-id="9f09bcd1-4974-23f3-c081-5b06612b9d46" class="favorite-button">favorite</div>
             </div>
-          </a>
+          </div>
         </div>
         <div class="div-block-3">
           <a href="#" class="product_page_button w-button">1</a>
@@ -277,11 +297,11 @@
       <div class="waves-divider-footer-1"></div>
       <div class="waves-bottom-footer-1">
         <div class="waves-bottom-right-footer-1">
-          <a href="#" class="w-inline-block"><img src="product_assets/images/dribbble.svg" loading="lazy" alt="" class="waves-icon-33"></a>
-          <a href="#" class="w-inline-block"><img src="product_assets/images/telegram.svg" loading="lazy" alt="" class="waves-icon-33"></a>
-          <a href="#" class="w-inline-block"><img src="product_assets/images/instagram.svg}" loading="lazy" alt="" class="waves-icon-33"></a>
-          <a href="#" class="w-inline-block"><img src="product_assets/images/google-circle.svg" loading="lazy" alt="" class="waves-icon-33"></a>
-          <a href="#" class="w-inline-block"><img src="product_assets/images/youtube.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="images/dribbble.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="images/telegram.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="images/instagram.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="images/google-circle.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="images/youtube.svg" loading="lazy" alt="" class="waves-icon-33"></a>
         </div>
       </div>
     </div>
