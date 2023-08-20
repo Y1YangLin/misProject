@@ -18,6 +18,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable();
             $table->date('birthday')->nullable();
+            $table->string('pic')->nullable();
             $table->integer('facetype_id')->unsigned()->nullable();
             $table->foreign('facetype_id')->references('id')->on('face_categories');
             $table->string('google_id')->nullable();

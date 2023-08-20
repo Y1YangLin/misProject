@@ -22,8 +22,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('intro');
             $table->integer('price');
-            $table->integer('commandAmount');
-            $table->integer('likeyAmount');
+            $table->integer('likeyAmount')->default(0);
             $table->string('image_url');
             $table->integer('brand_id')->unsigned();
             $table->foreign('brand_id')->references('id')->on('brands');

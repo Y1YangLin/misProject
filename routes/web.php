@@ -52,8 +52,8 @@ Route::post('/user/editUserProfile', [UsersController::class, 'editUserProfile']
 
 
 /* Products*/
-Route::get('/product', [ProductsController::class, 'index']);
-Route::get('/product-detail', [ProductsController::class, 'show_Product_Detail']);
+Route::get('/product', [ProductsController::class, 'show_Product_page']);
+Route::get('/product-detail/{name}/{id}', [ProductsController::class, 'show_Product_Detail']);
 
 /**FaceCategory */
 Route::get('/facetype', [FaceCategoryController::class, 'index']);

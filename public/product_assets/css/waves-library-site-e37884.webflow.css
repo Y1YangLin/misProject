@@ -1921,6 +1921,10 @@ a {
   box-shadow: 0 2px 12px rgba(20, 20, 43, .08);
 }
 
+.brix---product-card-wrapper-v1.w-inline-block{
+  display: block;
+}
+
 .brix---product-card-wrapper-v1:hover {
   transform: scale(.96);
 }
