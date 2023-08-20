@@ -23,6 +23,7 @@ class LikeyController extends Controller
             $this->productModel->setProdLikeAmount($request->prod_id);
             $this->likeModel->collectUserLike(Auth::user()->id, $request->prod_id);
         }else{
+            //沒反應
             return redirect()->route('login');
         }
 

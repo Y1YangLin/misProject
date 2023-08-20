@@ -196,13 +196,7 @@
           <!-- 推薦 -->
           @foreach ($products['recom'] as $recom)
           <div id="w-node-_474d1e66-e039-88c2-5ff8-f7af6d82ff4f-57444ce1" class="div-block-8 brix---product-card-wrapper-v1" data-product-category="BRIX - Integrations">
-            <a data-w-id="dd7f5726-41d7-90ca-3be0-44c2186494f1" href="/product-detail/{{ $recom->name }}/{{ $recom->id }}" class="brix---product-card-wrapper-v1 w-inline-block">
-              <div class="brix---product-card-image-inside-card"><img srcset="{{ $recom->image_url }}, {{ $recom->image_url }}" src="{{ $recom->image_url }}" sizes="(max-width: 767px) 99vw, (max-width: 991px) 50vw, (max-width: 1439px) 33vw, (max-width: 1919px) 406.6974792480469px, 21vw" alt="糟了 圖片睡著了zzz" class="brix---product-card-image-2" width="409.5px" height="409.5">
-                <div class="brix---badge-wrapper-top-right">
-                  <div class="brix---badge-secondary-small-bold">{{ "$" . $recom->price }}</div>
-                </div>
-              </div>
-            </a>
+             
             <div class="brix---product-card-content">
               <a data-w-id="664de3d5-a0d8-b4e3-93fc-45c01e33e96f" href="/product-detail/{{ $recom->name }}/{{ $recom->id }}" class="brix---copy w-inline-block">
                 <div class="brix---mg-bottom-16px">
