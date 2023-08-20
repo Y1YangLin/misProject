@@ -15,10 +15,10 @@ class ProductsController extends Controller
         $this->productModel = new Product();
 
         $data = [
-            'male' => $this->productModel->getRandomProdWithAmount(10),
-            'female' => $this->productModel->getRandomProdWithAmount(10),
-            'kid' => $this->productModel->getRandomProdWithAmount(10),
-            'recom' => $this->productModel->getRandomProdWithAmount(10)
+            'male' => $this->productModel->getRandomProdWithAmount(30),
+            'female' => $this->productModel->getRandomProdWithAmount(30),
+            'kid' => $this->productModel->getRandomProdWithAmount(30),
+            'recom' => $this->productModel->getRandomProdWithAmount(30)
         ];
                
         return view('products.product')->with('products', $data);
@@ -31,12 +31,6 @@ class ProductsController extends Controller
         
 
         return view('products.product-detail')->with('data', $data);
-    }
-
-    public function likeProd($u_id, $prod_id){ //對商品按讚
-
-
-
     }
 
 }

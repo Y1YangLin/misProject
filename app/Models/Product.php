@@ -31,8 +31,8 @@ class Product extends Model
         // return $data;
     }
 
-    public function getProdWithFacecat(){ //以膚質推薦產品
-
+    public function getProdWithFacecat($face_id){ //以膚質推薦產品
+        
     }
 
     public function getRandomProd(){ //隨機推薦產品
@@ -48,7 +48,7 @@ class Product extends Model
         return $data;
     }
 
-    public function getProdWithPriceRange(){ //以價格區間取得產品
+    public function getProdWithPriceRange($begin, $end){ //以價格區間取得產品
 
     }
 

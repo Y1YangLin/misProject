@@ -49,26 +49,26 @@
       <div data-w-id="635587f5-bcae-5ce0-c442-c8592c4de4a7" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="div-block-4">
         <div data-w-id="218b75c4-c550-4c23-3979-740d98b78fc1" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" data-current="BRIX - Mobile App" data-easing="ease" data-duration-in="300" data-duration-out="100" class="brix---tabs-wrapper-tabs-left w-tabs">
           <div class="brix---tabs-menu-vertical w-tab-menu">
-            <a data-w-tab="BRIX - Mobile App" class="brix---tab-left-icon w-inline-block w-tab-link w--current">
+            <a id="tab1" data-w-tab="BRIX - Mobile App" class="brix---tab-left-icon w-inline-block w-tab-link w--current">
               <div class="left_bar_icon">male</div>
               <div class="brix---mg-left-16px">
                 <div>男士愛用</div>
               </div>
             </a>
-            <a data-w-tab="BRIX - Desktop App" class="brix---tab-left-icon w-inline-block w-tab-link">
+            <a id="tab2" data-w-tab="BRIX - Desktop App" class="brix---tab-left-icon w-inline-block w-tab-link">
               <div class="left_bar_icon">female</div>
               <div class="brix---mg-left-16px">
                 <div>女人最愛</div>
               </div>
             </a>
-            <a data-w-tab="BRIX - Multiple Users" class="brix---tab-left-icon w-inline-block w-tab-link">
+            <a id="tab3" data-w-tab="BRIX - Multiple Users" class="brix---tab-left-icon w-inline-block w-tab-link">
               <div class="left_bar_icon">child_care</div>
               <div class="brix---mg-left-16px">
                 <div>孩童護理</div>
               </div>
             </a>
             @if(Auth::check())
-            <a data-w-tab="BRIX - Integrations" class="brix---tab-left-icon w-inline-block w-tab-link">
+            <a id="tab4" data-w-tab="BRIX - Integrations" class="brix---tab-left-icon w-inline-block w-tab-link">
               <div class="left_bar_icon">recommend</div>
               <div class="brix---mg-left-16px">
                 <div class="text-block-6">給您的推薦</div>
@@ -112,7 +112,7 @@
           @foreach ($products['male'] as $male)
           <div id="w-node-_474d1e66-e039-88c2-5ff8-f7af6d82ff4f-57444ce1" class="div-block-8 brix---product-card-wrapper-v1" data-product-category="BRIX - Mobile App">
             <a data-w-id="dd7f5726-41d7-90ca-3be0-44c2186494f1" href="/product-detail/{{ $male->name }}/{{ $male->id }}" class="brix---product-card-wrapper-v1 w-inline-block">
-              <div class="brix---product-card-image-inside-card"><img srcset="{{$male->image_url}}, {{$male->image_url}}" src="{{$male->image_url}}" sizes="(max-width: 767px) 99vw, (max-width: 991px) 50vw, (max-width: 1439px) 33vw, (max-width: 1919px) 406.6974792480469px, 21vw" alt="圖片無法顯示..." class="brix---product-card-image-2" width="409.5px" height="409.5">
+              <div class="brix---product-card-image-inside-card"><img srcset="{{$male->image_url}}, {{$male->image_url}}" src="{{$male->image_url}}" sizes="(max-width: 767px) 99vw, (max-width: 991px) 50vw, (max-width: 1439px) 33vw, (max-width: 1919px) 406.6974792480469px, 21vw" alt="糟了 圖片睡著了zzz" class="brix---product-card-image-2" width="409.5px" height="409.5">
                 <div class="brix---badge-wrapper-top-right">
                   <div class="brix---badge-secondary-small-bold">{{ "$" . $male->price }}</div>
                 </div>
@@ -141,7 +141,7 @@
           @foreach ($products['female'] as $female)
           <div id="w-node-_474d1e66-e039-88c2-5ff8-f7af6d82ff4f-57444ce1" class="div-block-8 brix---product-card-wrapper-v1" data-product-category="BRIX - Desktop App">
             <a data-w-id="dd7f5726-41d7-90ca-3be0-44c2186494f1" href="/product-detail/{{ $female->name }}/{{ $female->id }}" class="brix---product-card-wrapper-v1 w-inline-block">
-              <div class="brix---product-card-image-inside-card"><img srcset="{{ $female->image_url }}, {{ $female->image_url }}" src="{{ $female->image_url }}" sizes="(max-width: 767px) 99vw, (max-width: 991px) 50vw, (max-width: 1439px) 33vw, (max-width: 1919px) 406.6974792480469px, 21vw" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2" width="409.5px" height="409.5">
+              <div class="brix---product-card-image-inside-card"><img srcset="{{ $female->image_url }}, {{ $female->image_url }}" src="{{ $female->image_url }}" sizes="(max-width: 767px) 99vw, (max-width: 991px) 50vw, (max-width: 1439px) 33vw, (max-width: 1919px) 406.6974792480469px, 21vw" alt="糟了 圖片睡著了zzz" class="brix---product-card-image-2" width="409.5px" height="409.5">
                 <div class="brix---badge-wrapper-top-right">
                   <div class="brix---badge-secondary-small-bold">{{ "$" . $female->price }}</div>
                 </div>
@@ -169,7 +169,7 @@
           @foreach ($products['kid'] as $kid)
           <div id="w-node-_474d1e66-e039-88c2-5ff8-f7af6d82ff4f-57444ce1" class="div-block-8 brix---product-card-wrapper-v1" data-product-category="BRIX - Multiple Users">
             <a data-w-id="dd7f5726-41d7-90ca-3be0-44c2186494f1" href="/product-detail/{{ $kid->name }}/{{ $kid->id }}" class="brix---product-card-wrapper-v1 w-inline-block">
-              <div class="brix---product-card-image-inside-card"><img srcset="{{ $kid->image_url }}, {{ $kid->image_url }}" src="{{ $kid->image_url }}" sizes="(max-width: 767px) 99vw, (max-width: 991px) 50vw, (max-width: 1439px) 33vw, (max-width: 1919px) 406.6974792480469px, 21vw" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2" width="409.5px" height="409.5">
+              <div class="brix---product-card-image-inside-card"><img srcset="{{ $kid->image_url }}, {{ $kid->image_url }}" src="{{ $kid->image_url }}" sizes="(max-width: 767px) 99vw, (max-width: 991px) 50vw, (max-width: 1439px) 33vw, (max-width: 1919px) 406.6974792480469px, 21vw" alt="糟了 圖片睡著了zzz" class="brix---product-card-image-2" width="409.5px" height="409.5">
                 <div class="brix---badge-wrapper-top-right">
                   <div class="brix---badge-secondary-small-bold">{{ "$" . $kid->price }}</div>
                 </div>
@@ -197,7 +197,7 @@
           @foreach ($products['recom'] as $recom)
           <div id="w-node-_474d1e66-e039-88c2-5ff8-f7af6d82ff4f-57444ce1" class="div-block-8 brix---product-card-wrapper-v1" data-product-category="BRIX - Integrations">
             <a data-w-id="dd7f5726-41d7-90ca-3be0-44c2186494f1" href="/product-detail/{{ $recom->name }}/{{ $recom->id }}" class="brix---product-card-wrapper-v1 w-inline-block">
-              <div class="brix---product-card-image-inside-card"><img srcset="{{ $recom->image_url }}, {{ $recom->image_url }}" src="{{ $recom->image_url }}" sizes="(max-width: 767px) 99vw, (max-width: 991px) 50vw, (max-width: 1439px) 33vw, (max-width: 1919px) 406.6974792480469px, 21vw" alt="eCommerce - Elements Webflow Library - BRIX Templates" class="brix---product-card-image-2" width="409.5px" height="409.5">
+              <div class="brix---product-card-image-inside-card"><img srcset="{{ $recom->image_url }}, {{ $recom->image_url }}" src="{{ $recom->image_url }}" sizes="(max-width: 767px) 99vw, (max-width: 991px) 50vw, (max-width: 1439px) 33vw, (max-width: 1919px) 406.6974792480469px, 21vw" alt="糟了 圖片睡著了zzz" class="brix---product-card-image-2" width="409.5px" height="409.5">
                 <div class="brix---badge-wrapper-top-right">
                   <div class="brix---badge-secondary-small-bold">{{ "$" . $recom->price }}</div>
                 </div>
@@ -224,10 +224,10 @@
 
         </div>
         <div class="div-block-3">
-          <a href="#" class="product_page_button w-button" >1</a>
-          <a href="#" class="product_page_button w-button">2</a>
-          <a href="#" class="product_page_button w-button">3</a>
-          <a href="#" class="product_page_button w-button">..</a>
+          <a href="#" id="page1" class="product_page_button w-button" data-page="1">1</a>
+          <a href="#" id="page2" class="product_page_button w-button" data-page="2">2</a>
+          <a href="#" id="page3" class="product_page_button w-button" data-page="3">3</a>
+          <a href="#" id="more" class="product_page_button w-button">..</a>
         </div>
       </div>
     </div>
@@ -253,31 +253,221 @@
 
   <script type="text/javascript">
     const tabLinks = document.querySelectorAll('.w-tab-link');
-    const productCards = document.querySelectorAll('.brix---product-card-wrapper-v1');
-
-    // console.log(productCards);
+    const productCards = document.querySelectorAll('#w-node-_474d1e66-e039-88c2-5ff8-f7af6d82ff4f-57444ce1.brix---product-card-wrapper-v1');
+    const pageButtons = document.querySelectorAll('.product_page_button');
+    const allProdCards = document.querySelectorAll('.div-block-8');
+    const tabsBoolean = [0,0,0,0]
+    
 
     tabLinks.forEach(tabLink => {
-    tabLink.addEventListener('click', function() {
+    tabLink.addEventListener('click', function(e) {
+      for(var i = 0; i < 4; i++){
+        tabsBoolean[i] = 0;
+        
+      }
+      tabsBoolean[e.target.id[3] - 1] = 1;
+
       const selectedTab = this.getAttribute('data-w-tab');
-      
+      const categoryCounters = {};
+
       productCards.forEach(card => {
-        // console.log("card : " + card.nodeName);
+        const counter = 0;
         const cardCategory = card.getAttribute('data-product-category');
+        
         if(card.nodeName != "A"){ //設定產品卡內的A元素 display不要隨著改變
           const shouldDisplay = cardCategory === selectedTab || selectedTab === 'all';
+          
+          if (shouldDisplay) {
+            if (!categoryCounters.hasOwnProperty(cardCategory)) {
+                categoryCounters[cardCategory] = 0;
+            }
+            
+            if (categoryCounters[cardCategory] < 9) {
+                categoryCounters[cardCategory]++;
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+          } else {
+              card.style.display = 'none';
+          }
 
-          card.style.display = shouldDisplay ? 'block' : 'none';
+          // card.style.display = shouldDisplay ? 'block' : 'none';
+          
         }
         
-            });
+        
+          });
+            
         });
     });
 
     //預先設定男士tablink被點擊
     tabLinks[0].click();
-    // console.log(tabLinks[0]);
+
+    // 換頁的js
     
+    const prodLength = [0,0,0,0];
+
+    allProdCards.forEach(card => { //計算四個種類分別有幾個cards
+      
+      switch(card.attributes['data-product-category'].nodeValue){
+        case 'BRIX - Mobile App':
+          
+          prodLength[0] ++;
+          break;
+        case 'BRIX - Desktop App':
+          prodLength[1]++;
+          break;
+        case 'BRIX - Multiple Users':
+          prodLength[2]++;
+          break;
+        case 'BRIX - Integrations':
+          prodLength[3]++;
+          break;
+
+        default:
+          console.log('failed to catch prodCat...');
+        }
+    });
+
+    const prodStart = [0, prodLength[0], prodLength[0] + prodLength[1], prodLength[0] + prodLength[1] + prodLength[2]];    
+    
+    pageButtons.forEach(pageButton => {
+      pageButton.addEventListener('click', function(e){
+        
+        switch(e.target.id){
+          
+          case 'page1':  //每一頁都contain 9個內容
+            
+            for(var i = 0; i < allProdCards.length; i++){
+              if(tabsBoolean[0]){
+                if((i >= prodStart[0] && i <= prodStart[0] + 8) && i < prodStart[1]){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }else if(tabsBoolean[1]){
+                if((i >= prodStart[1] && i <= prodStart[1] + 8) && i < prodStart[2]){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }else if(tabsBoolean[2]){
+                if((i >= prodStart[2] && i <= prodStart[2] + 8) && i < prodStart[3]){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }else{
+                if(i >= prodStart[3] && i <= prodStart[3] + 8){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }
+            }
+            break;
+
+          case 'page2':
+            for(var i = 0; i < allProdCards.length; i++){
+              if(tabsBoolean[0]){
+                if((i >= prodStart[0] + 9 && i <= prodStart[0] + 17) && i < prodStart[1]){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }else if(tabsBoolean[1]){
+                if((i >= prodStart[1] + 9 && i <= prodStart[1] + 17) && i < prodStart[2]){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }else if(tabsBoolean[2]){
+                if((i >= prodStart[2] + 9 && i <= prodStart[2] + 17) && i < prodStart[3]){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }else{
+                if(i >= prodStart[3] + 9 && i <= prodStart[3] + 17){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }
+            }
+            break;
+
+          case 'page3':  
+            for(var i = 0; i < allProdCards.length; i++){
+              if(tabsBoolean[0]){
+                if((i >= prodStart[0] + 18 && i <= prodStart[0] + 26) && i < prodStart[1]){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }else if(tabsBoolean[1]){
+                if((i >= prodStart[1] + 18 && i <= prodStart[1] + 26) && i < prodStart[2]){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }else if(tabsBoolean[2]){
+                if((i >= prodStart[2] + 18 && i <= prodStart[2] + 26) && i < prodStart[3]){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }else{
+                if(i >= prodStart[3] + 18 && i <= prodStart[3] + 26){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }
+            }
+            break;
+
+          case 'more':  
+            for(var i = 0; i < allProdCards.length; i++){
+              if(tabsBoolean[0]){
+                if(i >= prodStart[0] && i < prodStart[1]){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }else if(tabsBoolean[1]){
+                if(i >= prodStart[1] && i < prodStart[2]){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }else if(tabsBoolean[2]){
+                if(i >= prodStart[2] && i < prodStart[3]){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }else{
+                if(i >= prodStart[3]){
+                  allProdCards[i].style.display = 'block';
+                }else{
+                  allProdCards[i].style.display = 'none';
+                }
+              }
+            }
+
+            break;
+
+          default:
+            console.log('show product cards failed');
+          }
+      });
+    });
+    
+    pageButtons[0].click();
+
   </script>
 
   <script>
@@ -288,9 +478,8 @@
         aElement.style.display = 'block';
     });
 });
-
-
   </script>
+
 
 </body>
 </html>
