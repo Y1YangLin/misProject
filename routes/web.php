@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FaceCategoryController;
 use App\Http\Controllers\GoogleAuthController;
+use App\Http\Controllers\LikeyController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\SendMailController;
@@ -54,6 +55,9 @@ Route::post('/user/editUserProfile', [UsersController::class, 'editUserProfile']
 /* Products*/
 Route::get('/product', [ProductsController::class, 'show_Product_page']);
 Route::get('/product-detail/{name}/{id}', [ProductsController::class, 'show_Product_Detail']);
+
+/**Like */
+Route::post('/pressLike', [LikeyController::class, 'getUserLikeRequest']);
 
 /**FaceCategory */
 Route::get('/facetype', [FaceCategoryController::class, 'index']);

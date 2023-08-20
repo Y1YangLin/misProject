@@ -32,7 +32,7 @@ class Product extends Model
     }
 
     public function getProdWithFacecat($face_id){ //以膚質推薦產品
-        
+
     }
 
     public function getRandomProd(){ //隨機推薦產品
@@ -49,6 +49,16 @@ class Product extends Model
     }
 
     public function getProdWithPriceRange($begin, $end){ //以價格區間取得產品
+
+    }
+
+    public function setProdLikeAmount($id){
+
+        $data = DB::table('products')->where('id', $id)->first();
+        $curr_likes = $data->likeyAmount;
+
+        DB::table('products')->where('id', $id)->update(['likeyAmount' => $curr_likes + 1]);
+    
 
     }
 

@@ -222,6 +222,10 @@
           @endforeach
           <!-- 四個產品卡結束 -->
 
+          <form>
+            <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
+          </form>
+
         </div>
         <div class="div-block-3">
           <a href="#" id="page1" class="product_page_button w-button" data-page="1">1</a>
@@ -480,6 +484,44 @@
 });
   </script>
 
+  <!-- 點擊愛心 -->
+  <script>
+    const favoriteDivs = document.querySelectorAll(".favorite-button");
+    
+    favoriteDivs.forEach(favoriteDiv => {
+      favoriteDiv.addEventListener('click', function(e){
+        const parentElement = e.target.parentElement;
+        const href = parentElement.getElementsByTagName('a')[0].href;
+        const splits = href.split('/');
+        const prod_id = splits[5];
+        
+        // console.log($("input[name='_token']").val());
+        // console.log(parentElement.getElementsByTagName('a')[0].getAttribute('data-w-id'));
+        
+        fetch('/pressLike', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'url': '/pressLike',
+            'X-CSRF-Token': $("input[name='_token']").val()
+          },
+          body: JSON.stringify({
+            prod_id
+          })
+        })
+        .then(response => response.json())
+        .then(data =>{
+
+        })
+        .catch(error =>{
+
+        });
+
+      });
+    });
+    
+  </script>
 
 </body>
 </html>
