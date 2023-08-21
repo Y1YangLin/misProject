@@ -24,7 +24,7 @@ class LikeyController extends Controller
             $this->likeModel->collectUserLike(Auth::user()->id, $request->prod_id);
         }else{
             //沒反應
-            return redirect()->route('login');
+            return response()->json(['msg' => 'not login']);
         }
 
         return response()->json(['msg' => '成功接收產品id']);

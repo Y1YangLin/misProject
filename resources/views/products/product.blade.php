@@ -9,16 +9,16 @@
   <meta content="dialog box" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
-  <link href="{{ asset('product_assets/css/normalize.css') }}" rel="stylesheet" type="text/css">
-  <link href="{{ asset('product_assets/css/webflow.css') }}" rel="stylesheet" type="text/css">
-  <link href="{{ asset('product_assets/css/waves-library-site-e37884.webflow.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('assets/css/normalize.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('assets/css/webflow.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('assets/css/waves-library-site-e37884.webflow.css') }}" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">WebFont.load({  google: {    families: ["Oswald:200,300,400,500,600,700"]  }});</script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="{{ asset('product_assets/images/favicon.ico') }}" rel="shortcut icon" type="image/x-icon">
-  <link href="{{ asset('product_assets/images/webclip.png') }}" rel="apple-touch-icon">
+  <link href="{{ asset('assets/images/favicon.ico') }}" rel="shortcut icon" type="image/x-icon">
+  <link href="{{ asset('assets/images/webclip.png') }}" rel="apple-touch-icon">
 </head>
 <body>
 
@@ -196,7 +196,13 @@
           <!-- 推薦 -->
           @foreach ($products['recom'] as $recom)
           <div id="w-node-_474d1e66-e039-88c2-5ff8-f7af6d82ff4f-57444ce1" class="div-block-8 brix---product-card-wrapper-v1" data-product-category="BRIX - Integrations">
-             
+            <a data-w-id="dd7f5726-41d7-90ca-3be0-44c2186494f1" href="/product-detail/{{ $recom->name }}/{{ $recom->id }}" class="brix---product-card-wrapper-v1 w-inline-block">
+              <div class="brix---product-card-image-inside-card"><img srcset="{{ $recom->image_url }}, {{ $recom->image_url }}" src="{{ $recom->image_url }}" sizes="(max-width: 767px) 99vw, (max-width: 991px) 50vw, (max-width: 1439px) 33vw, (max-width: 1919px) 406.6974792480469px, 21vw" alt="糟了 圖片睡著了zzz" class="brix---product-card-image-2" width="409.5px" height="409.5">
+                <div class="brix---badge-wrapper-top-right">
+                  <div class="brix---badge-secondary-small-bold">{{ "$" . $recom->price }}</div>
+                </div>
+              </div>
+            </a>
             <div class="brix---product-card-content">
               <a data-w-id="664de3d5-a0d8-b4e3-93fc-45c01e33e96f" href="/product-detail/{{ $recom->name }}/{{ $recom->id }}" class="brix---copy w-inline-block">
                 <div class="brix---mg-bottom-16px">
@@ -237,17 +243,17 @@
       <div class="waves-divider-footer-1"></div>
       <div class="waves-bottom-footer-1">
         <div class="waves-bottom-right-footer-1">
-          <a href="#" class="w-inline-block"><img src="product_assets/images/dribbble.svg" loading="lazy" alt="" class="waves-icon-33"></a>
-          <a href="#" class="w-inline-block"><img src="product_assets/images/telegram.svg" loading="lazy" alt="" class="waves-icon-33"></a>
-          <a href="#" class="w-inline-block"><img src="product_assets/images/instagram.svg" loading="lazy" alt="" class="waves-icon-33"></a>
-          <a href="#" class="w-inline-block"><img src="product_assets/images/google-circle.svg" loading="lazy" alt="" class="waves-icon-33"></a>
-          <a href="#" class="w-inline-block"><img src="product_assets/images/youtube.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="assets/images/dribbble.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="assets/images/telegram.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="assets/images/instagram.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="assets/images/google-circle.svg" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="assets/images/youtube.svg" loading="lazy" alt="" class="waves-icon-33"></a>
         </div>
       </div>
     </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64c3f1a50a737c6a48e2cd14" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="product_assets/js/webflow.js" type="text/javascript"></script>
+  <script src="assets/js/webflow.js" type="text/javascript"></script>
 
   <script type="text/javascript">
     const tabLinks = document.querySelectorAll('.w-tab-link');

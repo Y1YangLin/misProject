@@ -62,6 +62,8 @@ Route::post('/pressLike', [LikeyController::class, 'getUserLikeRequest']);
 /**FaceCategory */
 Route::get('/facetype', [FaceCategoryController::class, 'index']);
 Route::get('/facetype/photo', [FaceCategoryController::class, 'photo']);
+Route::post('/facetype/analysis',[FaceCategoryController::class, 'analysis']);
+
 
 /**Google Socialite */
 Route::get('auth/google', [GoogleAuthController::class, 'redirect'])->name('google-auth');

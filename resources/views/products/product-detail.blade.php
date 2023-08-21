@@ -9,16 +9,16 @@
   <meta content="Product_detail" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
-  <link href="{{ asset('product_assets/css/normalize.css') }}" rel="stylesheet" type="text/css">
-  <link href="{{ asset('product_assets/css/webflow.css') }}" rel="stylesheet" type="text/css">
-  <link href="{{ asset('product_assets/css/waves-library-site-e37884.webflow.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('assets/css/normalize.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('assets/css/webflow.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('assets/css/waves-library-site-e37884.webflow.css') }}" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">WebFont.load({  google: {    families: ["Oswald:200,300,400,500,600,700"]  }});</script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="{{ asset('product_assets/images/favicon.ico') }}" rel="shortcut icon" type="image/x-icon">
-  <link href="{{ asset('product_assets/images/webclip.png') }}" rel="apple-touch-icon">
+  <link href="{{ asset('assets/images/favicon.ico') }}" rel="shortcut icon" type="image/x-icon">
+  <link href="{{ asset('assets/images/webclip.png') }}" rel="apple-touch-icon">
 </head>
 <body>
   
@@ -38,7 +38,7 @@
             </a>
             <div class="columns w-row">
               <div class="w-col w-col-4">
-                <a href="#" class="lightbox-link w-inline-block w-lightbox"><img srcset="{{ $data->image_url }}, {{ $data->image_url }}, {{ $data->image_url }}, {{ $data->image_url }}" id="picture" sizes="(max-width: 479px) 51vw, (max-width: 767px) 28vw, (max-width: 991px) 27vw, (max-width: 1439px) 13vw, (max-width: 1919px) 15vw, 16vw" src="product_assets/images/02-blog-images-elements-brix-templates.jpg" alt="Blog - Elements Webflow Library - BRIX Templates" class="brix---blog-card-image-featured">
+                <a href="#" class="lightbox-link w-inline-block w-lightbox"><img srcset="{{ $data->image_url }}, {{ $data->image_url }}, {{ $data->image_url }}, {{ $data->image_url }}" id="picture" sizes="(max-width: 479px) 51vw, (max-width: 767px) 28vw, (max-width: 991px) 27vw, (max-width: 1439px) 13vw, (max-width: 1919px) 15vw, 16vw" src="assets/images/02-blog-images-elements-brix-templates.jpg" alt="Blog - Elements Webflow Library - BRIX Templates" class="brix---blog-card-image-featured">
                   <script type="application/json" class="w-json">{
   "items": [
     {
@@ -47,7 +47,7 @@
       "fileName": "04-blog-images-elements-brix-templates.jpg",
       "fileSize": 124323,
       "height": 984,
-      "url": "product_assets/images/04-blog-images-elements-brix-templates.jpg",
+      "url": "{{ $data->image_url }}",
       "width": 1758,
       "type": "image"
     },
@@ -57,7 +57,7 @@
       "fileName": "05-blog-images-elements-brix-templates.jpg",
       "fileSize": 110473,
       "height": 984,
-      "url": "product_assets/images/05-blog-images-elements-brix-templates.jpg",
+      "url": "{{ $data->image_url }}",
       "width": 1758,
       "type": "image"
     },
@@ -67,7 +67,7 @@
       "fileName": "01-blog-images-elements-brix-templates.jpg",
       "fileSize": 116075,
       "height": 984,
-      "url": "product_assets/images/01-blog-images-elements-brix-templates.jpg",
+      "url": "{{ $data->image_url }}",
       "width": 1758,
       "type": "image"
     },
@@ -77,7 +77,7 @@
       "fileName": "05-blog-images-elements-brix-templates.jpg",
       "fileSize": 110473,
       "height": 984,
-      "url": "product_assets/images/05-blog-images-elements-brix-templates.jpg",
+      "url": "{{ $data->image_url }}",
       "width": 1758,
       "type": "image"
     }
@@ -147,22 +147,22 @@
         <div id="w-node-eb709af1-e72b-d2f2-2b51-512266f378f2-9be527bc" class="brix---categories-badges-wrapper">
           <div class="brix---categories-badges-item-wrapper">
             <a href="#" class="brix---badge-secondary-category-badges w-inline-block">
-              <div>All</div>
+              <div>Male</div>
             </a>
           </div>
           <div class="brix---categories-badges-item-wrapper">
             <a href="#" class="brix---badge-secondary-category-badges w-inline-block">
-              <div>Growth</div>
+              <div>Female</div>
             </a>
           </div>
           <div class="brix---categories-badges-item-wrapper">
             <a href="#" class="brix---badge-secondary-category-badges w-inline-block">
-              <div>Marketing</div>
+              <div>Kid</div>
             </a>
           </div>
           <div class="brix---categories-badges-item-wrapper">
             <a href="#" class="brix---badge-secondary-category-badges w-inline-block">
-              <div>Tech</div>
+              <div>Random Goods</div>
             </a>
           </div>
         </div>
@@ -171,7 +171,7 @@
         <div class="w-layout-grid brix---grid-3-columns-gap-row-72px">
           <a data-w-id="eb709af1-e72b-d2f2-2b51-512266f37905" href="#" class="brix---blog-card-wrapper w-inline-block">
             <div class="brix---mg-bottom-32px">
-              <div class="brix---blog-card-image-wrapper"><img srcset="{{ asset('product_assets/images/02-blog-images-elements-brix-templates-p-500.jpg 500w') }}, {{ asset('product_assets/images/02-blog-images-elements-brix-templates-p-800.jpg 800w') }}, {{ asset('product_assets/images/02-blog-images-elements-brix-templates-p-1080.jpg 1080w') }}, {{ asset('product_assets/images/02-blog-images-elements-brix-templates.jpg 1758w') }}" src="{{ asset('product_assets/images/02-blog-images-elements-brix-templates.jpg') }}" sizes="(max-width: 767px) 79vw, (max-width: 991px) 42vw, (max-width: 1439px) 294.6625061035156px, 31vw" alt="Blog - Elements Webflow Library - BRIX Templates" class="brix---blog-card-image"></div>
+              <div class="brix---blog-card-image-wrapper"><img srcset="{{ asset('assets/images/02-blog-images-elements-brix-templates-p-500.jpg 500w') }}, {{ asset('assets/images/02-blog-images-elements-brix-templates-p-800.jpg 800w') }}, {{ asset('assets/images/02-blog-images-elements-brix-templates-p-1080.jpg 1080w') }}, {{ asset('assets/images/02-blog-images-elements-brix-templates.jpg 1758w') }}" src="{{ asset('assets/images/02-blog-images-elements-brix-templates.jpg') }}" sizes="(max-width: 767px) 79vw, (max-width: 991px) 42vw, (max-width: 1439px) 294.6625061035156px, 31vw" alt="Blog - Elements Webflow Library - BRIX Templates" class="brix---blog-card-image"></div>
             </div>
             <div>
               <div class="brix---mg-bottom-24px-2">
@@ -191,7 +191,7 @@
           </a>
           <a data-w-id="eb709af1-e72b-d2f2-2b51-512266f37918" href="#" class="brix---blog-card-wrapper w-inline-block">
             <div class="brix---mg-bottom-32px">
-              <div class="brix---blog-card-image-wrapper"><img srcset="product_assets/images/02-blog-images-elements-brix-templates-p-500.jpg 500w, product_assets/images/02-blog-images-elements-brix-templates-p-800.jpg 800w, product_assets/images/02-blog-images-elements-brix-templates-p-1080.jpg 1080w, product_assets/images/02-blog-images-elements-brix-templates.jpg 1758w" src="product_assets/images/02-blog-images-elements-brix-templates.jpg" sizes="(max-width: 767px) 79vw, (max-width: 991px) 42vw, (max-width: 1439px) 294.6625061035156px, 31vw" alt="Blog - Elements Webflow Library - BRIX Templates" class="brix---blog-card-image"></div>
+              <div class="brix---blog-card-image-wrapper"><img srcset="{{ asset('assets/images/02-blog-images-elements-brix-templates-p-500.jpg 500w') }}, {{ asset('assets/images/02-blog-images-elements-brix-templates-p-800.jpg 800w') }}, {{ asset('assets/images/02-blog-images-elements-brix-templates-p-1080.jpg 1080w') }}, {{ asset('assets/images/02-blog-images-elements-brix-templates.jpg 1758w') }}" src="assets/images/02-blog-images-elements-brix-templates.jpg" sizes="(max-width: 767px) 79vw, (max-width: 991px) 42vw, (max-width: 1439px) 294.6625061035156px, 31vw" alt="Blog - Elements Webflow Library - BRIX Templates" class="brix---blog-card-image"></div>
             </div>
             <div>
               <div class="brix---mg-bottom-24px-2">
@@ -211,7 +211,7 @@
           </a>
           <a data-w-id="eb709af1-e72b-d2f2-2b51-512266f3792b" href="#" class="brix---blog-card-wrapper w-inline-block">
             <div class="brix---mg-bottom-32px">
-              <div class="brix---blog-card-image-wrapper"><img srcset="product_assets/images/03-blog-images-elements-brix-templates-p-500.jpg 500w, product_assets/images/03-blog-images-elements-brix-templates-p-800.jpg 800w, product_assets/images/03-blog-images-elements-brix-templates-p-1080.jpg 1080w, product_assets/images/03-blog-images-elements-brix-templates.jpg 1758w" src="product_assets/images/03-blog-images-elements-brix-templates.jpg" sizes="(max-width: 767px) 79vw, (max-width: 991px) 42vw, (max-width: 1439px) 294.6750183105469px, 31vw" alt="Blog - Elements Webflow Library - BRIX Templates" class="brix---blog-card-image"></div>
+              <div class="brix---blog-card-image-wrapper"><img srcset="{{ asset('assets/images/03-blog-images-elements-brix-templates-p-500.jpg 500w') }}, {{ asset('assets/images/03-blog-images-elements-brix-templates-p-800.jpg 800w') }}, {{ asset('assets/images/03-blog-images-elements-brix-templates-p-1080.jpg 1080w') }}, {{ asset('assets/images/03-blog-images-elements-brix-templates.jpg 1758w') }}" src="{{ asset('assets/images/03-blog-images-elements-brix-templates.jpg') }}" sizes="(max-width: 767px) 79vw, (max-width: 991px) 42vw, (max-width: 1439px) 294.6750183105469px, 31vw" alt="Blog - Elements Webflow Library - BRIX Templates" class="brix---blog-card-image"></div>
             </div>
             <div>
               <div class="brix---mg-bottom-24px-2">
@@ -231,7 +231,7 @@
           </a>
           <a data-w-id="eb709af1-e72b-d2f2-2b51-512266f3793e" href="#" class="brix---blog-card-wrapper w-inline-block">
             <div class="brix---mg-bottom-32px">
-              <div class="brix---blog-card-image-wrapper"><img srcset="product_assets/images/04-blog-images-elements-brix-templates-p-500.jpg 500w, product_assets/images/04-blog-images-elements-brix-templates-p-800.jpg 800w, product_assets/images/04-blog-images-elements-brix-templates-p-1080.jpg 1080w, product_assets/images/04-blog-images-elements-brix-templates.jpg 1758w" src="product_assets/images/04-blog-images-elements-brix-templates.jpg" sizes="(max-width: 767px) 79vw, (max-width: 991px) 42vw, (max-width: 1439px) 294.6625061035156px, 31vw" alt="Blog - Elements Webflow Library - BRIX Templates" class="brix---blog-card-image"></div>
+              <div class="brix---blog-card-image-wrapper"><img srcset="{{ asset('assets/images/04-blog-images-elements-brix-templates-p-500.jpg 500w') }}, {{ asset('assets/images/04-blog-images-elements-brix-templates-p-800.jpg 800w') }}, {{ asset('assets/images/04-blog-images-elements-brix-templates-p-1080.jpg 1080w') }}, {{ asset('assets/images/04-blog-images-elements-brix-templates.jpg 1758w') }}" src="{{ asset('assets/images/04-blog-images-elements-brix-templates.jpg') }}" sizes="(max-width: 767px) 79vw, (max-width: 991px) 42vw, (max-width: 1439px) 294.6625061035156px, 31vw" alt="Blog - Elements Webflow Library - BRIX Templates" class="brix---blog-card-image"></div>
             </div>
             <div>
               <div class="brix---mg-bottom-24px-2">
@@ -251,7 +251,7 @@
           </a>
           <a data-w-id="eb709af1-e72b-d2f2-2b51-512266f37951" href="#" class="brix---blog-card-wrapper w-inline-block">
             <div class="brix---mg-bottom-32px">
-              <div class="brix---blog-card-image-wrapper"><img srcset="product_assets/images/05-blog-images-elements-brix-templates-p-500.jpg 500w, product_assets/images/05-blog-images-elements-brix-templates-p-800.jpg 800w, product_assets/images/05-blog-images-elements-brix-templates-p-1080.jpg 1080w, product_assets/images/05-blog-images-elements-brix-templates.jpg 1758w" src="product_assets/images/05-blog-images-elements-brix-templates.jpg" sizes="(max-width: 767px) 79vw, (max-width: 991px) 42vw, (max-width: 1439px) 294.6625061035156px, 31vw" alt="Blog - Elements Webflow Library - BRIX Templates" class="brix---blog-card-image"></div>
+              <div class="brix---blog-card-image-wrapper"><img srcset="{{ asset('assets/images/05-blog-images-elements-brix-templates-p-500.jpg 500w') }}, {{ asset('assets/images/05-blog-images-elements-brix-templates-p-800.jpg 800w') }}, {{ asset('assets/images/05-blog-images-elements-brix-templates-p-1080.jpg 1080w') }}, {{ asset('assets/images/05-blog-images-elements-brix-templates.jpg 1758w') }}" src="{{ asset('assets/images/05-blog-images-elements-brix-templates.jpg') }}" sizes="(max-width: 767px) 79vw, (max-width: 991px) 42vw, (max-width: 1439px) 294.6625061035156px, 31vw" alt="Blog - Elements Webflow Library - BRIX Templates" class="brix---blog-card-image"></div>
             </div>
             <div>
               <div class="brix---mg-bottom-24px-2">
@@ -271,7 +271,7 @@
           </a>
           <a data-w-id="eb709af1-e72b-d2f2-2b51-512266f37964" href="#" class="brix---blog-card-wrapper w-inline-block">
             <div class="brix---mg-bottom-32px">
-              <div class="brix---blog-card-image-wrapper"><img srcset="product_assets/images/06-blog-images-elements-brix-templates-p-500.jpg 500w, product_assets/images/06-blog-images-elements-brix-templates-p-800.jpg 800w, product_assets/images/06-blog-images-elements-brix-templates-p-1080.jpg 1080w, product_assets/images/06-blog-images-elements-brix-templates-p-1600.jpg 1600w, product_assets/images/06-blog-images-elements-brix-templates.jpg 1758w" src="product_assets/images/06-blog-images-elements-brix-templates.jpg" sizes="(max-width: 767px) 79vw, (max-width: 991px) 42vw, (max-width: 1439px) 294.6750183105469px, 31vw" alt="Blog - Elements Webflow Library - BRIX Templates" class="brix---blog-card-image"></div>
+              <div class="brix---blog-card-image-wrapper"><img srcset="{{ asset('assets/images/06-blog-images-elements-brix-templates-p-500.jpg 500w') }}, {{ asset('assets/images/06-blog-images-elements-brix-templates-p-800.jpg 800w') }}, {{ asset('assets/images/06-blog-images-elements-brix-templates-p-1080.jpg 1080w') }}, {{ asset('assets/images/06-blog-images-elements-brix-templates-p-1600.jpg 1600w') }}, {{ asset('assets/images/06-blog-images-elements-brix-templates.jpg 1758w') }}" src="{{ asset('assets/images/06-blog-images-elements-brix-templates.jpg') }}" sizes="(max-width: 767px) 79vw, (max-width: 991px) 42vw, (max-width: 1439px) 294.6750183105469px, 31vw" alt="Blog - Elements Webflow Library - BRIX Templates" class="brix---blog-card-image"></div>
             </div>
             <div>
               <div class="brix---mg-bottom-24px-2">
@@ -300,16 +300,16 @@
       <div class="waves-divider-footer-1"></div>
       <div class="waves-bottom-footer-1">
         <div class="waves-bottom-right-footer-1">
-          <a href="#" class="w-inline-block"><img src="{{ asset('product_assets/images/dribbble.svg') }}" loading="lazy" alt="" class="waves-icon-33"></a>
-          <a href="#" class="w-inline-block"><img src="{{ asset('product_assets/images/telegram.svg') }}" loading="lazy" alt="" class="waves-icon-33"></a>
-          <a href="#" class="w-inline-block"><img src="{{ asset('product_assets/images/instagram.svg') }}" loading="lazy" alt="" class="waves-icon-33"></a>
-          <a href="#" class="w-inline-block"><img src="{{ asset('product_assets/images/google-circle.svg') }}" loading="lazy" alt="" class="waves-icon-33"></a>
-          <a href="#" class="w-inline-block"><img src="{{ asset('product_assets/images/youtube.svg') }}" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="{{ asset('assets/images/dribbble.svg') }}" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="{{ asset('assets/images/telegram.svg') }}" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="{{ asset('assets/images/instagram.svg') }}" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="{{ asset('assets/images/google-circle.svg') }}" loading="lazy" alt="" class="waves-icon-33"></a>
+          <a href="#" class="w-inline-block"><img src="{{ asset('assets/images/youtube.svg') }}" loading="lazy" alt="" class="waves-icon-33"></a>
         </div>
       </div>
     </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64c3f1a50a737c6a48e2cd14" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="{{ asset('product_assets/js/webflow.js') }}" type="text/javascript"></script>
+  <script src="{{ asset('assets/js/webflow.js') }}" type="text/javascript"></script>
 </body>
 </html>

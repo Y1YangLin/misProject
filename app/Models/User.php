@@ -48,10 +48,14 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    protected function findUser($email){
+    public function findUser($email){
         $user = DB::table('users')->where('email', $email)->first();
+        
+        if($user){
+            return true;
+        }
 
-        return $user;
+        return false; 
     }
 
 }

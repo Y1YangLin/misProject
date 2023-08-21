@@ -5,25 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>會員中心</title>
-    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/bootstrap/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/fonts/fontawesome-all.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/fonts/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/fonts/fontawesome5-overrides.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/css/aos.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/css/Account-setting-or-edit-profile.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/css/NZTextbox---Date.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('membercenter_assets/css/styles.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/bootstrap/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/bootstrap/fonts/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/bootstrap/fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/bootstrap/fonts/fontawesome5-overrides.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/bootstrap/css/aos.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/bootstrap/css/Account-setting-or-edit-profile.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/bootstrap/css/NZTextbox---Date.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/bootstrap/css/styles.css') }}">
     
-    <link href="{{ asset('index_assets/css/normalize.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('index_assets/css/webflow.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('index_assets/css/waves-library-site-e37884.webflow.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('assets/css/normalize.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('assets/css/webflow.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('assets/css/waves-library-site-e37884.webflow.css') }}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <script type="text/javascript">WebFont.load({  google: {    families: ["Oswald:200,300,400,500,600,700"]  }});</script>
     <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-    <link href="index_assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="index_assets/images/webclip.png" rel="apple-touch-icon">
+    <link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="assets/images/webclip.png" rel="apple-touch-icon">
 
 </head>
 
@@ -225,7 +225,7 @@
                                         <ul class="nav">
                                             <li class="nav-item" href="#">
                                                 <div class="row d-flex flex-column">
-                                                    <div class="col btn_collection-1"><a href="#"><img class="img-thumbnail object-fit-fill" src="{{ URL::asset('membercenter_assets/img/swiftui.png ') }}"></a></div>
+                                                    <div class="col btn_collection-1"><a href="#"><img class="img-thumbnail object-fit-fill" src="{{ URL::asset('assets/bootstrap/img/swiftui.png ') }}"></a></div>
                                                     <div class="col">
                                                         <hr>
                                                     </div>
@@ -363,13 +363,13 @@
         </div>
     </div>
     
-    <script src="{{ URL::asset('membercenter_assets/bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="{{ URL::asset('membercenter_assets/js/aos.min.js') }}"></script>
-    <script src="{{ URL::asset('membercenter_assets/js/bs-init.js') }}"></script>
+    <script src="{{ URL::asset('assets/bootstrap/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ URL::asset('assets/bootstrap/js/aos.min.js') }}"></script>
+    <script src="{{ URL::asset('assets/bootstrap/js/bs-init.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4&quot; crossorigin=&quot;anonymous"></script>
-    <script src="{{ URL::asset('membercenter_assets/js/Offcanvasjustifiy.js') }}"></script>
-    <script src="{{ URL::asset('membercenter_assets/js/page.js') }}"></script>
-    <script src="{{ URL::asset('membercenter_assets//js/Toasts.js') }}"></script>
+    <script src="{{ URL::asset('assets/bootstrap/js/Offcanvasjustifiy.js') }}"></script>
+    <script src="{{ URL::asset('assets/bootstrap/js/page.js') }}"></script>
+    <script src="{{ URL::asset('assets/bootstrap/js/Toasts.js') }}"></script>
     <script>
 
 
@@ -396,7 +396,7 @@
 
     </script>
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64c3f1a50a737c6a48e2cd14" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="index_assets/js/webflow.js" type="text/javascript"></script>
+    <script src="assets/js/webflow.js" type="text/javascript"></script>
 </body>
 
 
