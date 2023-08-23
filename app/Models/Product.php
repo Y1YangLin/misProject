@@ -52,14 +52,24 @@ class Product extends Model
 
     }
 
-    public function setProdLikeAmount($id){
+    public function addLikeAmount($id){
 
         $data = DB::table('products')->where('id', $id)->first();
         $curr_likes = $data->likeyAmount;
-
-        DB::table('products')->where('id', $id)->update(['likeyAmount' => $curr_likes + 1]);
+        $curr_likes += 1;
+        DB::table('products')->where('id', $id)->update(['likeyAmount' => $curr_likes]);
     
+    }
 
+    public function substractLikeAmount($id){
+        $data = DB::table('products')->where('id', $id)->first();
+        $curr_likes = $data->likeyAmount;
+        if($curr_likes - 1 > 0){
+            DB::table('products')->where('id', $id)->update(['likeyAmount' => $curr_likes - 1]);
+        }else{
+            DB::table('products')->where('id', $id)->update(['likeyAmount' => 0]);
+        }
+        
     }
 
 }

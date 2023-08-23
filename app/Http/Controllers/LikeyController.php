@@ -18,16 +18,26 @@ class LikeyController extends Controller
         $this->productModel = new Product();
         $this->likeModel = new Likey();
 
+        
         //檢查是否有先登入才紀錄按讚
         if(Auth::check()){
-            $this->productModel->setProdLikeAmount($request->prod_id);
+            
             $this->likeModel->collectUserLike(Auth::user()->id, $request->prod_id);
+
+            if($this->likeModel->checkUserLikeHistory(Auth::user()->id, $request->prod_id)){
+                // dd('');
+                $this->productModel->addLikeAmount($request->prod_id);
+                
+            }else{
+                $this->productModel->substractLikeAmount($request->prod_id);
+            }
+            
         }else{
-            //沒反應
+        //沒有login
             return response()->json(['msg' => 'not login']);
         }
 
-        return response()->json(['msg' => '成功接收產品id']);
+        return response()->json(['msg' => 'success get prod id']);
     }
 
 

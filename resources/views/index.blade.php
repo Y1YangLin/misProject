@@ -292,7 +292,7 @@
     <a data-w-id="268cc64d-b646-1a65-94f1-e5ab1ed228a6" href="#" class="button-2 w-button">support_agent</a>
     <div data-w-id="3044bb03-ff94-e75a-70c3-81027bbea985" class="w-layout-blockcontainer container-3 w-container" style="display:none;">
       <div id="w-node-d2e5dcd5-352c-a2ee-2dd0-eebbc665976e-48e2cd1a">
-        <div class="dialogy_toplabel">低能客服宇杰寶</div>
+        <div class="dialogy_toplabel">AI客服宇杰寶</div>
       </div>
       <div class="waves-form-block-contact-2 w-form">
         <form id="wf-form-Input-box" name="wf-form-Input-box" data-name="Input box" method="get" class="waves---form-contact-1" data-wf-page-id="64c3f1a50a737c6a48e2cd1a" data-wf-element-id="d2e5dcd5-352c-a2ee-2dd0-eebbc665976c">
@@ -302,14 +302,28 @@
                 <div class="dialogy_top_head">support_agent</div>
               </div>
               <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798d-48e2cd1a" class="w-layout-cell gpt_content">
-                <div class="text-block-5">This is some text inside of a div blockadasddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaa.</div>
+                <div class="text-block-5">你好 ! 我是您的資生堂人工智慧產品顧問<br>請問能夠幫助您什麼呢 ?</div>
               </div>
+              
             </div>
             <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd691-48e2cd1a" class="w-layout-layout customer wf-layout-layout">
               <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd692-48e2cd1a" class="w-layout-cell"></div>
               <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd695-48e2cd1a" class="w-layout-cell customer_content">
-                <div class="text-block-5">This is some text inside of a div blockadasddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaa.</div>
+                <div class="text-block-5">請推薦我適合油性膚質的產品謝謝</div>
               </div>
+            </div>
+            <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798b-48e2cd1a" class="w-layout-layout gpt wf-layout-layout">
+              <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798c-48e2cd1a" class="w-layout-cell">
+                <div class="dialogy_top_head">support_agent</div>
+              </div>
+              <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798d-48e2cd1a" class="w-layout-cell gpt_content">
+                <div class="text-block-5">沒問題👌 通常膚質為油肌的女性應選擇最好吸收、簡單的植萃成分
+                  <br>這款<b>小紅亮眼精華組</b>好吸收而且使用起來無負擔，推薦給您。
+                  
+                </div>
+                <img src="https://www.global-shiseido.com.tw/dw/image/v2/BCSK_PRD/on/demandware.static/-/Sites-master-catalog-shiseido-tw/zh_TW/dw76bf9c0a/images/BOM/SB000000624.jpg?sw=305&sh=305&sm=fit, https://www.global-shiseido.com.tw/dw/image/v2/BCSK_PRD/on/demandware.static/-/Sites-master-catalog-shiseido-tw/zh_TW/dw76bf9c0a/images/BOM/SB000000624.jpg?sw=305&sh=305&sm=fit, https://www.global-shiseido.com.tw/dw/image/v2/BCSK_PRD/on/demandware.static/-/Sites-master-catalog-shiseido-tw/zh_TW/dw76bf9c0a/images/BOM/SB000000624.jpg?sw=305&sh=305&sm=fit, https://www.global-shiseido.com.tw/dw/image/v2/BCSK_PRD/on/demandware.static/-/Sites-master-catalog-shiseido-tw/zh_TW/dw76bf9c0a/images/BOM/SB000000624.jpg?sw=305&sh=305&sm=fit" height="30%">
+              </div>
+              
             </div>
           </div>
         </form>
