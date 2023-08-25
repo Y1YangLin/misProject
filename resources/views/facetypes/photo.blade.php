@@ -87,7 +87,12 @@
         確認
       </button>
     </div>
+    <form method="POST" action="photo">
+      <!-- @csrf -->
 
+      <!-- Equivalent to... -->
+      <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+    </form>
 
     
 
@@ -154,6 +159,10 @@
           // 發送 POST 請求
           var xhr = new XMLHttpRequest();
           xhr.open('POST', 'analysis', true);
+          // CSRF
+          xhr.setRequestHeader("X-CSRF-Token", $("input[name='_token']").val());
+
+
           xhr.onload = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
               // 請求成功的處理代碼

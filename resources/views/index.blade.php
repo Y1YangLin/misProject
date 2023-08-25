@@ -144,7 +144,7 @@
                   <p class="text-size-medium">我們將依據您的膚質推薦適合您的產品</p>
                 </div>
                 <div id="w-node-_4b7b9f17-5b56-a7e7-a77b-cf9302fb3d30-48e2cd1a" class="w-layout-cell cell">
-                  <a href="product.html" class="button is-secondary w-button">View all</a>
+                  <a href="product" class="button is-secondary w-button">View all</a>
                 </div>
               </div>
             </div>
@@ -288,29 +288,31 @@
       </div>
     </div>
   </div>
-  <div class="div-block-2 w-clearfix">
-    <a data-w-id="268cc64d-b646-1a65-94f1-e5ab1ed228a6" href="#" class="button-2 w-button">support_agent</a>
-    <div data-w-id="3044bb03-ff94-e75a-70c3-81027bbea985" class="w-layout-blockcontainer container-3 w-container" style="display:none;">
+  <div id="assistant-frame" class="div-block-2 w-clearfix">
+    <a data-w-id="268cc64d-b646-1a65-94f1-e5ab1ed228a6" class="button-2 w-button">support_agent</a>
+    <div id="assistantButton" data-w-id="3044bb03-ff94-e75a-70c3-81027bbea985" class="w-layout-blockcontainer container-3 w-container" style="display:none;min-width: 350px;">
       <div id="w-node-d2e5dcd5-352c-a2ee-2dd0-eebbc665976e-48e2cd1a">
-        <div class="dialogy_toplabel">低能客服宇杰寶</div>
+        <div class="dialogy_toplabel">男洞客服江鴻麟</div>
       </div>
-      <div class="waves-form-block-contact-2 w-form">
+      <div id="scroll-frame" class="waves-form-block-contact-2 w-form" style="height:450px;">
         <form id="wf-form-Input-box" name="wf-form-Input-box" data-name="Input box" method="get" class="waves---form-contact-1" data-wf-page-id="64c3f1a50a737c6a48e2cd1a" data-wf-element-id="d2e5dcd5-352c-a2ee-2dd0-eebbc665976c">
-          <div class="waves---input-wrap">
-            <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798b-48e2cd1a" class="w-layout-layout gpt wf-layout-layout">
+          <div id="talk-frame" class="waves---input-wrap" style="min-height: 450px;">
+<!-- padding:上右下左 -->
+            <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798b-48e2cd1a" class="w-layout-layout gpt wf-layout-layout" style="padding-top:0px;">
               <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798c-48e2cd1a" class="w-layout-cell">
                 <div class="dialogy_top_head">support_agent</div>
               </div>
               <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798d-48e2cd1a" class="w-layout-cell gpt_content">
-                <div class="text-block-5">This is some text inside of a div blockadasddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaa.</div>
+                <div class="text-block-5">這邊是你的個人小護士你可以盡情發問</div>
               </div>
             </div>
-            <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd691-48e2cd1a" class="w-layout-layout customer wf-layout-layout">
+            <!-- <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd691-48e2cd1a" class="w-layout-layout customer wf-layout-layout" style="padding-bottom:0px;">
               <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd692-48e2cd1a" class="w-layout-cell"></div>
               <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd695-48e2cd1a" class="w-layout-cell customer_content">
                 <div class="text-block-5">This is some text inside of a div blockadasddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaa.</div>
               </div>
-            </div>
+            </div> -->
+            <!--  -->
           </div>
         </form>
         <div class="waves-success-mesaage-2 w-form-done"></div>
@@ -319,26 +321,138 @@
         </div>
       </div>
       <div class="form-block w-form">
-        <form id="wf-form-" name="wf-form-" data-name="" method="post" class="form" data-wf-page-id="64c3f1a50a737c6a48e2cd1a" data-wf-element-id="7dc99aa3-b61c-1053-908b-49c919f25f3a">
+        <form id="wf-form-Input-Form" name="wf-form-Input-Form" data-name="Input Form" method="get" class="form" data-wf-page-id="64c3f1a50a737c6a48e2cd1a" data-wf-element-id="7dc99aa3-b61c-1053-908b-49c919f25f3a">
           <div id="w-node-be686127-321d-17eb-b2ec-2d3e7d8a0880-48e2cd1a" class="w-layout-layout quick-stack-4 wf-layout-layout">
-            <div id="w-node-be686127-321d-17eb-b2ec-2d3e7d8a0881-48e2cd1a" class="w-layout-cell cell-4"><input type="text" class="text-field w-input" autofocus="true" maxlength="256" name="field" data-name="Field" placeholder="請告訴我您的問題" id="field" required=""></div>
-            <div id="w-node-be686127-321d-17eb-b2ec-2d3e7d8a0882-48e2cd1a" class="w-layout-cell cell-5">
-              <a href="#" class="link-block-2 w-inline-block">
-                <div class="div-block-9">
-                  <div class="text-block-10">send</div>
-                </div>
-              </a>
-            </div>
+            <div id="w-node-be686127-321d-17eb-b2ec-2d3e7d8a0881-48e2cd1a" class="w-layout-cell cell-4"><input id="problem" autocomplete="off" style="border: 1px solid #ccc;" type="text" class="text-field w-input" autofocus="true" maxlength="256" name="field" data-name="Field" placeholder="請告訴我您的問題" id="field"></div>
+            <div id="w-node-be686127-321d-17eb-b2ec-2d3e7d8a0882-48e2cd1a" class="w-layout-cell cell-5"><input id="insertButton" type="submit" value="send" data-wait="Please wait..." class="submit-button w-button"></div>
           </div>
         </form>
-        <div class="w-form-done"></div>
+        <!-- <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
         <div class="w-form-fail">
           <div>Oops! Something went wrong while submitting the form.</div>
-        </div>
+        </div> -->
+        <form method="POST" action="/question">
+            <!-- @csrf -->
+
+            <!-- Equivalent to... -->
+            <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+        </form>
       </div>
     </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64c3f1a50a737c6a48e2cd14" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="assets/js/webflow.js" type="text/javascript"></script>
+  
+
+  
+  <script>
+    // 點空白處關閉聊天視窗
+    document.addEventListener('click', (event) => {
+        if (!document.getElementById('assistant-frame').contains(event.target)) {
+          document.getElementById('assistantButton').style.display = 'none';
+        }
+    });
+  </script>  
+  
+  <script>
+    const conversationElement = document.getElementById('scroll-frame');
+    const problem = document.getElementById('problem');
+    const insertButton = document.getElementById('insertButton');
+
+    insertButton.addEventListener('click', () => {
+      if(problem.value){
+        var nurse = "RRRRRRRRRRRRR";
+        var patient = problem.value;
+
+        problem.value = '';
+
+        const patient_html = `
+          <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd691-48e2cd1a" class="w-layout-layout customer wf-layout-layout" style="padding-bottom:0px;">
+            <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd692-48e2cd1a" class="w-layout-cell"></div>
+            <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd695-48e2cd1a" class="w-layout-cell customer_content">
+              <div class="text-block-5">`+patient+`</div>
+            </div>
+          </div>
+        `;
+        document.getElementById('talk-frame').insertAdjacentHTML('beforeend', patient_html);
+        conversationElement.scrollTop = conversationElement.scrollHeight;
+
+        // loading畫面
+
+        loading_html=`
+            <div id="loading" class="w-layout-layout gpt wf-layout-layout" style="padding-top:0px;grid-template-rows: auto;grid-template-columns: .25fr minmax(195px, 2.25fr);">
+              <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798c-48e2cd1a" class="w-layout-cell">
+                <div class="dialogy_top_head">support_agent</div>
+              </div>
+              <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798d-48e2cd1a" class="w-layout-cell gpt_content">
+                <div id="loading-text" class="text-block-5">.</div>
+              </div>
+            </div>`
+        document.getElementById('talk-frame').insertAdjacentHTML('beforeend', loading_html);
+        
+        let counter = 1;
+        const text = document.getElementById('loading-text');
+        const timer = setInterval(() => {
+            switch(counter%3){
+              case 0:
+                text.innerHTML = '.';
+                break;
+              case 1:
+                text.innerHTML = '..';
+                break;
+              case 2:
+                text.innerHTML = '...';
+                break;  
+            }
+            counter++;
+        }, 1000); // 3000 毫秒（3 秒）
+        
+        // ajax----------
+        var formData = new FormData();
+        formData.append('question', patient);
+        
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'question', true);
+        // CSRF
+        xhr.setRequestHeader("X-CSRF-Token", $("input[name='_token']").val());
+
+        xhr.onload = function() { 
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // loading畫面
+            // document.getElementById('loading').style.display ='none';
+            document.getElementById('talk-frame').removeChild(document.getElementById('loading'));
+            // clear timer
+            clearInterval(timer);
+            // 請求成功的處理代碼
+            console.log(xhr.responseText);
+            nurse = xhr.responseText;
+            const nurse_html = `
+              <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798b-48e2cd1a" class="w-layout-layout gpt wf-layout-layout" style="padding-top:0px;">
+                <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798c-48e2cd1a" class="w-layout-cell">
+                  <div class="dialogy_top_head">support_agent</div>
+                </div>
+                <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798d-48e2cd1a" class="w-layout-cell gpt_content">
+                  <div class="text-block-5">`+nurse+`</div>
+                </div>
+              </div>
+            `;
+            document.getElementById('talk-frame').insertAdjacentHTML('beforeend', nurse_html);
+            conversationElement.scrollTop = conversationElement.scrollHeight;
+            // document.getElementById("photo-alert").style.display ='';
+            // document.getElementById("photo-alert").innerHTML=xhr.responseText;
+          }else{
+            console.log("try again");
+            // document.getElementById("photo-alert").style.display ='';
+            // document.getElementById("photo-alert").innerHTML="try again";
+          }
+          // document.getElementById('loading-overlay').style.display ='none';
+        };
+        xhr.send(formData);
+
+      }
+    });
+</script>
 </body>
 </html>
