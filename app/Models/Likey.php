@@ -18,9 +18,6 @@ class Likey extends Model
             'product_id' => $prod_id,
             'like_time' => Carbon::now()->toDateTimeString()
         ]);
-
-        
-
     }
 
     public function checkUserLikeHistory($u_id, $prod_id){
@@ -56,6 +53,19 @@ class Likey extends Model
         }
     }
 
-    
+    public function getUserLikeIds($u_id){
+        $data = DB::table('likeys')->where('user_id', $u_id)->pluck('product_id')->first();
+
+        
+        
+        return $data;
+    }
+
+    public function getlikedProds($u_id){
+        $data = DB::table('likeys')->where('user_id', $u_id)->get();
+
+
+        return $data;
+    }
 
 }

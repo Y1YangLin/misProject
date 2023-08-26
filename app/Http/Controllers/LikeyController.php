@@ -14,7 +14,10 @@ class LikeyController extends Controller
     protected $userModel;
     protected $likeModel;
 
+
     public function getUserLikeRequest(Request $request){
+        /**處理使用者按讚或者取消按讚 */
+
         $this->productModel = new Product();
         $this->likeModel = new Likey();
 
@@ -30,6 +33,8 @@ class LikeyController extends Controller
                 
             }else{
                 $this->productModel->substractLikeAmount($request->prod_id);
+
+                return response()->json(['msg' => 'successfully unlike items']);
             }
             
         }else{
@@ -37,8 +42,23 @@ class LikeyController extends Controller
             return response()->json(['msg' => 'not login']);
         }
 
-        return response()->json(['msg' => 'success get prod id']);
+        return response()->json(['msg' => 'successfully like items']);
     }
 
+    public function get_ratings(){
+        $this->likeModel = new Likey();
+
+        if(Auth::check()){
+            $data = $this->likeModel->getlikedProds(Auth::user()->id);
+
+            dd($data);
+
+
+        }else{
+            dd('test');
+        }
+
+        return response()->json([]);
+    }
 
 }

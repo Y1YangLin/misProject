@@ -222,6 +222,7 @@
           @endforeach
           <!-- 四個產品卡結束 -->
 
+          <!-- CSRF TOKEN -->
           <form>
             <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
           </form>
@@ -512,7 +513,7 @@
         })
         .then(response => response.json())
         .then(data =>{
-
+          
         })
         .catch(error =>{
 
@@ -521,6 +522,47 @@
       });
     });
     
+  </script>
+
+  
+  <script>
+    var isAuthenticated = {{ Auth::check()?'true':'false'}};
+    
+    var user_id = {{Auth::user()->id}};
+    
+  </script>
+
+  <script>
+    const favoriteAElments = document.querySelectorAll('.brix---product-card-wrapper-v1.w-inline-block');
+    const favoriteIds = [];
+    let href, href_split, id;
+    // console.log(favoriteAElments[0].href);
+    favoriteAElments.forEach(favoriteAElment =>{
+      href = favoriteAElment.href;
+      href_split = href.split('/');
+      id = href_split[5];
+      favoriteIds.push(id);
+
+    });
+
+    fetch('/get_ratings', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'url': '/get_ratings',
+          },
+          
+        })
+        .then(response => response.json())
+        .then(data =>{
+          console.log(data);
+        })
+        .catch(error =>{
+          console.log(error);
+        });
+    
+
   </script>
 
 </body>

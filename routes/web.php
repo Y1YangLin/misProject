@@ -58,6 +58,7 @@ Route::get('/product-detail/{name}/{id}', [ProductsController::class, 'show_Prod
 
 /**Like */
 Route::post('/pressLike', [LikeyController::class, 'getUserLikeRequest']);
+Route::get('/get_ratings', [LikeyController::class, 'get_ratings']);
 
 /**FaceCategory */
 Route::get('/facetype', [FaceCategoryController::class, 'index']);

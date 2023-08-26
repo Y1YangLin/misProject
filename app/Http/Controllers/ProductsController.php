@@ -13,7 +13,7 @@ class ProductsController extends Controller
 
     public function show_Product_page(){
         $this->productModel = new Product();
-
+        // dd($this->productModel->getSelectProd(187));
         $data = [
             'male' => $this->productModel->getRandomProdWithAmount(30),
             'female' => $this->productModel->getRandomProdWithAmount(30),

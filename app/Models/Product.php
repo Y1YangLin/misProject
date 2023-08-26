@@ -20,6 +20,7 @@ class Product extends Model
     public function getSelectProd($id){
         $data = DB::table('products')->where('id', $id)->first();
 
+
         return $data;
     }
 
