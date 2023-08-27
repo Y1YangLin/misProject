@@ -533,14 +533,6 @@
     
   </script>
 
-  
-  <script>
-    var isAuthenticated = {{ Auth::check()?'true':'false'}};
-    
-    var user_id = {{Auth::user()->id}};
-    
-  </script>
-
   <script>
     const prodDivs = document.querySelectorAll('.div-block-8.brix---product-card-wrapper-v1');
     let href, href_split, id;

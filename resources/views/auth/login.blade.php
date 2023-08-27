@@ -26,7 +26,7 @@
   @endsection
   
   <div class="waves---section-medium-3">
-    <div class="waves-master-contact-1">
+    <div class="waves-master-contact-1" style="padding-top: 150px">
       <div class="waves---center-heading">
         <h1 class="waves---heading-2-no-margins-2">Welcome!</h1>
         <div class="waves---paragraph-big-2">Welcome to YOFU, here is the log in page.</div>

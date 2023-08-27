@@ -18,7 +18,7 @@ class PagesController extends Controller
     }
 
     public function question(){
-        $openai_api_key="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";
+        $openai_api_key="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";
         $open_ai = new OpenAi($openai_api_key);
 
         $question=$_POST["question"];
@@ -78,6 +78,7 @@ class PagesController extends Controller
         // decode response
         $d = json_decode($chat);
         // Get Content
+        // dd($d);
         echo($d->choices[0]->message->content);
 
         // echo $question;
