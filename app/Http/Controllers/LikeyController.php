@@ -53,9 +53,7 @@ class LikeyController extends Controller
 
             dd($data);
 
-
-        }else{
-            dd('test');
+            return response()->json(['']);
         }
 
         return response()->json([]);
