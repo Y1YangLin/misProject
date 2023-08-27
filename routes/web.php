@@ -43,6 +43,7 @@ Auth::routes();
 /*Pages --> 主頁等一般頁面*/
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/index', [PagesController::class, 'index'])->name('index');
+Route::post('/question', [PagesController::class, 'question']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/contact', [PagesController::class, 'showcontactform']);
 
@@ -64,6 +65,7 @@ Route::get('/get_ratings', [LikeyController::class, 'get_ratings']);
 Route::get('/facetype', [FaceCategoryController::class, 'index']);
 Route::get('/facetype/photo', [FaceCategoryController::class, 'photo']);
 Route::post('/facetype/analysis',[FaceCategoryController::class, 'analysis']);
+Route::post('/confirm',[FaceCategoryController::class, 'result']);
 
 
 /**Google Socialite */

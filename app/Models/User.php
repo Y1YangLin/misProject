@@ -58,6 +58,8 @@ class User extends Authenticatable
         return false; 
     }
 
-    
+    public function setUserFaceType($u_id, $face_type){
+        DB::table('users')->where('id', $u_id)->update(['facetype_id' => $face_type]);
+    }
 
 }

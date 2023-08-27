@@ -54,7 +54,6 @@
                     上傳照片<!--min-200*200px，max-4096*4096px,max-2MB-->
                   </button>
                 </div>
-
                 <div id="loading-overlay" style="display:none;">
                   <div id="loader">
                     <div class="ele1"></div>
@@ -83,11 +82,16 @@
     </section>
     
     <div style="padding-bottom: 100px;">
-      <button class="btn btn-primary" type="button" onclick="window.location.href='/'" style="position: relative;left: 50%;transform: translate(-50%, 0%);width: 600px;height: 44px;border-color: var(--bs-emphasis-color);background: #595959;margin-top: 50px;font-weight: bold;">
+      <button id="confirm" class="btn btn-primary" type="button" style="position: relative;left: 50%;transform: translate(-50%, 0%);width: 600px;height: 44px;border-color: var(--bs-emphasis-color);background: #595959;margin-top: 50px;font-weight: bold;">
         確認
       </button>
     </div>
+    <form method="POST" action="photo">
+      <!-- @csrf -->
 
+      <!-- Equivalent to... -->
+      <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+    </form>
 
     
 
@@ -154,6 +158,10 @@
           // 發送 POST 請求
           var xhr = new XMLHttpRequest();
           xhr.open('POST', 'analysis', true);
+          // CSRF
+          xhr.setRequestHeader("X-CSRF-Token", $("input[name='_token']").val());
+
+
           xhr.onload = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
               // 請求成功的處理代碼
@@ -247,6 +255,35 @@
           });
 
         });
+    </script>
+    <script>
+      var confirm = document.getElementById("confirm");
+      var face_type = document.getElementById("photo-alert").innerHTML;
+      // TODO :決定抓哪個膚質結果
+      
+      confirm.addEventListener("click", function(){
+ 
+        // window.location.href='/';
+        fetch('/confirm', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'url': '/confirm',
+            'X-CSRF-Token': $("input[name='_token']").val()
+          },
+          body: JSON.stringify({
+            face_type
+          })
+        })
+        .then(response => response.json())
+        .then(data =>{
+
+        })
+        .catch(error =>{
+          console.log(error);
+        });
+      });
     </script>
 
   </body>
