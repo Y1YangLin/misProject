@@ -54,7 +54,8 @@ class Likey extends Model
     }
 
     public function getUserLikeIds($u_id){
-        $data = DB::table('likeys')->where('user_id', $u_id)->pluck('product_id')->first();
+        /**取得用戶按讚的商品ids，並回傳json */
+        $data = DB::table('likeys')->where('user_id', $u_id)->pluck('product_id');
 
         
         
@@ -62,8 +63,18 @@ class Likey extends Model
     }
 
     public function getlikedProds($u_id){
+        /**取得用戶按讚的商品 */
         $data = DB::table('likeys')->where('user_id', $u_id)->get();
 
+
+        return $data;
+    }
+
+    public function getLikeJoinProd($u_id){
+        $data = DB::table('likeys')
+            ->join('products', 'likeys.product_id', '=', 'products.id')
+            ->select('*')->where('user_id', $u_id)
+            ->get();
 
         return $data;
     }

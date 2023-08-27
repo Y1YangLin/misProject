@@ -49,11 +49,15 @@ class LikeyController extends Controller
         $this->likeModel = new Likey();
 
         if(Auth::check()){
-            $data = $this->likeModel->getlikedProds(Auth::user()->id);
+            $data = $this->likeModel->getUserLikeIds(Auth::user()->id);
+            $json = [];
 
-            dd($data);
+            foreach($data as $i){
+                $json[$i] = 1;
+            }
 
-            return response()->json(['']);
+            
+            return response()->json($json);
         }
 
         return response()->json([]);

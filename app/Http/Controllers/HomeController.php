@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Likey;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -24,10 +26,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // dd('test');
-
+        $likeModel = new Likey();
         $user = Auth::user();
+        $likeData = $likeModel->getLikeJoinProd($user->id);
+        
 
-        return view('users.membercenter')->with(['user' => $user]);
+        return view('users.membercenter')->with([
+            'user' => $user,
+            'likeData' => $likeData,
+        ]);
     }
 }

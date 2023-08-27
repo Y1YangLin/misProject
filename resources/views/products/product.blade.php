@@ -495,9 +495,18 @@
         const href = parentElement.getElementsByTagName('a')[0].href;
         const splits = href.split('/');
         const prod_id = splits[5];
+
+        const currentBackgroundColor = favoriteDiv.style.backgroundColor.toLowerCase();
+
+        if(currentBackgroundColor === 'rgb(19, 19, 19)' ){
+          
+          favoriteDiv.style.backgroundColor = 'rgb(255, 255, 255)';
+          
+          console.log(favoriteDiv.style['background-color']);
+        }
+
         
-        // console.log($("input[name='_token']").val());
-        // console.log(parentElement.getElementsByTagName('a')[0].getAttribute('data-w-id'));
+        
         
         fetch('/pressLike', {
           method: 'POST',
@@ -533,18 +542,9 @@
   </script>
 
   <script>
-    const favoriteAElments = document.querySelectorAll('.brix---product-card-wrapper-v1.w-inline-block');
-    const favoriteIds = [];
+    const prodDivs = document.querySelectorAll('.div-block-8.brix---product-card-wrapper-v1');
     let href, href_split, id;
-    // console.log(favoriteAElments[0].href);
-    favoriteAElments.forEach(favoriteAElment =>{
-      href = favoriteAElment.href;
-      href_split = href.split('/');
-      id = href_split[5];
-      favoriteIds.push(id);
-
-    });
-
+    
     fetch('/get_ratings', {
           method: 'GET',
           headers: {
@@ -556,12 +556,28 @@
         })
         .then(response => response.json())
         .then(data =>{
-          console.log(data);
+          prodDivs.forEach(prodDiv =>{
+            let href = prodDiv.children[0].href;
+            href = href.split('/');
+            let prodId = href[5];
+            
+            if(data[prodId]){
+              let favoriteBtn = prodDiv.children[1].children[2];
+              favoriteBtn.style.background = 'rgb(19, 19, 19)';
+              
+            }
+            
+          });
+          
         })
         .catch(error =>{
           console.log(error);
         });
-    
+        
+        
+
+
+        
 
   </script>
 
