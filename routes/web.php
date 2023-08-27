@@ -64,6 +64,7 @@ Route::post('/pressLike', [LikeyController::class, 'getUserLikeRequest']);
 Route::get('/facetype', [FaceCategoryController::class, 'index']);
 Route::get('/facetype/photo', [FaceCategoryController::class, 'photo']);
 Route::post('/facetype/analysis',[FaceCategoryController::class, 'analysis']);
+Route::post('/confirm',[FaceCategoryController::class, 'result']);
 
 
 /**Google Socialite */

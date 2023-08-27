@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class FaceCategoryController extends Controller
 {
+    protected $userModel;
+
     //
     public function index(){
         return view('facetypes.facecategory');
@@ -59,6 +62,33 @@ class FaceCategoryController extends Controller
                 echo "混和性皮膚";
                 break;
         }
+    }
+    
+    public function result(Request $request){
+        $this->userModel = new User();
+        switch($request->face_type){
+            case '油性皮膚':
+                $face_type = 0;
+                break;
+            case '乾性皮膚':
+                $face_type = 1;
+                break;
+            case '中性皮膚':
+                $face_type = 2;
+                break;
+            case '混和性皮膚':
+                $face_type = 3;
+                break;
+        }
+
+        if(Auth::check()){
+            $this->userModel->setUserFaceType(Auth::user()->id, $face_type);
+        }else{
+            //沒反應
+            return response()->json(['msg' => 'not login']);
+        }
+
+        return response()->json(['msg' => '成功接收膚質']);
     }
 
 }
