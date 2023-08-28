@@ -795,15 +795,16 @@ a {
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
+  padding-left: 0;
   display: flex;
 }
 
 .nav-link {
   color: #1a1b1f;
   letter-spacing: .25px;
-  margin-left: 5px;
+  margin-left: 0;
   margin-right: 5px;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 0;
   font-size: 17px;
   line-height: 20px;
   text-decoration: none;
@@ -1489,8 +1490,14 @@ a {
 }
 
 .nav-link-2 {
+  padding-right: 0;
   font-family: Material-icons-round, sans-serif;
   font-size: 45px;
+}
+
+.nav-link-2.w--current {
+  color: #131313;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .text-block-4 {
@@ -1771,7 +1778,11 @@ a {
 }
 
 .form {
-  max-width: 600px;
+  max-width: 800px;
+}
+
+.form-block {
+  width: 100%;
 }
 
 .customer {
@@ -1800,7 +1811,7 @@ a {
   display: block;
   position: fixed;
   top: auto;
-  bottom: 3%;
+  bottom: 2%;
   left: auto;
   right: 10%;
 }
@@ -1910,7 +1921,7 @@ a {
 }
 
 .brix---product-card-wrapper-v1 {
-  height: 100%;
+  
   max-width: 1010px;
   color: #6e7191;
   background-color: #fff;
@@ -2174,7 +2185,7 @@ a {
 }
 
 .brix---mg-bottom-16px {
-  margin-bottom: 16px;
+  margin-bottom: 0;
 }
 
 .brix---inner-container-1068px-center {
@@ -2395,7 +2406,11 @@ a {
 }
 
 .brix---product-card-content {
+  text-align: center;
+  border-width: 1px;
+  border-color: #000;
   padding: 32px 32px 48px;
+  box-shadow: 1px 0 1px -11px rgba(0, 0, 0, .2);
 }
 
 .product_page_button {
@@ -3250,7 +3265,7 @@ a {
 .waves-text-field-background-2 {
   height: 52px;
   color: #131313;
-  
+  background-color: #fff;
   border: 1px solid #131313;
   border-radius: 8px;
   margin: 0;
@@ -3683,6 +3698,59 @@ a {
 
 .heading-4, .text-block-9 {
   align-self: center;
+}
+.div-block-8 {
+  mix-blend-mode: normal;
+  border: 1px #000;
+  border-radius: 20px;
+}
+
+.brix---copy {
+  color: #6e7191;
+  text-align: center;
+  background-color: #fff;
+  border: 1px #eff0f6;
+  border-radius: 24px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.brix---copy:hover {
+  transform: scale(.96);
+}
+
+.text-block-10 {
+  color: #fff;
+  background-color: #131313;
+  border-radius: 100%;
+  padding: 10px 15px;
+  font-family: Material-icons-outlined, sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+  text-decoration: none;
+}
+
+.div-block-9 {
+  border-radius: 100%;
+  text-decoration: none;
+}
+
+.link-block-2 {
+  text-decoration: none;
+}
+
+.link {
+  color: #9b9b9b;
+}
+
+.link-2 {
+  color: #6e7191;
+}
+
+.link-3 {
+  color: #9b9b9b;
 }
 
 @media screen and (min-width: 1440px) {
@@ -5374,10 +5442,25 @@ a {
     grid-row-gap: 24px;
     flex-direction: column;
   }
+  
+  .waves-footer-1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .nav-link-2 {
+    text-align: left;
+    padding-right: 20px;
+  }
 
   .waves---2-inputs {
     grid-row-gap: 24px;
     grid-template-columns: 1fr;
+  }
+  
+  .waves-form-block-contact-2 {
+    max-height: 335px;
+    overflow: auto;
   }
 
   .waves-content-contact-2 {
@@ -5390,8 +5473,9 @@ a {
   }
 
   .container-3 {
-    max-width: 200px;
-    right: 27%;
+    display: none;
+    left: 2px;
+    right: 26%;
   }
 
   .brix---link-icon-right {
@@ -5756,7 +5840,13 @@ a {
     font-size: 34px;
   }
 
-  .waves---section-medium-3, .waves---section-medium-4 {
+  .waves---section-medium-3 {
+    margin-top: 115px;
+    margin-bottom: 0;
+    padding: 0 14px 64px;
+  }
+
+  .waves---section-medium-4 {
     padding-top: 64px;
     padding-bottom: 64px;
   }
