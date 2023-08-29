@@ -487,6 +487,39 @@
 
   <!-- 點擊愛心 -->
   <script>
+    const prodDivs = document.querySelectorAll('.div-block-8.brix---product-card-wrapper-v1');
+    let href, href_split, id;
+    
+    fetch('/get_ratings', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'url': '/get_ratings',
+          },
+          
+        })
+        .then(response => response.json())
+        .then(data =>{
+          prodDivs.forEach(prodDiv =>{
+            let href = prodDiv.children[0].href;
+            href = href.split('/');
+            let prodId = href[5];
+            
+            if(data[prodId]){
+              let favoriteBtn = prodDiv.children[1].children[2];
+              favoriteBtn.style.background = 'rgb(19, 19, 19)'; 
+              
+            }
+            
+          });
+          
+        })
+        .catch(error =>{
+          console.log(error);
+        });
+
+
     const favoriteDivs = document.querySelectorAll(".favorite-button");
     
     favoriteDivs.forEach(favoriteDiv => {
@@ -534,37 +567,7 @@
   </script>
 
   <script>
-    const prodDivs = document.querySelectorAll('.div-block-8.brix---product-card-wrapper-v1');
-    let href, href_split, id;
     
-    fetch('/get_ratings', {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json',
-            'url': '/get_ratings',
-          },
-          
-        })
-        .then(response => response.json())
-        .then(data =>{
-          prodDivs.forEach(prodDiv =>{
-            let href = prodDiv.children[0].href;
-            href = href.split('/');
-            let prodId = href[5];
-            
-            if(data[prodId]){
-              let favoriteBtn = prodDiv.children[1].children[2];
-              favoriteBtn.style.background = 'rgb(19, 19, 19)';
-              
-            }
-            
-          });
-          
-        })
-        .catch(error =>{
-          console.log(error);
-        });
         
         
 

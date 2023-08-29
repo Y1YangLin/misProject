@@ -290,7 +290,7 @@
   </div>
   <div id="assistant-frame" class="div-block-2 w-clearfix">
     <a data-w-id="268cc64d-b646-1a65-94f1-e5ab1ed228a6" class="button-2 w-button">support_agent</a>
-    <div id="assistantButton" data-w-id="3044bb03-ff94-e75a-70c3-81027bbea985" class="w-layout-blockcontainer container-3 w-container" style="display:none;min-width: 350px;">
+    <div id="assistantButton" data-w-id="3044bb03-ff94-e75a-70c3-81027bbea985" class="w-layout-blockcontainer container-3 w-container" style="display:none;">
       <div id="w-node-d2e5dcd5-352c-a2ee-2dd0-eebbc665976e-48e2cd1a">
         <div class="dialogy_toplabel">男洞客服江鴻麟</div>
       </div>

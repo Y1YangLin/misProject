@@ -18,7 +18,8 @@ class PagesController extends Controller
     }
 
     public function question(){
-        $openai_api_key="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";
+        /** place our open-ai api key here*/
+        $openai_api_key="";
         $open_ai = new OpenAi($openai_api_key);
 
         $question=$_POST["question"];
