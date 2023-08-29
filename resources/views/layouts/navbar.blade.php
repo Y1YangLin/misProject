@@ -12,7 +12,11 @@
             <div class="nav-menu-three">
               <ul role="list" class="nav-menu-block w-list-unstyled">
                 <li>
-                  <a href="/facetype" class="nav-link">膚質分析</a>
+                  @if(Auth::check())
+                    <a href="/facetype/photo" class="nav-link">膚質分析</a>
+                  @else
+                    <a href="/facetype" class="nav-link">膚質分析</a>
+                  @endif
                 </li>
                 <li>
                   <a href="/contact" class="nav-link">聯絡我們</a>

@@ -4,7 +4,7 @@
 <html data-wf-page="64e4ab7c6343f7e6f4e81452" data-wf-site="64c3f1a50a737c6a48e2cd14">
 <head>
   <meta charset="utf-8">
-  <title>Skin_analysis_after_login</title>
+  <title>膚質檢測頁面</title>
   <meta content="Skin_analysis_after_login" property="og:title">
   <meta content="Skin_analysis_after_login" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
