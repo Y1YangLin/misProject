@@ -62,33 +62,38 @@ class FaceCategoryController extends Controller
                 echo "混和性皮膚";
                 break;
         }
+
+        $this->userModel = new User();
+        if(Auth::check()){
+            $this->userModel->setUserFaceType(Auth::user()->id, $type);
+        }
     }
     
-    public function result(Request $request){
-        $this->userModel = new User();
-        switch($request->face_type){
-            case '油性皮膚':
-                $face_type = 0;
-                break;
-            case '乾性皮膚':
-                $face_type = 1;
-                break;
-            case '中性皮膚':
-                $face_type = 2;
-                break;
-            case '混和性皮膚':
-                $face_type = 3;
-                break;
-        }
+    // public function result(Request $request){
+    //     $this->userModel = new User();
+    //     switch($request->face_type){
+    //         case '油性皮膚':
+    //             $face_type = 0;
+    //             break;
+    //         case '乾性皮膚':
+    //             $face_type = 1;
+    //             break;
+    //         case '中性皮膚':
+    //             $face_type = 2;
+    //             break;
+    //         case '混和性皮膚':
+    //             $face_type = 3;
+    //             break;
+    //     }
 
-        if(Auth::check()){
-            $this->userModel->setUserFaceType(Auth::user()->id, $face_type);
-        }else{
-            //沒反應
-            return response()->json(['msg' => 'not login']);
-        }
+    //     if(Auth::check()){
+    //         $this->userModel->setUserFaceType(Auth::user()->id, $face_type);
+    //     }else{
+    //         //沒反應
+    //         return response()->json(['msg' => 'not login']);
+    //     }
 
-        return response()->json(['msg' => '成功接收膚質']);
-    }
+    //     return response()->json(['msg' => '成功接收膚質']);
+    // }
 
 }

@@ -1527,7 +1527,7 @@ a {
   top: auto;
   bottom: 5%;
   left: auto;
-  right: 3%;
+  right: 2%;
 }
 
 .waves-success-mesaage-2 {
@@ -1723,7 +1723,7 @@ a {
   overflow-wrap: anywhere;
   flex: 0 auto;
   padding-bottom: 0;
-  padding-left: 5px;
+  padding-left: 7px;
   padding-right: 40px;
 }
 
@@ -1795,7 +1795,7 @@ a {
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   overflow-wrap: anywhere;
-  flex: 1;
+  flex: 0 auto;
   padding-top: 0;
   padding-left: 60px;
 }
@@ -4169,6 +4169,7 @@ width: 100%;
   }
   
   .cf-services-h2-heading.cf-tab-icon {
+    width: 80px;
     color: #ff5e69;
   }
   
@@ -5003,6 +5004,7 @@ width: 100%;
     justify-content: flex-start;
     align-items: center;
     display: grid;
+    max-width: 300px;
   }
   
   .cf-cta-section-copy4 {
@@ -5536,14 +5538,16 @@ width: 100%;
   }
   
   .cf-tab-image-3 {
+    min-height: 300px;
     object-fit: contain;
-    display: none;
+    border-radius: 15px;
+    /* display: none; */
   }
   
   .cf-flex-image-wrapper-2 {
     width: 100%;
-    max-height: 700px;
-    min-height: 500px;
+    max-height: 450px;
+    min-height: 350px;
     border: .1px solid #000;
     border-radius: 20px;
     flex-direction: column;
@@ -5645,6 +5649,7 @@ width: 100%;
   }
   
   .cf-tabs-menu-3 {
+    padding-top:10px;
     width: 100%;
     max-width: 1440px;
     flex-flow: wrap;
@@ -6651,7 +6656,7 @@ width: 100%;
     }
   
     .cf-services-h2-heading.cf-tab-icon {
-      font-size: 100px;
+      font-size: 75px;
     }
   
     .cf-cta-form-wrapper {
@@ -6681,8 +6686,8 @@ width: 100%;
     }
   
     .heading-5 {
-      font-size: 36px;
-      line-height: 50px;
+      font-size: 24px;
+      /* line-height: 50px; */
     }
   
     .cf-wrapper.cta-wrapper {
@@ -7521,8 +7526,8 @@ width: 100%;
     .cf-pricing-3-box {
       grid-column-gap: 16px;
       grid-template-columns: 1fr 1fr;
-      padding-left: 40px;
-      padding-right: 40px;
+      padding-left: 2px;
+      padding-right: 2px;
     }
   
     .cf-pricing-3-blocks-wrapper {
@@ -9137,8 +9142,13 @@ width: 100%;
 
   .container-3 {
     display: none;
-    left: 2px;
-    right: 26%;
+    left: 5px;
+    right: 19%;
+  }
+
+  .button-2{
+    line-height: 40px;
+    font-size: 40px;
   }
 
   .brix---link-icon-right {

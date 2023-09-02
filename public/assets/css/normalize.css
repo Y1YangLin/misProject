@@ -53,6 +53,7 @@ video {
   /* 1 */
   vertical-align: baseline;
   /* 2 */
+  max-height: 400px;
 }
 /**
  * Prevent modern browsers from displaying `audio` without controls.
