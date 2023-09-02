@@ -161,13 +161,13 @@
                   </div>
                 </div>
               </div>
-              <div class="column-3 w-col w-col-7 w-col-stack">
-                <div class="div-block-12">
-                  <div class="div-block-11">
-                    <button class="button-4 w-button" data-w-id="04f2e76a-dccc-9280-a62a-e28bd82cf4ce" onclick="location.href='/';" style="background-color: black; color:white;font-size: 20px;">
-                      確認
-                    </button>
-                  </div>
+            </div>
+            <div class="column-3 w-col w-col-7 w-col-stack">
+              <div class="div-block-12">
+                <div class="div-block-11">
+                  <button class="button-4 w-button" data-w-id="04f2e76a-dccc-9280-a62a-e28bd82cf4ce" onclick="location.href='/';" style="background-color: black; color:white;font-size: 20px;">
+                    確認
+                  </button>
                 </div>
               </div>
             </div>
