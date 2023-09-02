@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('face_categories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('type');
-            $table->string('pic_url');
+            $table->string('pic_url')->nullable();
         });
     }
 
