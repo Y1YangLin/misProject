@@ -250,13 +250,16 @@
           <div class="waves---subtitle">填寫信箱，體驗獨特的用戶專屬服務.</div>
         </div>
         <div class="waves---form-block-hero-6 w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" method="get" class="waves-form-hero-6" data-wf-page-id="64c3f1a50a737c6a48e2cd1a" data-wf-element-id="f7ad9e51-fb4a-dc50-ec0b-b6cb81107f23"><input type="email" class="waves-text-field-background field-hero-6 w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter email" id="Email-2"><input type="submit" value="Submit" data-wait="Please wait..." class="waves---cta-dark wide-cta w-button"></form>
+          <form id="email-form" name="email-form" data-name="Email Form" method="get" class="waves-form-hero-6" data-wf-page-id="64c3f1a50a737c6a48e2cd1a" data-wf-element-id="f7ad9e51-fb4a-dc50-ec0b-b6cb81107f23">
+            <input type="email" class="waves-text-field-background field-hero-6 w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter email" id="Email-2">
+            <input type="submit" value="Submit" data-wait="Please wait..." class="waves---cta-dark wide-cta w-button">
+          </form>
           <div class="waves-success-mesaage w-form-done">
             <div>Thank you! Your submission has been received!</div>
           </div>
-          <div class="w-form-fail">
+          <!-- <div class="w-form-fail">
             <div>Oops! Something went wrong while submitting the form.</div>
-          </div>
+          </div> -->
         </div>
         <div class="waves---master-checks-horizontal">
           <div class="waves---single-check-item"><img src="assets/images/check.svg" loading="lazy" alt="" class="waves---check-icon">
@@ -298,14 +301,13 @@
         <form id="wf-form-Input-box" name="wf-form-Input-box" data-name="Input box" method="get" class="waves---form-contact-1" data-wf-page-id="64c3f1a50a737c6a48e2cd1a" data-wf-element-id="d2e5dcd5-352c-a2ee-2dd0-eebbc665976c">
           <div id="talk-frame" class="waves---input-wrap" style="min-height: 450px;">
 <!-- padding:上右下左 -->
-            <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798b-48e2cd1a" class="w-layout-layout gpt wf-layout-layout" style="padding-top:0px;">
+            <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798b-48e2cd1a" class="w-layout-layout gpt wf-layout-layout" style="padding-top:0px;grid-template-rows: auto;grid-template-columns: .25fr minmax(195px, 2.25fr);">
               <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798c-48e2cd1a" class="w-layout-cell">
                 <div class="dialogy_top_head">support_agent</div>
               </div>
               <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798d-48e2cd1a" class="w-layout-cell gpt_content">
                 <div class="text-block-5">你好 ! 我是您的資生堂人工智慧產品顧問<br>請問能夠幫助您什麼呢 ?</div>
               </div>
-              
             </div>
             <!-- <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd691-48e2cd1a" class="w-layout-layout customer wf-layout-layout" style="padding-bottom:0px;">
               <div id="w-node-_99e47253-8c17-914f-b272-6987e7abd692-48e2cd1a" class="w-layout-cell"></div>
@@ -378,7 +380,8 @@
           </div>
         `;
         document.getElementById('talk-frame').insertAdjacentHTML('beforeend', patient_html);
-        conversationElement.scrollTop = conversationElement.scrollHeight;
+        // conversationElement.scrollTop = conversationElement.scrollHeight;
+        conversationElement.scrollTo({top: conversationElement.scrollHeight, behavior: 'smooth'});
 
         // loading畫面
 
@@ -409,7 +412,11 @@
             }
             counter++;
         }, 1000); // 3000 毫秒（3 秒）
-        
+        // conversationElement.scrollTop = conversationElement.scrollHeight;
+        conversationElement.scrollTo({top: conversationElement.scrollHeight, behavior: 'smooth'});
+
+
+
         // ajax----------
         var formData = new FormData();
         formData.append('question', patient);
@@ -430,7 +437,7 @@
             console.log(xhr.responseText);
             nurse = xhr.responseText;
             const nurse_html = `
-              <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798b-48e2cd1a" class="w-layout-layout gpt wf-layout-layout" style="padding-top:0px;">
+              <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798b-48e2cd1a" class="w-layout-layout gpt wf-layout-layout" style="padding-top:0px;grid-template-rows: auto;grid-template-columns: .25fr minmax(195px, 2.25fr);">
                 <div id="w-node-_47926d6a-1202-bc6e-5f85-eac936f6798c-48e2cd1a" class="w-layout-cell">
                   <div class="dialogy_top_head">support_agent</div>
                 </div>
@@ -440,7 +447,9 @@
               </div>
             `;
             document.getElementById('talk-frame').insertAdjacentHTML('beforeend', nurse_html);
-            conversationElement.scrollTop = conversationElement.scrollHeight;
+            // conversationElement.scrollTop = conversationElement.scrollHeight;
+            conversationElement.scrollTo({top: conversationElement.scrollHeight, behavior: 'smooth'});
+
             // document.getElementById("photo-alert").style.display ='';
             // document.getElementById("photo-alert").innerHTML=xhr.responseText;
           }else{
