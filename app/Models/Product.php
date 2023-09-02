@@ -33,7 +33,7 @@ class Product extends Model
     }
 
     public function getProdWithFacecat($face_id){ //以膚質推薦產品
-
+        
     }
 
     public function getRandomProd(){ //隨機推薦產品

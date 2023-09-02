@@ -20,7 +20,7 @@ class LikeyController extends Controller
 
         $this->productModel = new Product();
         $this->likeModel = new Likey();
-
+        
         
         //檢查是否有先登入才紀錄按讚
         if(Auth::check()){

@@ -79,30 +79,7 @@
         </div>
 
 
-        <div class="w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" method="get" data-wf-page-id="64c7c06a322ef8c157444ce1" data-wf-element-id="92b5fc8e-07dd-d623-9c19-a05a2ee7e807">
-            <div class="fs_rangeslider-2_component">
-              <div class="fs_rangeslider-2_embed w-embed w-script">
-                <!--  [Finsweet Attributes] Range Slider  -->
-                <script>(()=>{var t="https://cdn.jsdelivr.net/npm/@finsweet/attributes-rangeslider@1/rangeslider.js",e=document.querySelector(`script[src="${t}"]`);e||(e=document.createElement("script"),e.async=!0,e.src=t,document.head.append(e));})();</script>
-              </div>
-              <div fs-rangeslider-formatdisplay="true" fs-rangeslider-element="wrapper" fs-rangeslider-min="0" fs-rangeslider-max="5000" class="fs_rangeslider-2_wrapper">
-                <div fs-rangeslider-element="track" class="fs_rangeslider-2_track">
-                  <div aria-label="minimum price" fs-rangeslider-element="handle" class="fs_rangeslider-2_left"></div>
-                  <div aria-label="maximum price" fs-rangeslider-element="handle" class="fs_rangeslider-2_handle-right"></div>
-                  <div fs-rangeslider-element="fill" class="fs_rangeslider-2_fill"></div>
-                </div><input type="text" class="fs_rangeslider-2_input w-input" maxlength="256" name="From" fs-cmsfilter-field="price" data-name="From" fs-cmsfilter-range="from" placeholder="From" id="From-2"><input type="text" class="fs_rangeslider-2_input w-input" maxlength="256" name="To" fs-cmsfilter-field="price" data-name="To" fs-cmsfilter-range="to" placeholder="To" id="To-2">
-                <div class="fs_rangeslider-2_values">
-                  <div class="fs_rangeslider-2_handle-text">$<span fs-rangeslider-element="display-value" class="fs_rangeslider-2_handle-value">0</span></div>
-                  <div class="fs_rangeslider-2_handle-text">$<span fs-rangeslider-element="display-value" class="fs_rangeslider-2_handle-value">0</span></div>
-                </div>
-              </div>
-            </div>
-          </form>
-          <div class="w-form-done"></div>
-          <div class="w-form-fail"></div>
-        </div>
-        <a href="#" class="search-left-button w-button">Search</a>
+
       </div>
 
       <!-- 產品容器 -->

@@ -27,7 +27,10 @@ class ProductsController extends Controller
     public function show_Product_Detail($name, $id){
         $this->productModel = new Product();
 
-        $data = $this->productModel->getSelectProd($id);
+        $data = [
+            'product' => $this->productModel->getSelectProd($id),
+            'others' => $this->productModel->getRandomProdWithAmount(6)
+        ];
         
 
         return view('products.product-detail')->with('data', $data);
