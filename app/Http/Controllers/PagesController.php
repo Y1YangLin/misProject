@@ -2,6 +2,7 @@
 // cmd:composer require orhanerday/open-ai
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Orhanerday\OpenAi\OpenAi;
 
@@ -9,7 +10,11 @@ class PagesController extends Controller
 {
     //返回HomePage
     public function index(){
-        return view('index');
+        $productModel = new Product();
+        $data = [
+            'random' => $productModel->getRandomProdWithAmount(6)
+        ];
+        return view('index')->with('data', $data);
     }
 
     public function showcontactform(){

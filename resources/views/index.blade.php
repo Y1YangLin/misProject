@@ -152,76 +152,24 @@
           <div class="gallery21_component">
             <div data-delay="4000" data-animation="slide" class="gallery21_slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false" id="gallery13_slider">
               <div class="gallery21_mask w-slider-mask">
+              @foreach($data['random'] as $random)
                 <div class="gallery21_slide w-slide">
+                  
                   <div class="blog33_item">
-                    <a href="product-detail.html" target="_blank" class="blog33_image-link w-inline-block">
-                      <div class="blog33_image-wrapper"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg" loading="lazy" alt="" class="blog33_image"></div>
+                    <a href="/product-detail/{{ $random->name }}/{{ $random->id }}" target="_blank" class="blog33_image-link w-inline-block">
+                      <div class="blog33_image-wrapper"><img src="{{ $random->image_url }}" loading="lazy" alt="糟了 圖片睡著了..." class="blog33_image"></div>
                     </a>
-                    <a href="product-detail.html" target="_blank" class="blog33_category-link w-inline-block">
-                      <div class="text-block">類別(男生、女生...)</div>
+                    <a href="/product-detail/{{ $random->name }}/{{ $random->id }}" target="_blank" class="blog33_category-link w-inline-block">
+                      <div class="text-block">Random goods</div>
                     </a>
-                    <a href="product-detail.html" target="_blank" class="blog3_title-link w-inline-block">
-                      <h3 class="heading-style-h5">產品名稱</h3>
+                    <a href="/product-detail/{{ $random->name }}/{{ $random->id }}" target="_blank" class="blog3_title-link w-inline-block">
+                      <h3 class="heading-style-h5">{{ mb_substr($random->name, 0, 5,'utf-8') . '...'}}</h3>
                     </a>
-                    <div class="text-size-regular">大致內容</div>
+                    <div class="text-size-regular">點進來看更多 !</div>
                   </div>
+                  
                 </div>
-                <div class="gallery21_slide w-slide">
-                  <div class="blog33_item">
-                    <a href="#" class="blog33_image-link w-inline-block">
-                      <div class="blog33_image-wrapper"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg" loading="lazy" alt="" class="blog33_image"></div>
-                    </a>
-                    <a href="#" class="blog33_category-link w-inline-block">
-                      <div class="text-block">類別(男生、女生...)</div>
-                    </a>
-                    <a href="#" class="blog3_title-link w-inline-block">
-                      <h3 class="heading-style-h5">產品名稱</h3>
-                    </a>
-                    <div class="text-size-regular">大致內容</div>
-                  </div>
-                </div>
-                <div class="gallery21_slide w-slide">
-                  <div class="blog33_item">
-                    <a href="#" class="blog33_image-link w-inline-block">
-                      <div class="blog33_image-wrapper"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg" loading="lazy" alt="" class="blog33_image"></div>
-                    </a>
-                    <a href="#" class="blog33_category-link w-inline-block">
-                      <div class="text-block">類別(男生、女生...)</div>
-                    </a>
-                    <a href="#" class="blog3_title-link w-inline-block">
-                      <h3 class="heading-style-h5">產品名稱</h3>
-                    </a>
-                    <div class="text-size-regular">大致內容</div>
-                  </div>
-                </div>
-                <div class="gallery21_slide w-slide">
-                  <div class="blog33_item">
-                    <a href="#" class="blog33_image-link w-inline-block">
-                      <div class="blog33_image-wrapper"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg" loading="lazy" alt="" class="blog33_image"></div>
-                    </a>
-                    <a href="#" class="blog33_category-link w-inline-block">
-                      <div class="text-block">類別(男生、女生...)</div>
-                    </a>
-                    <a href="#" class="blog3_title-link w-inline-block">
-                      <h3 class="heading-style-h5">產品名稱</h3>
-                    </a>
-                    <div class="text-size-regular">大致內容</div>
-                  </div>
-                </div>
-                <div class="gallery21_slide w-slide">
-                  <div class="blog33_item">
-                    <a href="#" class="blog33_image-link w-inline-block">
-                      <div class="blog33_image-wrapper"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg" loading="lazy" alt="" class="blog33_image"></div>
-                    </a>
-                    <a href="#" class="blog33_category-link w-inline-block">
-                      <div class="text-block">類別(男生、女生...)</div>
-                    </a>
-                    <a href="#" class="blog3_title-link w-inline-block">
-                      <h3 class="heading-style-h5">產品名稱</h3>
-                    </a>
-                    <div class="text-size-regular">大致內容</div>
-                  </div>
-                </div>
+                @endforeach
               </div>
               <div class="gallery21_arrow is-left w-slider-arrow-left">
                 <div class="gallery21_arrow-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
