@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 use function PHPUnit\Framework\isNull;
 
@@ -46,10 +47,19 @@ class UsersController extends Controller
         
         if(Hash::check($oldPassword, Auth::user()->password)){
             
-            $this->validate($request,[
+            $rule = [
                 'newPwd' => 'required|min:8',
-                'newPwd2' => 'required|same:newPwd'
-            ]);
+                'newPwd2' => 'required|min:8|same:newPwd',
+            ];
+
+            $errorMsg = [
+                'password_confirmed_failed' => '二次輸入新密碼錯誤了喔 !',
+            ];
+            $validator = Validator::make($request->all(), $rule, $errorMsg);
+
+            if($validator->fails()){
+                return redirect()->route('home')->with('message', $errorMsg['password_confirmed_failed']);
+            }
 
             $userData = DB::table('users')->where('email', Auth::user()->email)->first();
 
