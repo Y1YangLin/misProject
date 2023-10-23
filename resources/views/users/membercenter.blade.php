@@ -38,8 +38,6 @@
     <br>
     <br>
 
-    
-
     <!-- 用來顯示使用者修改資料的狀態 -->
     <script>
         var msg = "{{ Session::get('message') }}";
@@ -49,7 +47,7 @@
         if(exist){
             alert(msg);
         }
-
+        console.log(msg);
     </script>
 
     
@@ -186,9 +184,9 @@
 
             
             <!-- 按讚記錄在這裡 -->
-
+            
             <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 pressgood gy-3 px-5" id="pressgood" style="display: none;">
-
+                
                 @if(is_null($likeData))
                     <p style='font-family:"黑體-繁","微軟正黑體", sans-serif; font-size:50px; line-height: normal;' >{{ "你還沒有按過讚，快去按吧 ! 😎"}}</p>
                 @else
@@ -210,6 +208,8 @@
                     @endforeach
                 </div>
                 @endif
+   
+                
             </div>
             
             <!-- 按讚紀錄結束 -->
