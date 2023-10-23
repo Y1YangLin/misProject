@@ -30,6 +30,9 @@ class HomeController extends Controller
         $user = Auth::user();
         $likeData = $likeModel->getLikeJoinProd($user->id);
         
+        if(sizeof($likeData) == 0){
+            $likeData = null;
+        }
 
         return view('users.membercenter')->with([
             'user' => $user,
