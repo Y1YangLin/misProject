@@ -1,72 +1,48 @@
-## NCU mis 第三組
+## NCU MIS 畢業專題 第三組
 
-: )
+主題 : 膚質分析與AI小幫手系統 -YOFU
+
+## 系統維護日誌
+- [x] 從2023/10/25開始早中晚依照TestCase來測試系統
+- [x] 陸續發現有bug e.g 按讚之商品若為空，頁面卻沒有提示單純只顯示空白 etc...
+- [x] 測試與維護至2023/11/1 Jenkins log 上沒有任何Test失敗紀錄，TestCase全部通過因此暫停系統維護
+
+**目前網站功能關結中**
+
+## 前端畫面預覽
+### 一、平台首頁
+![image](https://github.com/Y1YangLin/misProject/assets/83540570/660c20d8-3502-416e-99de-96b453b2dffc)
+
+### 二、串接 GPT 3.5 turbo api 與prompt engineering 來建置智能客服
+![image](https://github.com/Y1YangLin/misProject/assets/83540570/cb18b89c-ee98-451b-a394-d8c434e690a9)
+
+### 三、使用Model對使用者進行膚質分析
+![image](https://github.com/Y1YangLin/misProject/assets/83540570/c979ddef-30ee-43ca-a63d-0f7a146c1aac)
+![image](https://github.com/Y1YangLin/misProject/assets/83540570/2fcddc71-b7b8-4212-9f1d-1dc59dc73407)
+
+### 四、會員登入、按讚等基本系統實作
+![image](https://github.com/Y1YangLin/misProject/assets/83540570/bb2fc01b-1e96-4cf0-abae-5f0a6c71180f)
+
+**若點擊商品則會進入其專屬頁面**
+![image](https://github.com/Y1YangLin/misProject/assets/83540570/0606dd6a-265b-4fb8-8f6d-f56fe1f792d1)
+
+### 五、各類品牌之產品展示頁面
+![image](https://github.com/Y1YangLin/misProject/assets/83540570/bf892a3b-76d2-4c38-88cd-0b54f7a1385e)
 
 
-
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 開發工具及框架
+* 前端
+    * Webflow
+    * Figma
+    * Bootstrap
+    * CSS HTML 
+* 後端
+    * Laravel
+    * PHP
+    * AJAX
+    * Git
+* 系統測試
+    * Selenium
+    * Jenkins
+    * Robotiive
+    * PHPUnit，Jest
