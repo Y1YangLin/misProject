@@ -1,6 +1,13 @@
-### NCU MIS 畢業專題 第三組
+## NCU MIS 畢業專題 第三組
 
 主題 : 膚質分析與AI小幫手系統 -YOFU
+
+## 系統維護日誌
+- [x] 從2023/10/25開始早中晚依照TestCase來測試系統
+- [x] 陸續發現有bug e.g 按讚之商品若為空，頁面卻沒有提示單純只顯示空白 etc...
+- [x] 測試與維護至2023/11/1 Jenkins log 上沒有任何Test失敗紀錄，TestCase全部通過因此暫停系統維護
+
+**目前網站功能關結中**
 
 ## 前端畫面預覽
 ### 一、平台首頁
@@ -18,6 +25,10 @@
 
 **若點擊商品則會進入其專屬頁面**
 ![image](https://github.com/Y1YangLin/misProject/assets/83540570/0606dd6a-265b-4fb8-8f6d-f56fe1f792d1)
+
+### 五、各類品牌之產品展示頁面
+![image](https://github.com/Y1YangLin/misProject/assets/83540570/bf892a3b-76d2-4c38-88cd-0b54f7a1385e)
+
 
 ## 開發工具及框架
 * 前端
