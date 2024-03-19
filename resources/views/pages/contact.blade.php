@@ -25,6 +25,9 @@
   @section('content')
   @endsection
 
+
+
+
   <br>
   <br>
   <br>
@@ -118,6 +121,14 @@
       </div>
     </div>
   </div>
+
+  <script>
+  var form = document.getElementById('Contact-form');
+  form.addEventListener('submit', function(event) {
+    var successMessage = "表單提交成功！";
+    alert(successMessage);
+  });
+</script>
 
   @if (session()->has('message'))
     <script>
